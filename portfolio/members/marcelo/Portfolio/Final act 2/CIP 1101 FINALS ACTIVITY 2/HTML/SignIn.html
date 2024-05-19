@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<head>
+    <title>
+		Sign In
+	</title>
+	<style>
+		body
+		{
+			margin: 0;
+		}
+		#nav
+		{
+			font-family:arial;
+			margin: 0;
+			padding: 0;
+			width: 15%;
+			background-color: black;
+			position: fixed;
+			height: 100%;
+		}
+		#nav p
+		{	
+			font-size:50px;
+			margin-left:15px;
+			color:white;
+		}
+		#ulNav
+		{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 15%;
+			background-color: Grey;
+			position: fixed;
+			height: 100%;
+			overflow: auto;
+			font-size:30px;
+		}
+		.liNav
+		{
+			
+			border-bottom:1px white solid;
+		}
+		.liNav a
+		{
+			display: block;
+			color: white;
+			padding:16px;
+		}
+		.liNav a.active
+		{
+			background-color: #555;
+			color: white;
+		}
+		.liNav a:hover:not(.active) 
+		{
+			background-color: #555;
+			color: white;
+		}
+		#container
+		{
+			position:relative;
+			margin-left:15%;
+		}
+		#header
+		{
+			height: 21.4vh;
+			background-color:#0099ff;
+		}
+		#bod
+		{
+			
+			height: 78.6vh;
+			background-color:#e6e6e6;
+		}
+		#LogIn
+		{
+			padding:20px;
+			width:500px;
+			position:absolute;
+			background-color:white;
+			border:1px solid grey;
+			box-shadow: 0 5px 20px 0 black;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius:5px;
+		}
+		#SocialMedia
+		{
+			display:flex;
+			justify-content:center;
+			gap:40px;
+		}
+		.media img
+		{
+			width:100px;
+			height:auto;
+
+		}
+		.label
+		{
+			text-align:center;
+			font-family:arial;
+		}
+		.media img:hover
+		{
+			opacity:.5;
+		}
+		
+		h2 
+		{
+			width: 90%; 
+			text-align: center; 
+			border-bottom: 1px solid #00000050; 
+			line-height:0.1em;
+			margin: 10px  20px; 
+		} 
+
+		h2 span 
+		{ 
+			background:#fff; 
+			padding:0 10px; 
+		}
+		input
+		{
+			margin:10px;
+			width:90%;
+			font-size:20px;
+			border-radius:10px;
+			padding:10px;
+		}
+		#footer
+		{
+			display:flex;
+			justify-content:start;
+			gap:10px;
+		}
+		#footer input
+		{
+			width:40%;
+			background-color:#ffa31a;
+			font-weight:bold;
+			color:white;
+		}
+		#footer p
+		{
+			font-size:20px;
+			font-family:arial;
+		}
+		#footer a
+		{
+			color:#0099ff;
+		}
+	</style>
+</head>	
+<body>
+	<div id = "nav">
+		<p>Menu</p>
+		<ul id = "ulNav">
+			<li class = "liNav"><a href = "../HTML/Contact.html">Contact Us</a></li>
+			<li class = "liNav"><a href = "../HTML/subscribe.html">Subscribe</a></li>
+			<li class = "liNav"><a href = "../HTML/About.html">About Us</a></li>
+			<li class = "liNav"><a href = "../HTML/SignIn.html" class = "active">Sign in</a></li>
+		</ul>
+	</div>	
+	<section id = "container">
+		<div id = "header" >
+		</div>
+		<div id = "bod">
+		</div>
+		<div id = "LogIn">
+			<form action ="">
+				<p style = "text-align:center; font-size:50px; font-weight:bold; font-family:arial;">Sign-in using</p>
+				<div id = "SocialMedia">
+					<div class = "media">
+						<a href = ""><img src = "../Images/fb.png"></a>
+						<p class = "label">Facebook</p>
+					</div>
+					<div class = "media">
+						<a href = ""><img src = "../Images/twitter.png"></a>
+						<p class = "label">Twitter</p>
+					</div>
+					<div class = "media">
+						<a href = ""><img src = "../Images/google.png"></a>
+						<p class = "label">Google</p>
+					</div>
+				</div>
+				<h2><span>or</span></h2>
+				<input type = "text" placeholder = "Email or Username">
+				<br>
+				<input type = "password" placeholder = "Password"><br>
+				<div id = "footer">
+					<input type = "submit" value = "Sign-in">
+					<p> or <a href ="">create an account</a></p>
+				</div>
+			</form>
+		</div>
+	</section>
+</body>

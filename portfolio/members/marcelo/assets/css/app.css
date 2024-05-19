@@ -1,0 +1,42 @@
+:root {
+    --clr-primary: #2f57db;
+    --clr-secondary: #e9eff5;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.active {
+    background-color: var(--clr-primary);
+    color: white !important;
+}
+
+.active > svg {
+    fill: white;
+}
+
+.bg-primary-color {
+    background-color: var(--clr-primary);
+}
+
+.nav-link:hover {
+    background-color: var(--clr-secondary);
+	color:black !important;
+}
+.nav-link:hover > svg
+{
+	fill:black;
+}
+
+.text-small {
+    font-size: 0.75rem;
+}
+.back
+{
+	background-color: var(--clr-secondary);
+	border-radius:10px;
+	width:100px;
+	color:red;
+}

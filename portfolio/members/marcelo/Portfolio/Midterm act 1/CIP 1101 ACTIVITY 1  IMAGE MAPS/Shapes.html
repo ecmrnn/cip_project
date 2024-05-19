@@ -1,0 +1,22 @@
+<head>
+	<title>Image Mapping</title>
+	<link rel="stylesheet" href="../../../assets/css/app.css">
+</head>
+<body>
+    <div>
+        <button class="back" id="backButton">Back</button>
+    </div>
+      
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+          history.back();
+        });
+    </script>
+	<img src="Shapes.png" alt="Shapes" style = "display:block; margin-left:auto; margin-right:auto;" usemap="#Shapes">
+
+	<map name="Shapes">
+		<area shape="rect" coords="0,0,300,300" alt="Square" href="Square.html">
+		<area shape="circle" coords="477,150,150" alt="Circle" href="Circle.html">
+		<area shape="poly" coords="804,0,654,300,954,300" alt="Triangle" href="Triangle.html">
+	</map>
+</body>

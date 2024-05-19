@@ -1,0 +1,548 @@
+<!DOCTYPE HTML>
+
+<head>
+	<title> Form</title>
+	<style>
+		
+		form
+		{
+			position:absolute;
+			border:solid 2px black;
+			border-radius:10px;
+			padding:10px;
+		}
+		header
+		{
+			display:flex;
+			justify-content:space-between;
+			border:solid 1px black;
+			border-radius:10px;
+			padding:10px;
+		}
+		header img
+		{
+			width:100px;
+			height:auto;
+		}
+		header input
+		{
+			width:70%;
+			background: transparent;
+			border: none;
+			border-bottom: 1px solid black;
+		}
+		header p, h2
+		{
+			margin:0px;
+			text-align:center;
+		}
+		#StudName
+		{
+			margin-top:10px;
+			display:grid;
+			grid-template-columns: repeat( 4, 1fr);	
+			border:solid 1px black;
+			border-radius:10px;
+			padding:10px;			
+		}
+		#StudName input
+		{
+			height:25px;
+			width:100%;
+			text-align:center;
+			background: transparent;
+			border: none;
+			border-bottom: 1px solid black;
+		}
+		#StudName label
+		{
+			display: flex;
+			justify-content: center;
+			
+		}
+		
+		#StudDetails
+		{
+			margin-top:10px;
+			border:solid 1px black;
+			border-radius:10px;
+			padding:10px;
+		}
+		#StudDetails input
+		{
+			background: transparent;
+			border: none;
+			border-bottom: 1px solid black;
+			margin-top:2px;
+		}
+		#CityAdd
+		{
+			width:90%;
+		}
+		#HomeAdd
+		{
+			width:89.3%;
+		}
+		#StudDetails1
+		{
+			display:grid;
+			grid-template-columns: repeat( 3, 1fr);
+		}
+		#StudDetails1 input
+		{
+			width:67.5%;
+		}
+		#StudDetails2
+		{
+			display:grid;
+			grid-template-columns: repeat( 2, 1fr);
+		}
+		#HomeZipCode
+		{
+			width:85%;
+		}
+		#BirthDay
+		{
+			width:85.9%;
+		}
+		#BirthPlace
+		{
+			width:83.4%;
+		}
+		#Citizenship
+		{
+			width:83.8%;
+		}
+		#alien
+		{
+			width:63.7%;
+		}
+		#Region
+		{
+			width:85.2%;
+		}
+		#Age
+		{
+			width:88.6%;
+		}
+		#Religion
+		{
+			width:84.2%;
+		}
+		#status
+		{
+			margin-top:10px;
+			display:grid;
+			grid-template-columns: repeat( 2, 1fr);
+			border:solid 1px black;
+			border-radius:10px;
+			padding:10px;
+		}
+		input[type=checkbox] 
+		{
+			
+		}
+		#sex
+		{
+			background:transparent;
+		}
+		#NotWorkingTxt
+		{
+			background: transparent;
+			border: none;
+			border-bottom: 1px solid black;
+			width:41.5%;
+		}
+		#ParentInfo
+		{
+			margin-top:10px;
+			border:solid 1px black;
+			border-radius:10px;
+			padding:10px;
+		}
+		#Parent
+		{
+			display:grid;
+			grid-template-columns: repeat( 2, 1fr);
+		}
+		#ParentInfo input
+		{
+			background: transparent;
+			border: none;
+			border-bottom: 1px solid black;
+		}
+		#FatherSurname
+		{
+			width:85%;
+		}
+		#FatherFirstname
+		{
+			width:83%;
+		}
+		#FatherMiddlename
+		{
+			width:80.6%;
+		}
+		#FatherAuxname
+		{
+			width:78%;
+		}
+		#FatherOccupation
+		{
+			width:70.8%;
+		}
+		#FatherEducation
+		{
+			width:72.1%;
+		}
+		#MotherSurname
+		{
+			width:85.9%;
+		}
+		#MotherFirstname
+		{
+			width:84.1%;
+		}
+		#MotherMiddlename
+		{
+			width:81.9%;
+		}
+		#MotherAuxname
+		{
+			width:79.4%;
+		}
+		#MotherOccupation
+		{
+			width:72.3%;
+		}
+		#MotherEducation
+		{
+			width:73.6%;
+		}
+		#ParentAddress
+		{
+			width:90%;
+		}
+		#ParentZipCode
+		{
+			width:15.8%;
+		}
+		#ParentTel
+		{
+			width:15.8%;
+		}
+		#GuardianInfo
+		{
+			margin-top:10px;
+			border:solid 1px black;
+			border-radius:10px;
+			padding:10px;
+		}
+		#Guardian 
+		{
+			margin-top:10px;
+			display:grid;
+			grid-template-columns: repeat( 2, 1fr);
+		}
+		#Guardian input
+		{
+			background: transparent;
+			border: none;
+			border-bottom: 1px solid black;
+		}
+		#GuardianSurname
+		{
+			width:85%;
+		}
+		#GuardianFirstname
+		{
+			width:83%;
+		}
+		#GuardianMiddlename
+		{
+			width:80.7%;
+		}
+		#GuardianAuxname
+		{
+			width:78%;
+		}
+		#GuardianOccupation
+		{
+			width:70.8%;
+		}
+		#GuardianOffice
+		{
+			width:80.2%;
+		}
+		#GuardianAdd
+		{
+			width:77.5%;
+		}
+		#GuardianZipCode
+		{
+			width:86.3%;
+		}
+		#GuardianTel
+		{
+			width:90%;
+		}
+	</style>
+	<link rel="stylesheet" href="../../assets/css/app.css">
+</head>
+
+<body>
+<div>
+        <button class="back" id="backButton">Back</button>
+    </div>
+      
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+          history.back();
+        });
+    </script>
+	<form action = "">
+
+		<header>
+			<div>
+				<img src = "https://upload.wikimedia.org/wikipedia/en/9/9f/University_of_the_East_seal.png" alt = "Ue Logo">
+			</div>
+			<div>
+				<hgroup>
+					<h2> UNIVERSITY OF THE EAST</h2>
+					<p>ENROLLMENT SYSTEM</p>
+				</hgroup>
+				<hgroup>
+					<h2>PERSONAL DATA SHEET</h2>
+					<p>&lpar;Graduate School, Law, Medicine	&rpar;</p>
+				</hgroup>
+			</div>
+			<div>
+				<div>
+					<label for = "Program">Program: </label>
+					<input type = "text" name = "Program">		
+				</div>
+				<div>
+					<label for = "Student#">Student#: </label>
+					<input type = "text" name = "Student#">
+				</div>
+			</div>
+		</header>
+		<div id = "StudName">
+			<div>
+				<input type = "text" name = "Surname" id = "Surname"><br>
+				<label for = "Surname">SURNAME</label>
+			</div>
+			<div>	
+				<input type = "text" name = "GivenName"id = "GivenName"><br>
+				<label for = "GivenName">GIVEN NAME</label>
+			</div>
+			<div>
+				<input type = "text" name = "MiddleName"id = "MiddleName"><br>
+				<label for = "MiddleName">MIDDLE NAME</label>
+			</div>
+			<div>
+				<input type = "text" name = "AuxName"id = "AuxName"><br>
+				<label for = "AuxName">AUXILIARY NAME</label>
+			</div>	
+		</div>
+		
+		<div id = "StudDetails">
+			<h3>
+				STUDENT DETAILS:
+			</h3>
+			
+				<label for = "CityAdd">City Address:</label>
+				<input type = "text" name = "CityAdd" id = "CityAdd" placeholder = "City Address"><br>
+			<div id = "StudDetails1">
+				<div>
+					<label for = "ZipCode">Zip Code:</label>
+					<input type = "number" name = "ZipCode"id = "ZipCode" placeholder = "0000">
+				</div>
+				<div>
+					<label for = "TelNo">Tel No.:</label>
+					<input type = "number" name = "TelNo"id = "TelNo" placeholder = "00-000-0000">
+				</div>
+				<div>
+					<label for = "Email">E-mail address:</label>	
+					<input type = "email" name = "Email"id = "Email" placeholder = "Bla@gmail.com"><br>
+				</div>
+			</div>	
+				<label for = "HomeAdd">Home Address:</label>
+				<input type = "text" name = "HomeAdd" id = "HomeAdd" placeholder = "Home Adress"><br>
+			
+			<div id = "StudDetails2">
+				
+				<div>
+					<label for = "HomeZipCode">Zip Code:</label>
+					<input type = "number" name = "HomeZipCode"id = "HomeZipCode" placeholder = "0000"><br>
+				
+				
+					<label for = "BirthDay">Birthday:</label>
+					<input type = "date" name = "BirthDay"id = "BirthDay" placeholder = "Birthday"><br>
+				
+					<label for = "BirthPlace">Birth Place:</label>
+					<input type = "text" name = "BirthPlace"id = "BirthPlace" placeholder = "Birth Place"><br>
+				
+					<label for = "Citizenship">Citizenship</label>
+					<input type = "text" name = "Citizenship"id = "Citizenship" placeholder = "Citizenship"><br>
+				
+					<label for = "alien">If Alien, ACR# &lpar;see Registration&rpar;:</label>
+					<input type = "text" name = "alien" id = "alien">
+				</div>	
+				<div>
+					<label for = "Region">Region:</label>
+					<input type = "text" name = "Region"id = "Region" placeholder = "Region"><br>
+					
+					<label for = "Age">Age</label>
+					<input type = "number" name = "Age"id = "Age" placeholder = "Age"><br>
+					
+					<label for = "Religion">Religion:</label>
+					<input type = "text" name = "Religion"id = "Religion" placeholder = "Religion"><br>
+					
+					<label for = "sex">Sex</label>
+					<select name = "sex" id = "sex">
+					<option value = ""></option>
+					<option value = "male">Male</option>
+					<option value = "female">Female</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div id = "status">
+			<div>
+				<h3>Legal Status:</h3>
+				<input type = "radio" id = "CitezenRP" name = "legal" value = "CitezenRP">
+				<label for = "CitezenRP">Citezen of RP</label><br>
+				
+				<input type = "radio" id = "PermaRes" name = "legal" value = "PermaRes">
+				<label for = "PermaRes">Permanent Resident</label><br>
+				
+				<input type = "radio" id = "PersonStudent" name = "legal" value = "PersonStudent">
+				<label for = "PersonStudent">Person grantend permission to enter and remain as a student in RP on a visa for a defined period of time</label><br>
+				
+				<input type = "radio" id = "PersonChildSpouse" name = "legal" value = "PersonChildSpouse">
+				<label for = "PersonChildSpouse">Person grantend permission to enter and remain as a child or spouse of a worker on a visa for a defined period of time</label><br>
+				
+				<input type = "radio" id = "OtherVisa" name = "legal" value = "OtherVisa">
+				<label for = "OtherVisa">Other Visa</label><br>
+				
+				<input type = "radio" id = "LegalStatus" name = "legal" value = "LegalStatus">
+				<label for = "LegalStatus">Legal Status not known</label><br>
+			</div>
+			<div>
+				<h3>Civil Status:</h3>
+				<input type = "radio" id = "Single" name = "civil" value = "Single">
+				<label for = "Single">Single</label><br>
+				
+				<input type = "radio" id = "Married" name = "civil" value = "Married">
+				<label for = "Married">Married</label><br>
+				
+				<input type = "radio" id = "Divorced" name = "civil" value = "Divorced">
+				<label for = "Divorced">Divorced</label><br>
+				
+				<input type = "radio" id = "Widowed" name = "civil" value = "Widowed">
+				<label for = "Widowed">Widowed</label><br>
+				
+				<input type = "radio" id = "Separated" name = "civil" value = "Separated">
+				<label for = "Separated">Separated</label><br>
+				
+				<input type = "radio" id = "Working" name = "civil" value = "Working">
+				<label for = "Working">Working if Working:</label>
+				<input type = "radio" id = "NotWorking" name = "civil" value = "NotWorking">
+				<label for = "NotWorking">Not working Office/Bus.Tell.#</label>
+				<input type = "number" id = "NotWorkingTxt" name = "civil">
+			</div>
+		</div>
+		<div id = "ParentInfo">
+			<div id = "Parent">
+				<div>
+					<h3>FATHER'S INFORMATION</h3>
+					<label for = "FatherSurname">Surname:</label>
+					<input type = "text" id = "FatherSurname" name = "FatherSurname"> <br>
+				
+					<label for = "FatherFirstname">First Name:</label>
+					<input type = "text" id = "FatherFirstname" name = "FatherFirstname"> <br>
+				
+					<label for = "FatherMiddlename">Middle Name:</label>
+					<input type = "text" id = "FatherMiddlename" name = "FatherMiddlename"> <br>
+				
+					<label for = "FatherAuxname">Auxilliary Name:</label>
+					<input type = "text" id = "FatherAuxname" name = "FatherAuxname"> <br>
+				
+					<label for = "FatherOccupation">Occupation/Employment:</label>
+					<input type = "text" id = "FatherOccupation" name = "FatherOccupation"> <br>
+				
+					<label for = "FatherEducation">Educational Attainment:</label>
+					<input type = "text" id = "FatherEducation" name = "FatherEducation"> <br>	
+				</div>
+					<div>
+					<h3>MOTHER'S INFORMATION</h3>
+					<label for = "MotherSurname">Surname:</label>
+					<input type = "text" id = "MotherSurname" name = "MotherSurname"> <br>
+				
+					<label for = "MotherFirstname">First Name:</label>
+					<input type = "text" id = "MotherFirstname" name = "MotherFirstname"> <br>
+				
+					<label for = "MotherMiddlename">Middle Name:</label>
+					<input type = "text" id = "MotherMiddlename" name = "MotherMiddlename"> <br>
+				
+					<label for = "MotherAuxname">Auxilliary Name:</label>
+					<input type = "text" id = "MotherAuxname" name = "MotherAuxname"> <br>
+				
+					<label for = "MotherOccupation">Occupation/Employment:</label>
+					<input type = "text" id = "MotherOccupation" name = "MotherOccupation"> <br>
+				
+					<label for = "MotherEducation">Educational Attainment:</label>
+					<input type = "text" id = "MotherEducation" name = "MotherEducation"> <br>	
+				</div>
+			</div>
+			<div>
+				<label for = "ParentAddress">Parent's Address:</label>
+				<input type = "text" id = "ParentAddress" name = "ParentAddress"> <br>
+				
+				<label for = "ParentZipCode">Parent's Zip Code:</label>
+				<input type = "number" id = "ParentZipCode" name = "ParentZipCode">
+				<label for = "ParentTel">Parent's Tel.#:</label>
+				<input type = "number" id = "ParentTel" name = "ParentTel">
+			</div>	
+		</div>
+		<div id = "GuardianInfo">
+			<h3>
+				GUARDIAN'S INFORMATION &lpar;If Applicable&rpar;
+			</h3>
+			<div id = "Guardian">
+				<div>
+					<label for = "GuardianSurname">Surname:</label>
+					<input type = "text" id = "GuardianSurname" name = "GuardianSurname"><br>
+				
+					<label for = "GuardianFirstname">First Name:</label>
+					<input type = "text" id = "GuardianFirstname" name = "GuardianFirstname"> <br>
+				
+					<label for = "GuardianMiddlename">Middle Name:</label>
+					<input type = "text" id = "GuardianMiddlename" name = "GuardianMiddlename"> <br>
+				
+					<label for = "GuardianAuxname">Auxilliary Name:</label>
+					<input type = "text" id = "GuardianAuxname" name = "GuardianAuxname"><br>
+				
+					<label for = "GuardianOccupation">Occupation/Employment:</label>
+					<input type = "text" id = "GuardianOccupation" name = "GuardianOccupation"> <br>
+					
+					<label for = "GuardianOffice">Off./Bus.Tel.#:</label>
+					<input type = "number" id = "GuardianOffice" name = "GuardianOffice">
+				</div>
+				<div>
+					<label for = "GuardianAdd">Guardian's Address:</label>
+					<input type = "text" id = "GuardianAdd" name = "GuardianAdd"><br>
+				
+					<label for = "GuardianZipCode">Zip Code:</label>
+					<input type = "number" id = "GuardianZipCode" name = "GuardianZipCode"><br>
+			
+					<label for = "GuardianTel">Tel.#:</label>
+					<input type = "number" id = "GuardianTel" name = "GuardianTel"><br><br>
+					<input type="submit" class="back">
+				</div>
+			</div>
+		</div>	
+	
+	</form>
+</body>

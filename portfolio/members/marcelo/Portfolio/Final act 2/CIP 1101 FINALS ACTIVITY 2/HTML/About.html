@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<head>
+    <title>
+		About Us
+	</title>
+	<style>
+		* {box-sizing: border-box}
+		body {font-family: Verdana, sans-serif; margin:0}
+		.mySlides 
+		{
+			display: none
+		}
+		img {vertical-align: middle;}
+
+		#nav
+		{
+			font-family:arial;
+			margin: 0;
+			padding: 0;
+			width: 15%;
+			background-color: black;
+			position: fixed;
+			height: 100%;
+		}
+		#nav p
+		{	
+			font-size:50px;
+			margin-left:15px;
+			color:white;
+		}
+		#ulNav
+		{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 15%;
+			background-color: Grey;
+			position: fixed;
+			height: 100%;
+			overflow: auto;
+			font-size:30px;
+		}
+		.liNav
+		{
+			
+			border-bottom:1px white solid;
+		}
+		.liNav a
+		{
+			display: block;
+			color: white;
+			padding:16px;
+		}
+		.liNav a.active
+		{
+			background-color: #555;
+			color: white;
+		}
+		.liNav a:hover:not(.active) 
+		{
+			background-color: #555;
+			color: white;
+		}
+		.slideshow-container 
+		{
+			max-width: 1000px;
+			position: relative;
+			margin-left:25%;
+			padding-top:5px;
+		}
+
+		.prev, .next 
+		{
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: auto;
+			padding: 16px;
+			margin-top: -22px;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			border-radius: 0 3px 3px 0;
+			user-select: none;
+		}
+		
+		
+		.next 
+		{
+			right: 0;
+			border-radius: 3px 0 0 3px;
+		}
+		
+		
+		.prev:hover, .next:hover 
+		{
+			background-color: rgba(0,0,0,0.8);
+		}
+		.text
+		{
+			text-align:center;
+			width:925px;
+		}
+		.numbertext 
+		{
+			color: #f2f2f2;
+			font-size: 20px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+		}
+		
+		#dotContainer
+		{
+			margin-left:10%;
+		}
+		.dot 
+		{
+			cursor: pointer;
+			height: 15px;
+			width: 15px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+		}
+		
+		.active, .dot:hover 
+		{
+			background-color: #717171;
+		}
+		
+		.fade 
+		{
+			animation-name: fade;
+			animation-duration: 1.5s;
+		}
+		
+		@keyframes fade 
+		{
+			from {opacity: .4} 
+			to {opacity: 1}
+		}
+		.hover-image 
+		{
+			transition: transform 0.3s ease;
+		}
+
+		.hover-image:hover 
+		{
+			transform: scale(1.1);
+		}
+
+		.info-overlay 
+		{
+			position: absolute;
+			margin-top:5px;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 94%;
+			background-color: rgba(0, 0, 0, 0.5);
+			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;
+			transition: opacity 0.3s ease;
+			border-radius:20px;
+			text-align:center;
+			font-size:20px;
+		}
+
+		.mySlides:hover .info-overlay 
+		{
+			opacity: 1;
+		}
+	
+	</style>
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			let i;
+			let slides = document.getElementsByClassName("mySlides");
+			let dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}    
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			setTimeout(showSlides, 200);
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+		}
+		
+	</script>
+</head>
+<body>
+	<div id = "nav">
+		<p>Menu</p>
+		<ul id = "ulNav">
+			<li class = "liNav"><a href = "../HTML/Contact.html">Contact Us</a></li>
+			<li class = "liNav"><a href = "../HTML/subscribe.html">Subscribe</a></li>
+			<li class = "liNav"><a href = "../HTML/About.html" class = "active">About Us</a></li>
+			<li class = "liNav"><a href = "../HTML/SignIn.html">Sign in</a></li>
+		</ul>
+	</div>	
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="../Images/Pandan.png" style="width:100%" class = "hover-image">
+			<div class="info-overlay"><p><span style = "font-size:30px; font-weight:bold;">Pandan Villa<br></span>The perfect getaway for relaxation with your partner, family, or friends. Pandan Villa rooms <br>are equipped with beds, showers, and toiletries.</p></div>
+			<div class="text">Hover the image<br>for more info</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="../Images/Cabana.png" style="width:100%" class = "hover-image">
+			<div class="info-overlay"><p><span style = "font-size:30px; font-weight:bold;">Cabana Room<br></span>The Large Family Room is equipped with one (1) shower and one (1) beds <br>to six (6) single bunk beds that could accommodate twelve (12) person.</p></div>
+			<div class="text">Hover the image <br>for more info</div>
+		</div>
+
+		<div class="mySlides fade">
+		
+			<div class="numbertext">3 / 3</div>
+			<img src="../Images/LaTereza.png" style="width:100%" class = "hover-image">
+			<div class="info-overlay"><p><span style = "font-size:30px; font-weight:bold;">LaTereza Room<br></span>The Family Room at our resort is a spacious and comfortable accommodation,<br> featuring two (2) beds and one (1) bathroom.</p></div>
+			<div class="text">Hover the image<br>for more info</div>	
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+
+		</div>
+		<br>
+		<div id = "dotContainer">
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+		</div>
+</body>
+</html>

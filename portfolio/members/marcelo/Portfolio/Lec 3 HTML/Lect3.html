@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<head>
+	<title>
+		Lect3
+	</title>
+	<link rel="stylesheet" href="../../assets/css/app.css">
+	 <style>
+    table, th, td
+    {
+     border: 1px dotted black;
+     border-collapse: collapse;
+     padding: 15px; 
+    }
+  </style> 
+</head>
+<body>
+<div>
+        <button class="back" id="backButton">Back</button>
+    </div>
+      
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+          history.back();
+        });
+    </script>
+
+<h1>Prelim Lectures</h1>
+<h2>Lecture 3 : HTML List, Tsables, and ...</h2>
+<hr>
+<h2> HTML Styles</h2>
+<ul>
+  <li>The HTML style attributes is used to add stykes to an element, such as color, font, and more/.</li>
+  <li>The HTML styles attribute has the following syntax.</li>
+  <li>&lttangname style = "property value"&gt</li>
+</ul>
+<p>Example</p>
+  <p style = "color:red">Im not blue</p>
+<hr>
+<h2> Background Color</h2>
+<ul>
+  <li>The CSS background-color property definse the cackground color for an HTML element.</li>
+ </ul>
+<p>Example</p>
+ <p style = "background-color:blue;padding:.5em 1em; color:white";> This is not Red</p>
+<hr>
+<h2> Text color</h2>
+<ul>
+  <li>The CSS color propertu defines the text color for an HTML element</li>
+</ul> 
+<p>Example</p>
+ <p style = "color:green";> This is not Red</p>
+<hr>
+<h2> Font</h2>
+<ul>
+  <li>The CSS font-family property defines the font to be used for an HTML element.</li>
+</ul> 
+<p>Example</p>
+ <p style = "font-family:Arial";> This is not Times New Roman</p>
+<hr>
+<h2> Text Size</h2>
+<ul>
+  <li>The CSS font-size property defines the text size  for an HTML element.</li>
+</ul> 
+<p>Example</p>
+ <p style = "font-size:60px";> Im big boy</p>
+<hr>
+<h2> Text Alignment</h2>
+<ul>
+  <li>The CSS text-align property defines the horizontal tex alignment for an HTML element.</li>
+</ul> 
+<p>Example</p>
+ <p style = "font-size:20px;text-align:center;";> Im in the center</p>
+<hr>
+<h2> HTML list</h2>
+<ul>
+  <li>ul</li>
+  <li>ol</li>
+  <li>dl</li>
+</ul> 
+<p>Example of ul</p>
+ <ul>
+  <li>ra</li>
+  <li>ra</li>
+  <li>ra</li>
+</ul>
+<p>Example of ol</p>
+ <ol start = "40000">
+  <li>one</li>
+  <li>two</li>
+  <li>three</li>
+</ol>
+<p>Example of ol Roman edition</p>
+ <ol type = "I" start="40">
+  <li>one</li>
+  <li>two</li>
+  <li>three</li>
+</ol>
+<hr>
+<h2> Exercise 3.1(5pts)</h2>
+<p>Create a step-by-step instruction with the given format</p>
+<ul>
+  <li>Numbers</li>
+  <li>UPPERCASE LETTERS</li>
+  <li>LOWER CASE LETTERS</li>
+  <li>UPPERCASE ROMAN NUMERALS</li>
+  <li>LOWER CASE ROMAN NUMERALS</li>
+</ul>
+<hr>
+<h2>Answer "The Writing Process"</h2>
+<ol>
+  <li>Prewriting</li>
+  <li>Research (if needed)</li>
+  <li>Drafting</li>
+  <li> Revising</li>
+  <li> Editing and Proofreading</li>
+</ol>
+<ol type= "A">
+  <li>Prewriting</li>
+  <li>Research (if needed)</li>
+  <li>Drafting</li>
+  <li> Revising</li>
+  <li> Editing and Proofreading</li>
+</ol>
+<ol  type= "a">
+  <li>Prewriting</li>
+  <li>Research (if needed)</li>
+  <li>Drafting</li>
+  <li> Revising</li>
+  <li> Editing and Proofreading</li>
+</ol>
+<ol type= "I">
+  <li>Prewriting</li>
+  <li>Research (if needed)</li>
+  <li>Drafting</li>
+  <li> Revising</li>
+  <li> Editing and Proofreading</li>
+</ol>
+<ol type= "i">
+  <li>Prewriting</li>
+  <li>Research (if needed)</li>
+  <li>Drafting</li>
+  <li> Revising</li>
+  <li> Editing and Proofreading</li>
+</ol>
+<hr>
+<h1>HTML TABLES</h1>
+<hr>
+<h2>Defining an HTML Table</h2>
+<table style= "width:100%"> 
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Nicole</td>
+    <td>Pascual</td>
+    <td>18</td>
+  </tr> 
+  <tr>
+    <td>Allen</td>
+    <td>Ramirez</td>
+    <td>18</td>
+   </tr>
+</table>
+<hr>
+<h3>HTML Table - Collapsed Borders</h3>
+<p>If you want the borders tocollapse into one border, add the CSS border-collapse property:(collapse,separate(default))<br>
+ border:solid ,dotted, double
+</p>
+</body>

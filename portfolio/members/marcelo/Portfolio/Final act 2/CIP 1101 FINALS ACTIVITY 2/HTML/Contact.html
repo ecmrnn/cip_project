@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<head>
+	<title>
+			Contact Us
+	</title>
+	<style>
+		body
+		{
+			margin: 0;
+		}
+		#nav
+		{
+			font-family:arial;
+			margin: 0;
+			padding: 0;
+			width: 15%;
+			background-color: black;
+			position: fixed;
+			height: 100%;
+		}
+		#nav p
+		{	
+			font-size:50px;
+			margin-left:15px;
+			color:white;
+		}
+		#ulNav
+		{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 15%;
+			background-color: Grey;
+			position: fixed;
+			height: 100%;
+			overflow: auto;
+			font-size:30px;
+		}
+		.liNav
+		{
+			
+			border-bottom:1px white solid;
+		}
+		.liNav a
+		{
+			display: block;
+			color: white;
+			padding:16px;
+		}
+		.liNav a.active
+		{
+			background-color: #555;
+			color: white;
+		}
+		.liNav a:hover:not(.active) 
+		{
+			background-color: #555;
+			color: white;
+		}
+		header
+		{
+			font-size:50px;
+			padding-top:50px;
+			padding-left:20px;
+			font-family:arial;
+			margin-left:15%;
+		}
+		header p
+		{
+			margin-top:0;
+		}
+		#contentContainer
+		{
+			padding:25px 20px;
+			font-family:arial;
+			margin-left:15%;
+			background-color:#e6e6e6;
+			border:3px solid #99999980;
+		}
+		#content
+		{
+			display:flex;
+			justify-content:space-around;
+			
+		}
+		label
+		{
+			font-weight:bold;
+		}
+		input , select
+		{
+			border:1px solid;
+			margin:15px 0;
+			padding:15px 0;
+			width:250px;
+			border-radius:5px;
+			font-size:15px;
+		}
+		#calendar
+		{
+			display: grid;
+			grid-template-columns: auto auto auto auto auto auto;
+			background-color: white;
+			padding: 10px;
+			border-radius:5px;
+			border:3px solid #99999980;
+		}
+		.calendarDate
+		{
+			padding: 20px;
+			font-size: 15px;
+			color:black;
+		}
+		.calendarTime
+		{
+			background-color:#3691b0;
+			border: 1px solid white;
+			padding: 20px;
+			font-size: 15px;
+			text-align: center;
+			color:white;
+		}
+		#calendarTimeSelected
+		{
+			background-color:#ffa31a;
+		}
+		.calendarTimeVoid
+		{
+			background-color:#b3b3b3;
+			border: 1px solid white;
+			padding: 20px;
+			font-size: 15px;
+			text-align: center;
+			color:white;
+		}
+		.calendarMore
+		{
+			background-color:#2a7189;
+			border: 1px solid white;
+			padding: 20px;
+			font-size: 15px;
+			text-align: center;
+			color:white;
+		}
+		footer
+		{
+			margin-left:15%;
+			display:flex;
+			justify-content:center;
+			gap:30px;
+			font-family:arial;
+		}
+		.cancel
+		{
+			padding:20px 40px;
+			border:3px solid #99999980;
+			color: #99999980;
+			font-size:30px;
+			text-align:center;
+			font-weight:bold;
+			margin-top:20px;
+			border-radius:5px;
+		}
+		.cancel p
+		{
+			margin:0;
+		}
+		.bookNow
+		{
+			background-color:#ffad33;
+			border-radius:5px;
+			padding:20px;
+			border:3px solid #99999980;
+			color: white;
+			font-size:30px;
+			text-align:center;
+			font-weight:bold;
+			margin-top:20px;
+		}
+		.bookNow p
+		{
+			margin:0;
+		}
+		.back{margin:30px; padding:10px 20px;}
+	</style>
+	<link rel="stylesheet" href="../../../../assets/css/app.css">
+</head>
+<body>
+	<div id = "nav">
+		<a href="../../../../../Portfolio/final.html"> <div>
+        <button class="back" id="backButton">Back</button>
+    </div></a>
+		<ul id = "ulNav">
+			<li class = "liNav"><a href = "../HTML/Contact.html"class = "active">Contact Us</a></li>
+			<li class = "liNav"><a href = "../HTML/subscribe.html">Subscribe</a></li>
+			<li class = "liNav"><a href = "../HTML/About.html">About Us</a></li>
+			<li class = "liNav"><a href = "../HTML/SignIn.html">Sign in</a></li>
+		</ul>
+	</div>	
+	<header>
+		<p>Book appointment</p>
+	</header>
+	<section id = "contentContainer">
+		<div id = "content">
+			<div>
+				<form action = "">
+					<label for = "checkUP">REASON FOR VISIT</label><br>
+					<select id="checkUP" name="checkUP">
+						<option value=""></option>
+						<option value="yearly">Yearly Check up</option>
+						<option value="monthly">Monthly Check up</option>
+						<option value="weekly">Weekly Check up</option>
+						<option value="daily">Daily Check up</option>
+					</select><br>
+					<label for = "name">NAME</label><br>
+					<input type = "text" id = "name"><br>
+					<label for = "email">EMAIL ADDRESS</label><br>
+					<input type = "email" id = "email"><br>
+					<label for = "num">PHONE NUMBER</label><br>
+					<input type = "text" id = "num"><br>
+
+				</form>
+			</div>
+			<div id = "calendarContasiner">
+				<div id = "calendar">
+					<div class="calendarDate">&lt;</div>
+					<div class="calendarDate"><b>MON</b><br>04-08-2024</div>
+					<div class="calendarDate"><b>TUE</b><br>05-08-2024</div>
+					<div class="calendarDate"><b>WED</b><br>06-08-2024</div>  
+					<div class="calendarDate"><b>THU</b><br>07-08-2024</div>
+					<div class="calendarDate">&gt;</div>
+					<div></div>
+					<div class="calendarTime">9:45 am</div>
+					<div class="calendarTime">9:45 am</div>  
+					<div class="calendarTime">9:45 am</div>
+					<div class="calendarTime">9:45 am</div>
+					<div></div>
+					<div></div>
+					<div class="calendarTime">10:30 am</div>
+					<div class="calendarTime">10:30 am</div>  
+					<div class="calendarTime" id = "calendarTimeSelected">10:30 am</div>
+					<div class="calendarTime">10:30 am</div>
+					<div></div>
+					<div></div>
+					<div class="calendarTimeVoid"></div>
+					<div class="calendarTime">10:45 am</div>  
+					<div class="calendarTimeVoid"></div>
+					<div class="calendarTime">10:45 am</div>
+					<div></div>
+					<div></div>
+					<div class="calendarTimeVoid"></div>
+					<div class="calendarTime">11:00 am</div>  
+					<div class="calendarTime">11:00 am</div>
+					<div class="calendarTime">11:00 am</div>
+					<div></div>
+					<div></div>
+					<div class="calendarMore">MORE...</div>
+					<div class="calendarMore">MORE...</div>  
+					<div class="calendarMore">MORE...</div>
+					<div class="calendarMore">MORE...</div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class = "cancel"><p>CANCEL</p></div>
+		<div class = "bookNow">BOOK NOW</div>
+	</footer>
+</body>

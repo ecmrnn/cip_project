@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<head>
+	<title>
+		Final_Lect7
+	</title>
+	<link rel="stylesheet" href="../../assets/css/app.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<style>
+		.container
+		{
+			padding:10px;
+			background-color: #80808050;
+		}
+		.container p
+		{
+			color:red;
+			font-size:16px;
+		}
+	</style>
+</head>
+<body>
+<div>
+        <button class="back" id="backButton">Back</button>
+    </div>
+      
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+          history.back();
+        });
+    </script>
+	<h1>
+		What is Bootstrap?
+	</h1>
+	<p>
+		<b>Bootstrap</b> is the most popular <b>CSS Framework</b> for developing responsive and mobile-first websites.
+		<br><b>Bootstrap</b> 5 is the newest version of Bootstrap
+	</p>
+	<h1>
+		How do you use Bootstrap containers?
+	</h1>
+	<p>
+		 Containers are the most basic layout element in Bootstrap and are required when using our default grid system. <br>Containers are used to contain, pad, and (sometimes) center the content within them. While containers can be nested, <br> most layouts do not require a nested container.
+	</p>
+	<ul>
+		<li>
+			Present an example &lpar;code&amp;output&rpar;
+			<ul>
+				<li>
+					&lt;div class="container"&gt;<br>
+						&lt;!-- Content here --&gt;<br>
+					&lt;/div&gt;
+				</li>
+				<li>
+					<div class="container">
+						<p>sample</p>
+					</div>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<h1>
+		How do you use Bootstrap in Typography?
+	</h1>
+	<p>Bootstrap sets basic global display, typography, and link styles. When more control is needed, check out the textual utility classes.
+
+	Use a native font stack that selects the best font-family for each OS and device.
+	For a more inclusive and accessible type scale, we use the browser’s default root font-size (typically 16px) so visitors can customize their browser defaults as needed.
+	Use the $font-family-base, $font-size-base, and $line-height-base attributes as our typographic base applied to the &lt;body&gt;.
+	Set the global link color via $link-color.
+	Use $body-bg to set a background-color on the &lt;body&gt; (#fff by default).
+	These styles can be found within _reboot.scss, and the global variables are defined in _variables.scss. Make sure to set $font-size-base in rem.&lt;/p&gt;
+	<ul>
+		<li>
+			Present an example &lpar;code&amp;output&rpar;
+			<ul>
+				<li>
+					&lt;h1 class="display-1"&gt;Display 1&lt;/h1&gt;<br>
+					&lt;h1 class="display-2"&gt;Display 2&lt;/h1&gt;<br>
+					&lt;h1 class="display-3"&gt;Display 3&lt;/h1&gt;<br>
+					&lt;h1 class="display-4"&gt;Display 4&lt;/h1&gt;<br>
+					&lt;h1 class="display-5"&gt;Display 5&lt;/h1&gt;<br>
+					&lt;h1 class="display-6"&gt;Display 6&lt;/h1&gt;
+				</li>
+				<li>
+					<h1 class="display-1">Display 1</h1>
+					<h1 class="display-2">Display 2</h1>
+					<h1 class="display-3">Display 3</h1>
+					<h1 class="display-4">Display 4</h1>
+					<h1 class="display-5">Display 5</h1>
+					<h1 class="display-6">Display 6</h1>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<h1>
+		How do you use Bootstrap in Colors?
+	</h1>
+	<p>
+		Bootstrap is supported by an extensive color system that themes our styles and components. This enables more comprehensive customization and extension for any project.
+	</p>
+		<ul>
+		<li>
+			Present an example &lpar;code&amp;output&rpar;
+			<ul>
+				<li>
+					&lt;p class="text-primary"&gt;.text-primary&lt;/p&gt;<br>
+					&lt;p class="text-secondary&gt;.text-secondary&lt;/p&gt;<br>
+					&lt;p class="text-success"&gt;.text-success&lt;/p&gt;<br>
+					&lt;p class="text-danger"&gt;.text-danger&lt;/p&gt;<br>
+					&lt;p class="text-warning"&gt;.text-warning&lt;/p&gt;<br>
+					&lt;p class="text-info"&gt;.text-info&lt;/p&gt;<br>
+					&lt;p class="text-light bg-dark"&gt;.text-light&lt;/p&gt;<br>
+					&lt;p class="text-dark"&gt;.text-dark&lt;/p&gt;<br>
+					&lt;p class="text-muted"&gt;.text-muted&lt;/p&gt;<br>
+					&lt;p class="text-white bg-dark"&gt;.text-white&lt;/p&gt;
+				</li>
+				<li>
+					<p class="text-primary">.text-primary</p>
+					<p class="text-secondary">.text-secondary</p>
+					<p class="text-success">.text-success</p>
+					<p class="text-danger">.text-danger</p>
+					<p class="text-warning">.text-warning</p>
+					<p class="text-info">.text-info</p>
+					<p class="text-light bg-dark">.text-light</p>
+					<p class="text-dark">.text-dark</p>
+					<p class="text-muted">.text-muted</p>
+					<p class="text-white bg-dark">.text-white</p>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</body>	

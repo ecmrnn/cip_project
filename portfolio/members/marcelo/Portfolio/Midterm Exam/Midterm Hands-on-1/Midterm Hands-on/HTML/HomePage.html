@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<head>
+	<title>
+		Home Page
+	</title>
+	<style>
+		body, html
+		{
+			height: 100%;
+			margin: 0;
+		}
+		#bg
+		{
+			background-image: url("../Images/PostMaloneHome.png");
+			height: 100%;
+			background-size: 100% auto;
+			background-position:center;
+			background-repeat:no-repeat;
+			position:relative;
+		}
+		#post
+		{
+			position:absolute;
+			bottom: 10px;
+			right: 30px;
+		}
+		#nav
+		{
+			position:relative;
+		}
+		ul 
+		{
+			list-style-type: none;
+			margin: 0;
+			padding:0;
+			overflow: hidden;
+			background-color: #333;
+			display:flex;
+			justify-content:space-between;
+		}
+
+		li 
+		{
+			font-family:arial;
+			font-size:25px;
+			float: left;
+		}
+
+		li a 
+		{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 20px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover 
+		{
+			background-color: #111;
+			height:100%;
+		}
+		#nav p
+		{
+			font-weight:bold;
+		}
+		#nav span
+		{
+			font-weight:bold;
+			font-size:30px;
+		}
+		#nav img
+		{
+			width:30px;
+		}
+		#nav div
+		{
+			margin-right:20px;
+		}
+		#dropdown
+		{
+			display: none;
+			position: absolute;
+			background-color: #f1f1f1;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;	
+		}
+		#dropdown a
+		{
+			font-size:15px;
+			color: black;
+			padding: 10px 15px;
+			text-decoration: none;
+			display: block;
+		}
+		#dropdown a:hover {background-color: #ddd;}
+
+		#navAlbum:hover #dropdown {display: block;}
+
+		#Album:hover {background-color: #111;}
+		.Active {background-color: #111;}
+	</style>
+	<link rel="stylesheet" href="../../../../../assets/css/app.css">
+</head>
+<body>
+	<div id ="bg">
+		<div id = "nav">
+			<ul>
+				<li><a href="../../../../../../Portfolio/midterm.html"><div>
+        <button class="back" id="backButton">Back</button>
+    </div></a></li>
+				<div>
+				<li><a href="../HTML/Artist.html">Artist</a></li>
+				<li id = "navAlbum"><a href="../HTML/Album.html" id = "Album">Album</a>
+					<div id = "dropdown">
+						<a href = "../HTML/Album.html">Hollywood's Bleeding</a>
+						<a href = "../HTML/Album2.html">Beerpongs &amp; Bently</a>
+						<a href = "../HTML/Album3.html">Stoney &lpar;Deluxe&rpar;</a>
+						<a href = "../HTML/Album4.html">The Diamond Collection</a>
+					</div>
+				</li>
+				<li><a href="../HTML/Feedback.html">Feed Back</a></li>
+				</div>
+			</ul>	
+		</div>
+	
+		<img src = "../Images/Post.png" id = "post" alt = "Post Malone" usemap = "#PostMap">
+		<map name="PostMap">
+			<area alt="Hollywood's Bleeding" title="Hollywood's Bleeding" href="../HTML/Album.html" coords="28,29,13,47,10,65,7,74,7,83,10,88,10,97,11,102,16,110,13,119,17,125,23,132,27,140,70,140,59,135,55,129,61,127,67,123,72,120,78,113,75,106,65,108,66,102,71,98,77,95,87,92,94,87,100,80,104,70,106,62,106,54,101,44,94,37,85,32,75,30" shape="poly">
+			<area alt="Beerpongs &amp; Bently" title="Beerpongs &amp; Bently" href="../HTML/Album2.html" coords="179,56,162,60,155,66,150,71,147,77,143,86,140,92,140,99,131,102,129,108,128,118,132,121,136,123,136,127,146,128,144,133,138,143,146,136,145,151,149,142,150,152,149,155,151,155,156,139,158,141,157,155,171,164,176,156,185,161,189,153,193,148,200,145,203,139,209,132,213,125,216,118,218,110,218,103,218,96,217,89,215,81,212,74,208,68,202,63,195,59" shape="poly">
+			<area alt="Stoney &lpar;Deluxe&rpar;" title="Stoney &lpar;Deluxe&rpar;" href="../HTML/Album3.html" coords="324,49,317,54,305,51,296,49,288,50,280,51,272,53,265,60,261,65,258,58,254,53,251,66,251,73,255,77,254,88,259,100,251,110,260,110,264,105,267,111,267,119,272,115,272,111,283,113,290,115,297,118,298,123,299,130,306,129,312,126,314,134,312,144,305,147,296,149,286,149,279,144,273,139,268,133,263,127,256,119,256,127,256,133,257,139,257,147,259,155,263,149,269,151,278,153,284,154,290,154,300,154,309,152,322,144,327,134,338,128,330,122,336,120,330,116,333,113,328,110,326,103,327,96,321,89,315,85,309,87,302,88,296,85,285,82,276,75,272,66,277,58,287,54,295,54,301,56,305,58,309,62,314,68,323,80,325,80" shape="poly">
+			<area alt="The Diamond Collection" title="The Diamond Collection" href="../HTML/Album4.html" coords="410,54,401,48,398,54,394,51,397,58,373,58,374,83,377,83,378,75,379,70,382,68,387,72,392,74,397,80,402,84,402,128,402,139,398,143,393,143,389,144,390,146,426,146,426,143,420,142,415,139,414,135,413,85,418,84,419,79,420,73,425,77,427,76,427,72,431,69,433,67,435,65,437,71,438,84,442,83,442,59,427,59,422,54,420,52,418,48,414,47" shape="poly">
+		</map>
+	</div>	
+</body>

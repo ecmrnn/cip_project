@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>MARCELO</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/media.css">
+</head>
+
+<body class="d-flex flex-column" style="min-height: 100svh;">
+
+  <header class="p-2 px-lg-4 bg-primary-color container-fluid d-flex justify-content-between align-items-center">
+    <!-- Logo -->
+    <a href="Link pabalik ng Group Portfolio">
+      <div>
+        <button class="back" id="backButton">Link pabalik ng Group Portfolio "Back"</button>
+      </div>
+    </a>
+
+    <!-- User Info. & Display Picture -->
+    <div class="d-flex gap-3 align-items-center">
+      <div class="d-flex align-items-end flex-column">
+        <span class="text-white fw-bold m-0" style="line-height: 1;">John Paul Marcelo</span>
+        <span class="text-white text-small">Web Developer</span>
+      </div>
+
+      <button class="btn bg-white position-relative rounded-circle" style="width: 40px; height: 40px;" type="button"
+        data-bs-toggle="dropdown" aria-expanded="false"><img
+          class="position-absolute top-50 start-25 translate-middle rounded-circle pos"
+          style="width: 40px; height: 40px;"
+          src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t39.30808-6/332698636_733679444863713_6583954419615083406_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH8V5TaquwUsS3PVAKz6w0oQriP-iLP-otCuI_6Is_6iyAE76bkFKqXKBdaCIFeGOGsLa7gJTSY2fzTwH15Tjas&_nc_ohc=T3U-y0nNofAQ7kNvgE-ONh4&_nc_ht=scontent.fmnl8-2.fna&oh=00_AYCecvAaknS-G_SqXGB8AwgnPCNVFGE2-tIoIR-voIfs3Q&oe=664FE7D1"></button>
+
+      <ul class="dropdown-menu" style="z-index: 999 !important;">
+        <li><a class="dropdown-item" href="#">Account</a></li>
+        <li><a class="dropdown-item" href="#">Settings</a></li>
+        <li><a class="dropdown-item" href="#">Preferences</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="d-flex flex-column flex-lg-row flex-grow-1">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-lg-2 sticky-top border-bottom border-end border-start"
+      style="width: max-content; z-index: 1;">
+      <div class="container-fluid align-self-start align-items-center flex-lg-column">
+        <span class="text-black-50 text-left text-small align-self-lg-start ps-lg-2 pt-lg-2">Main Menu</span>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation"
+          aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse mt-3" id="mainNavigation">
+          <ul class="navbar-nav d-flex flex-column me-auto mb-2 mb-lg-0 gap-1">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2 px-3 py-lg-2 rounded" aria-current="page"
+                href="/index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M184.62-200q-27.62 0-46.12-18.5Q120-237 120-264.62v-430.76q0-27.62 18.5-46.12Q157-760 184.62-760H357q12.92 0 25.12 5.23 12.19 5.23 20.88 13.92L463.85-680h311.53q27.62 0 46.12 18.5Q840-643 840-615.38v350.76q0 27.62-18.5 46.12Q803-200 775.38-200H184.62Zm0-40h590.76q10.77 0 17.7-6.92 6.92-6.93 6.92-17.7v-350.76q0-10.77-6.92-17.7-6.93-6.92-17.7-6.92H447.77l-73.08-73.08q-3.84-3.84-8.07-5.38-4.24-1.54-8.85-1.54H184.62q-10.77 0-17.7 6.92-6.92 6.93-6.92 17.7v430.76q0 10.77 6.92 17.7 6.93 6.92 17.7 6.92ZM160-240v-480 480Z" />
+                </svg>
+                <span>Lectures</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2 px-3 py-lg-2 rounded " href="/prelim.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M184.62-200q-27.62 0-46.12-18.5Q120-237 120-264.62v-430.76q0-27.62 18.5-46.12Q157-760 184.62-760H357q12.92 0 25.12 5.23 12.19 5.23 20.88 13.92L463.85-680h311.53q27.62 0 46.12 18.5Q840-643 840-615.38v350.76q0 27.62-18.5 46.12Q803-200 775.38-200H184.62Zm0-40h590.76q10.77 0 17.7-6.92 6.92-6.93 6.92-17.7v-350.76q0-10.77-6.92-17.7-6.93-6.92-17.7-6.92H447.77l-73.08-73.08q-3.84-3.84-8.07-5.38-4.24-1.54-8.85-1.54H184.62q-10.77 0-17.7 6.92-6.92 6.93-6.92 17.7v430.76q0 10.77 6.92 17.7 6.93 6.92 17.7 6.92ZM160-240v-480 480Z" />
+                </svg>
+                <span>Prelim Activities</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2 px-3 py-lg-2 rounded active" href="/midterm.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M184.62-200q-27.62 0-46.12-18.5Q120-237 120-264.62v-430.76q0-27.62 18.5-46.12Q157-760 184.62-760H357q12.92 0 25.12 5.23 12.19 5.23 20.88 13.92L463.85-680h311.53q27.62 0 46.12 18.5Q840-643 840-615.38v350.76q0 27.62-18.5 46.12Q803-200 775.38-200H184.62Zm0-40h590.76q10.77 0 17.7-6.92 6.92-6.93 6.92-17.7v-350.76q0-10.77-6.92-17.7-6.93-6.92-17.7-6.92H447.77l-73.08-73.08q-3.84-3.84-8.07-5.38-4.24-1.54-8.85-1.54H184.62q-10.77 0-17.7 6.92-6.92 6.93-6.92 17.7v430.76q0 10.77 6.92 17.7 6.93 6.92 17.7 6.92ZM160-240v-480 480Z" />
+                </svg>
+                <span>Midterm Activities</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2 px-3 py-lg-2 rounded" href="/final.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#000000">
+                  <path
+                    d="M184.62-200q-27.62 0-46.12-18.5Q120-237 120-264.62v-430.76q0-27.62 18.5-46.12Q157-760 184.62-760H357q12.92 0 25.12 5.23 12.19 5.23 20.88 13.92L463.85-680h311.53q27.62 0 46.12 18.5Q840-643 840-615.38v350.76q0 27.62-18.5 46.12Q803-200 775.38-200H184.62Zm0-40h590.76q10.77 0 17.7-6.92 6.92-6.93 6.92-17.7v-350.76q0-10.77-6.92-17.7-6.93-6.92-17.7-6.92H447.77l-73.08-73.08q-3.84-3.84-8.07-5.38-4.24-1.54-8.85-1.54H184.62q-10.77 0-17.7 6.92-6.92 6.93-6.92 17.7v430.76q0 10.77 6.92 17.7 6.93 6.92 17.7 6.92ZM160-240v-480 480Z" />
+                </svg>
+                <span>Finals Activities</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="p-3 p-md-4 p-lg-5 container-fluid">
+      <section class="d-flex gap-3 mb-3">
+        <article class="bg-primary-color border ratio ratio-16x9 w-100 rounded p-3" style="max-height: 150px;">
+          <h3 class="text-center text-white">Midterm Act 1</h3><a
+            href="Portfolio/Midterm act 1/CIP 1101 ACTIVITY 1  IMAGE MAPS/Shapes.html"></a>
+        </article>
+        <article class="bg-primary-color border ratio ratio-16x9 w-100 rounded p-3 d-none d-lg-block"
+          style="max-height: 150px;">
+          <h3 class="text-center text-white">Midterm Quiz 1</h3><a
+            href="Portfolio/Midterm quiz 1/Hands on Quiz1 Marcelo.html"></a>
+        </article>
+
+      </section>
+
+      <section class="d-flex flex-column flex-lg-row gap-3">
+        <article class="bg-primary-color border ratio ratio-16x9 w-100 rounded p-3 d-none d-lg-block"
+          style="max-height: 250px;">
+          <h3 class="text-center text-white">Midterm Exam</h3><a
+            href="Portfolio/Midterm Exam/Midterm Hands-on-1/Midterm Hands-on/HTML/HomePage.html"></a>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

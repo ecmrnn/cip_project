@@ -1,0 +1,126 @@
+	<div class="responsive">
+		<div class = "container">
+			<a class = "ShopNow">
+				Shop Now
+			</a>
+			<div class="gallery">
+				<a>
+					<img src="../Images/Products/Best Seller 1.jpg" width="600" height="400">
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="responsive">
+		<div class = "container">
+			<a class = "ShopNow">
+				Shop Now
+			</a>
+			<div class="gallery">
+				<a>
+					<img src="../Images/Products/Best Seller 3.jpg" width="600" height="400">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="responsive">
+		<div class = "container">
+			<a class = "ShopNow">
+				Shop Now
+			</a>
+			<div class="gallery">
+				<a>
+					<img src="../Images/Products/Best Seller 2.jpg" width="600" height="400">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="responsive">
+		<div class = "container">
+			<a class = "ShopNow">
+				Shop Now
+			</a>
+			<div class="gallery">
+				<a>
+					<img src="../Images/Products/Best Seller 4.jpg" width="600" height="400">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+	
+	
+	.gallery 
+{
+	border: 1px solid #ccc;
+}
+
+.container
+{
+	position:relative;
+}
+
+.ShopNow
+{
+	transition: transform .2s;
+	position: absolute;
+	font-family:verdana;
+	padding:10px;
+	bottom: 20px;
+	left: 20px;
+	background-color: orange;
+	color: black;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.ShopNow:hover
+{
+	transform: scale(1.15);
+}
+
+.gallery img 
+{
+	width: 100%;
+}
+
+
+* 
+{
+	box-sizing: border-box;
+}
+
+.responsive 
+{
+	padding: 0 6px;
+	float: left;
+	width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) 
+{
+  .responsive 
+  {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) 
+{
+	.responsive 
+	{ 
+		width: 100%;
+	}
+}
+
+.clearfix:after 
+{
+	content: "";
+	display: table;
+	clear: both;
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<head>
+	<title>
+		Feedback Page
+	</title>
+	<style>
+		body, html
+		{
+			height: 100%;
+			margin: 0;
+		}
+		#bg
+		{
+			background-image: url("../Images/FeedbackBG.png");
+			height: 130%;
+			width:100%;
+			background-size:cover;
+			background-repeat:no-repeat;
+			position:relative;
+			background-attachment:scroll;
+		}
+		#nav
+		{
+			position:fixed;
+			width:100%;
+			z-index:9999999999;
+		}
+		ul 
+		{
+			
+			list-style-type: none;
+			margin: 0;
+			padding:0;
+			overflow: hidden;
+			background-color: #333;
+			display:flex;
+			justify-content:space-between;
+		}
+
+		li 
+		{
+			font-family:arial;
+			font-size:25px;
+			float: left;
+		}
+
+		li a 
+		{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 20px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover 
+		{
+			background-color: #111;
+			height:100%;
+		}
+		#nav p
+		{
+			font-weight:bold;
+		}
+		#nav span
+		{
+			font-weight:bold;
+			font-size:30px;
+		}
+		#nav img
+		{
+			width:30px;
+		}
+		#nav div
+		{
+			margin-right:20px;
+		}
+		#dropdown
+		{
+			display: none;
+			position: absolute;
+			background-color: #f1f1f1;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;	
+		}
+		#dropdown a
+		{
+			font-size:15px;
+			color: black;
+			padding: 10px 15px;
+			text-decoration: none;
+			display: block;
+		}
+		#dropdown a:hover {background-color: #ddd;}
+
+		#navAlbum:hover #dropdown {display: block;}
+
+		#Album:hover {background-color: #111;}
+		.Active{background-color: #111;}
+		.ActiveAlbum {background-color: #ddd;}
+		form
+		{
+			position:absolute;
+			background-color: #FFFFFF70;
+			margin-left: auto;
+			margin-right: auto;
+			width:90%;
+			padding-top:20px;
+			padding-left:20px;
+			padding-right:20px;
+			border-radius: 10px;
+			
+		}
+		#form
+		{
+			display:flex;
+			justify-content: center;
+		}
+		#FormHeader
+		{	
+			background-color:#221C1C70;
+		}
+		#FormHeader p
+		{
+			padding:30px;
+			padding-left:50px;
+			margin:0;
+			color: white;
+			font-family:arial;
+			font-size: 50px;
+			font-weight: bold;
+			line-height: 70%;
+		}
+		#FormHeader span
+		{
+			line-height: 50%;
+			font-size:25px;
+			font-weight: normal;
+		}
+		#experience
+		{
+
+			background-color: #FFFFFF70;
+		}
+		#experience p
+		{
+			padding:30px;
+			padding-left:50px;
+			margin:0;
+			font-family:arial;
+			font-size: 30px;
+		}
+		#Exp
+		{
+			display:flex;
+			justify-content:space-around;
+		}
+		#Exp input[type=radio]
+		{
+			display:none;
+		}
+		#Exp label:hover
+		{
+			background-color:#3E60B980;
+		}
+		#Exp input[type=radio]:checked+label 
+		{
+			background-color:#3E60B980;
+		}
+		#review
+		{
+			display:flex;
+			background-color:#221C1C70;
+			justify-content: center;
+		}
+		#review textarea, textarea::placeholder
+		{
+			padding:5px;
+			color:black;
+			background-color:transparent;
+			font-size:20px;
+			font-weight:bold;
+		}
+		#classification
+		{
+			background-color:#FFFFFF70;
+			padding-bottom:10px;
+			margin-bottom:20px;
+		}
+		#Category
+		{
+			padding-top:30px;
+			font-family:arial;
+			font-size:30px;
+			
+		}
+		#Category input[type = radio]
+		{
+			height:30px; 
+			width:30px; 
+			vertical-align: middle;
+			margin-left:225px;
+		}
+		#finish
+		{
+			display:flex;
+			padding:30px;
+			justify-content: center;
+		}
+		#finish input[type = submit]
+		{
+			color:white;
+			padding: 10px 30%;
+			font-size:25px;
+			background-color:#3E60B9;
+			border-radius:5px;
+		}
+	</style>
+</head>
+<body>
+	<div id ="bg">
+		<div id = "nav">
+			<ul>
+				<li><a href="../HTML/HomePage.html"><span><img src = "../Images/MusicFolderWhite.png">Malone</span>Mania</a></li>
+				<div>
+				<li><a href="../HTML/Artist.html">Artist</a></li>
+				<li id = "navAlbum"><a href="../HTML/Album.html" id = "Album">Album</a>
+					<div id = "dropdown">
+						<a href = "../HTML/Album.html">Hollywood's Bleeding</a>
+						<a href = "../HTML/Album2.html">Beerpongs &amp; Bently</a>
+						<a href = "../HTML/Album3.html">Stoney &lpar;Deluxe&rpar;</a>
+						<a href = "../HTML/Album4.html">The Diamond Collection</a>
+					</div>
+				</li>
+				<li><a class = "Active" href="../HTML/Feedback.html">Feed Back</a></li>
+				</div>
+			</ul>	
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div id = "form">
+			<form action = "">
+				<div id = "FormHeader">
+					<p>Send us your feedback!<br><span>Do you have a suggestion or found some bug?<br>let us know</span></p>
+				</div>
+				<div id = "experience">
+					<p>How was your experience?</p>	
+					<div id = "Exp">
+						<input type="radio" id="Smile" name="Mood" value="Smile" checked>
+						<label for="Smile"><img src = "../Images/Smiling.png"></label>
+						<input type="radio" id="Happy" name="Mood" value="Happy">
+						<label for="Happy"><img src = "../Images/Happy.png"></label>
+						<input type="radio" id="Sad" name="Mood" value="Sad">
+						<label for="Sad"><img src = "../Images/Sad.png"></label>
+					</div>
+				</div>
+				<div id = "review" >
+					 <textarea id="comment" name="comment" rows="10" cols="150" placeholder="Describe your experience here..."></textarea>
+				</div>
+				<div id = "classification">
+					<div id = "Category">
+						<input type="radio" id="Bug" name="set" value="Bug">
+						<label for="Bug">Bug</label>
+						<input type="radio" id="Suggest" name="set" value="Suggest">
+						<label for="Suggest">Suggestion</label>
+						<input type="radio" id="Other" name="set" value="Other">
+						<label for="Other">Other</label>
+					</div>
+					<div id ="finish">
+						<input type = "submit" value ="Send Feedback">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>		
+</body>

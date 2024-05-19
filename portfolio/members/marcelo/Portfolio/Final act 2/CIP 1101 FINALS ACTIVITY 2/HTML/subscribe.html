@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<head>
+	<title>
+			Subscribe
+	</title>
+	<style>
+		body
+		{
+			margin: 0;
+		}
+		#nav
+		{
+			font-family:arial;
+			margin: 0;
+			padding: 0;
+			width: 15%;
+			background-color: black;
+			position: fixed;
+			height: 100%;
+		}
+		#nav p
+		{	
+			font-size:50px;
+			margin-left:15px;
+			color:white;
+		}
+		#ulNav
+		{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 15%;
+			background-color: Grey;
+			position: fixed;
+			height: 100%;
+			overflow: auto;
+			font-size:30px;
+		}
+		.liNav
+		{
+			
+			border-bottom:1px white solid;
+		}
+		.liNav a
+		{
+			display: block;
+			color: white;
+			padding:16px;
+		}
+		.liNav a.active
+		{
+			background-color: #555;
+			color: white;
+		}
+		.liNav a:hover:not(.active) 
+		{
+			background-color: #555;
+			color: white;
+		}
+		#contentContainer
+		{
+			padding:25px 20px;
+			font-family:arial;
+			margin-left:15%;
+			background-color:#e6e6e6;
+			border:3px solid #99999980;
+			height: 92.5vh;
+		}
+		#content
+		{
+			display:flex;
+			justify-content:space-around;
+			
+		}
+		.subscription
+		{
+			font-size:40px;
+			padding:20px 50px;
+			background-color:white;
+			text-align:center;
+			border-radius:5px;
+			box-shadow: 0 5px 20px 0 black;
+		}
+		.subscription span
+		{
+			font-size:15px;
+			text-align:left;
+		}
+		.bi-check
+		{
+			font-weight:bold;
+			color:green;
+			font-size:25px;
+		}
+		.bi-x
+		{	
+			font-weight:bold;
+			color:red;
+			font-size:25px;
+		}
+		.select
+		{
+			color:white;
+			font-size:20px;
+			padding:20px;
+			border-radius:5px;
+			font-weight:bold;
+		}
+	</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>	
+<body>
+	<div id = "nav">
+		<p>Menu</p>
+		<ul id = "ulNav">
+			<li class = "liNav"><a href = "../HTML/Contact.html">Contact Us</a></li>
+			<li class = "liNav"><a href = "../HTML/subscribe.html" class = "active">Subscribe</a></li>
+			<li class = "liNav"><a href = "../HTML/About.html">About Us</a></li>
+			<li class = "liNav"><a href = "../HTML/SignIn.html">Sign in</a></li>
+		</ul>
+	</div>	
+	<section id = "contentContainer">
+		<div id = "content">
+			<div class = "subscription">
+				<p style = "color:#3691b0;">Basic</p>
+				<span>
+					<p><i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bed Room</p>
+					<p><i class="bi bi-x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Basic Toiletries</p>
+					<p><i class="bi bi-x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buffet Access</p>
+					<p><i class="bi bi-x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pool Access</p>
+					<p><i class="bi bi-x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gym Access</p>
+				</span>
+				<p style = "margin-bottom:0px;">$29.99</p>
+				<p style = "font-size:15px; margin-top :0px;">per month</p>
+				<p class = "select" style = "background-color:#3691b0;">SELECT</p>
+			</div>
+			<div class = "subscription">
+				<p style = "color:#2a7189;">Standard</p>
+				<span>
+					<p><i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bed Room</p>
+					<p><i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Basic Toiletries</p>
+					<p><i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buffet Access</p>
+					<p><i class="bi bi-x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pool Access</p>
+					<p><i class="bi bi-x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gym Access</p>
+				</span>
+				<p style = "margin-bottom:0px;">$59.99</p>
+				<p style = "font-size:15px; margin-top :0px;">per month</p>
+				<p class = "select" style = "background-color:#2a7189;">SELECT</p>
+			</div>
+			<div class = "subscription">
+				<p style = "color:#ff0066;">Premium</p>
+				<span>
+					<p><i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bed Room</p>
+					<p><i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Basic Toiletries</p>
+					<p><i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buffet Access</p>
+					<p><i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pool Access</p>
+					<p><i class="bi bi-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gym Access</p>
+				</span>
+				<p style = "margin-bottom:0px;">$99.99</p>
+				<p style = "font-size:15px; margin-top :0px;">per month</p>
+				<p class = "select" style = "background-color:#ff0066;">SELECT</p>
+			</div>
+		</div>
+	</section>
+</body>

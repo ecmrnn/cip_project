@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<head>
+	<title>
+		Developer's Page
+	</title>
+	<style>
+		 body,html {
+ margin: 0;
+ margin-right:0;
+ }
+
+.header {
+  padding: 50px;
+  text-align:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+
+ }
+
+#grad1 {
+height:100%;
+background-image: linear-gradient(to right,#fc5d9d,#f8c596);
+}
+.topnav { 
+padding:10px;
+background-color:#333;
+overflow:hidden;
+position:absolute;
+width:99.4%;
+margin-left:0;
+padding-left:0;
+padding-bottom:10px;
+opacity:0.6;
+}
+.topnav a {
+ float:right;
+ color:#f2f2f2;
+ text-align:center;
+ padding:14px 16px;
+ text-decoration:none;
+ font-size:15px;
+
+}
+.topnav a:hover {
+background-color:#D2D5D4;
+color:black;
+
+}
+.topnav a.active {
+background-color:#fc5d9d;
+color:black;
+
+}
+h1 {
+padding:20px;
+color: white;
+  text-shadow: 1px 1px 2px #fc5d9d, 0 0 25px #f8c596, 0 0 5px #f8c596;
+  padding-left:10px;
+  padding-top:0;
+  margin-top:5px;
+  margin-left:10px;
+  padding-bottom:0;
+  position:absolute;
+  left:8%;
+  top:1%;
+  
+}
+.JP{
+   font-size:35px;  
+   }
+h2{
+	margin-top:90px;
+	font-family:cinzel;
+	font-weight:bold;
+	font-size:35px;
+	text-align:center;
+}
+
+.Biography{
+
+  text-align:justify;
+  font-size:18px;
+	max-width:500px;
+	margin-top:-10px;
+	letter-spacing:2px;
+}
+
+.Dev{
+	
+	font-family:cinzel;
+	font-size:50px;
+	text-align:center;
+	color: white;
+    text-shadow: 1px 1px 2px #fc5d9d, 0 0 25px cyan, 0 0 5px #f8c596;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  left:38%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 20.2%;
+  transform: translate(-40%, -50%);
+  -ms-transform: translate(-50%, -50%);
+ 
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: .75;
+}
+
+.text {
+  background-color: grey;
+  color: white;
+  font-size: 16px;
+  padding: 100px 100px;
+}
+
+.footer{
+	margin-top:5%;
+	text-align:center;
+	padding:20px;
+	background:grey;
+	
+}
+.facebook{
+	width:50px;
+	height:50px;
+}
+.insta{
+	width:50px;
+	height:50px;
+}
+.twitter{
+	width:50px;
+	height:50px;
+}
+	</style>
+	<link rel="stylesheet" href="../../assets/css/app.css">
+</head>
+<body <div id="grad1"></div>
+<div class="topnav">
+
+<a class="active">ABOUT ME</a> 
+
+ </div>
+
+<div class="header">
+ </div>
+   <div>
+        <button class="back" id="backButton">Back</button>
+    </div>
+      
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+          history.back();
+        });
+    </script>
+<p class = "Dev">Developer</p>
+
+<div class="container">
+  <img src="https://scontent.fmnl25-4.fna.fbcdn.net/v/t39.30808-6/332698636_733679444863713_6583954419615083406_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH8V5TaquwUsS3PVAKz6w0oQriP-iLP-otCuI_6Is_6iyAE76bkFKqXKBdaCIFeGOGsLa7gJTSY2fzTwH15Tjas&_nc_ohc=hLK2Av3euQMQ7kNvgGDJscS&_nc_ht=scontent.fmnl25-4.fna&oh=00_AfCib1adw1rKeX0h5tzj1leCCjt3fU-Xk49DWQaBuGWDuQ&oe=663D72D1" alt="Jaypee" class="image" style="width:50%">
+  <div class="middle">
+    <div class="text">
+   <p class = "JP"> <b><em>Hello I'm JP</em></b></p>   
+	<ul>
+	<li>Student Of UE</li>
+	<li>20 yrs old</li>
+	<li>BSIT</li>
+	<li>Knowledgeable in HTML & CSS</li>
+  <li>Basic programming</li> 
+	
+	</div>
+  </div>
+</div>
+
+ 
+ <center>
+ <h2>Biography </h2>  
+ <p class = "Biography">Hello, my name is <b><i>John Paul O. Marcelo</i></b> or you can call me <ins>JP</ins> I'm the one who created this webpage. I'am 20 years old and currently studying at the University of the East as a BSIT student. I like watching youtube, anime, and reading manhwa and manga.
+I have a <mark>little</mark> backgound on simple HTML and CSS because I got interested on it. I also have knowledge in basic programming.
+</p>
+</center>
+
+ 
+ <div class="footer">
+  <a href="https://www.facebook.com/johnpaul.o.marcelo" ><img class="facebook" src="data:image/png;base64,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"></a>
+  <a href="https://www.instagram.com/ja_apot/" >
+    <img class="insta" src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg?size=338&ext=jpg&ga=GA1.1.1448711260.1706745600&semt=ais"></a>
+  <a href="https://twitter.com/JaApot"><img class="twitter" src="https://img.freepik.com/premium-vector/new-twitter-logo-x-2023-twitter-x-logo-official-vector-download_691560-10797.jpg?w=2000"></a>
+ 
+						
+</div>
+	
+</body>
