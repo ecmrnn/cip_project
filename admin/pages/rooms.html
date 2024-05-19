@@ -318,6 +318,18 @@
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <div></div>
+                                    <button type="button"
+                                        class="btn btn-primary d-flex align-items-center gap-3 justify-content-center pe-4"
+                                        data-bs-toggle="modal" data-bs-target="#addRoomModal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#ffffff">
+                                            <path d="M460-460H240v-40h220v-220h40v220h220v40H500v220h-40v-220Z" />
+                                        </svg>
+                                        <span class="text-white">Add Room</span>
+                                    </button>
+                                </div>
                                 <div class="p-3 border rounded d-flex justify-content-between gap-3 mb-3">
                                     <div class="d-flex flex-column flex-md-row gap-3">
                                         <div class="p-3 border rounded" style="width: min-content;">
@@ -351,6 +363,16 @@
                                                 viewBox="0 -960 960 960" width="24px" fill="#00">
                                                 <path
                                                     d="M480.18-353.85q60.97 0 103.47-42.68t42.5-103.65q0-60.97-42.68-103.47t-103.65-42.5q-60.97 0-103.47 42.68t-42.5 103.65q0 60.97 42.68 103.47t103.65 42.5ZM480-392q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm.11 152q-129.96 0-236.88-70.73Q136.31-381.46 83.08-500q53.23-118.54 160.04-189.27T479.89-760q129.96 0 236.88 70.73Q823.69-618.54 876.92-500q-53.23 118.54-160.04 189.27T480.11-240ZM480-500Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z" />
+                                            </svg>
+                                        </button>
+
+                                        <button class="btn border rounded" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" title="Remove"
+                                            onclick="$('#deleteRoom').modal('show');">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#dc3545">
+                                                <path
+                                                    d="M304.62-160q-26.85 0-45.74-18.88Q240-197.77 240-224.62V-720h-40v-40h160v-30.77h240V-760h160v40h-40v495.38q0 27.62-18.5 46.12Q683-160 655.38-160H304.62ZM680-720H280v495.38q0 10.77 6.92 17.7 6.93 6.92 17.7 6.92h350.76q9.24 0 16.93-7.69 7.69-7.69 7.69-16.93V-720ZM392.31-280h40v-360h-40v360Zm135.38 0h40v-360h-40v360ZM280-720v520-520Z" />
                                             </svg>
                                         </button>
                                     </div>
@@ -390,6 +412,16 @@
                                                     d="M480.18-353.85q60.97 0 103.47-42.68t42.5-103.65q0-60.97-42.68-103.47t-103.65-42.5q-60.97 0-103.47 42.68t-42.5 103.65q0 60.97 42.68 103.47t103.65 42.5ZM480-392q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm.11 152q-129.96 0-236.88-70.73Q136.31-381.46 83.08-500q53.23-118.54 160.04-189.27T479.89-760q129.96 0 236.88 70.73Q823.69-618.54 876.92-500q-53.23 118.54-160.04 189.27T480.11-240ZM480-500Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z" />
                                             </svg>
                                         </button>
+
+                                        <button class="btn border rounded" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" title="Remove"
+                                            onclick="$('#deleteRoom').modal('show');">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#dc3545">
+                                                <path
+                                                    d="M304.62-160q-26.85 0-45.74-18.88Q240-197.77 240-224.62V-720h-40v-40h160v-30.77h240V-760h160v40h-40v495.38q0 27.62-18.5 46.12Q683-160 655.38-160H304.62ZM680-720H280v495.38q0 10.77 6.92 17.7 6.93 6.92 17.7 6.92h350.76q9.24 0 16.93-7.69 7.69-7.69 7.69-16.93V-720ZM392.31-280h40v-360h-40v360Zm135.38 0h40v-360h-40v360ZM280-720v520-520Z" />
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="p-3 border rounded d-flex justify-content-between gap-3">
@@ -427,6 +459,16 @@
                                                     d="M480.18-353.85q60.97 0 103.47-42.68t42.5-103.65q0-60.97-42.68-103.47t-103.65-42.5q-60.97 0-103.47 42.68t-42.5 103.65q0 60.97 42.68 103.47t103.65 42.5ZM480-392q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm.11 152q-129.96 0-236.88-70.73Q136.31-381.46 83.08-500q53.23-118.54 160.04-189.27T479.89-760q129.96 0 236.88 70.73Q823.69-618.54 876.92-500q-53.23 118.54-160.04 189.27T480.11-240ZM480-500Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z" />
                                             </svg>
                                         </button>
+
+                                        <button class="btn border rounded" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" title="Remove"
+                                            onclick="$('#deleteRoom').modal('show');">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#dc3545">
+                                                <path
+                                                    d="M304.62-160q-26.85 0-45.74-18.88Q240-197.77 240-224.62V-720h-40v-40h160v-30.77h240V-760h160v40h-40v495.38q0 27.62-18.5 46.12Q683-160 655.38-160H304.62ZM680-720H280v495.38q0 10.77 6.92 17.7 6.93 6.92 17.7 6.92h350.76q9.24 0 16.93-7.69 7.69-7.69 7.69-16.93V-720ZM392.31-280h40v-360h-40v360Zm135.38 0h40v-360h-40v360ZM280-720v520-520Z" />
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -451,6 +493,25 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                         <button type="button" class="btn btn-danger">Unpublish Page</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delete Room Modal -->
+        <div class="modal fade" id="deleteRoom" tabindex="-1" aria-labelledby="deleteRoomLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-danger" id="deleteRoomLabel">Removing a Room</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you sure you really want to remove this room?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-danger">Remove Room</button>
                     </div>
                 </div>
             </div>
@@ -543,7 +604,40 @@
                 </div>
             </div>
         </div>
+
+        <!-- Add Room Modal -->
+        <div class="modal fade" id="addRoomModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <form action="" method="post" class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Add Room</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Upload New Image</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                            <div class="mb-3">
+                                <label for="newTitle" class="form-label">New Title</label>
+                                <input type="email" class="form-control" id="newTitle" placeholder="...">
+                            </div>
+                            <div class="">
+                                <label for="newDescription" class="form-label">New Description</label>
+                                <textarea class="form-control" id="newDescription" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn bg-white border" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Add Room</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
+
 </body>
 
 </html>
