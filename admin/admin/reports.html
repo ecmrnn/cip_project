@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS and JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer></script>
+    <link rel="stylesheet" href="../assets/styles/app.css">
+    <link rel="stylesheet" href="../assets/styles/media.css">
+
+    <title>Reports</title>
+</head>
+
+<body class="d-lg-flex min-vh-100 bg-light">
+    <!-- Navigation -->
+    <nav
+        class="py-3 navbar sticky-top navbar-expand-lg navbar-light bg-white border-bottom border-end align-items-start">
+        <div class="container-fluid d-lg-flex flex-lg-column h-100">
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- User : Profile Picture, Name, and Role -->
+            <div class="d-inline" href="#">
+                <div class="d-flex flex-lg-row-reverse gap-3 align-items-center">
+                    <div class="d-flex flex-column align-items-end align-items-lg-start d-sm-flex d-lg-none d-xl-flex">
+                        <!-- Name and Role -->
+                        <p class="m-0" style="font-size: 0.875rem;">Hans Carbilledo</p>
+                        <p class="m-0" style="font-size: 0.75rem; opacity: .5;">Admin</p>
+                    </div>
+
+                    <div>
+                        <!-- Profile Picture -->
+                        <img src="" alt="" class="rounded-circle border" style="width: 40px; aspect-ratio: 1;">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse mt-3 pt-3 border-top flex-column justify-content-between align-items-start"
+                id="navbarToggler">
+                <ul class="nav flex-column">
+                    <p style="font-size: 0.75rem; opacity: .5;" class="d-lg-flex justify-content-lg-center d-xl-block">
+                        <span class="d-sm-inline d-lg-none d-xl-inline text-center">Main</span> Menu
+                    </p>
+                    <li class="nav-item mb-1">
+                        <a class="nav-link d-flex gap-3 align-items-start" href="dashboard.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#e8eaed">
+                                <path
+                                    d="M240-200h147.69v-203.08q0-13.73 9.29-23.02 9.29-9.28 23.02-9.28h120q13.73 0 23.02 9.28 9.29 9.29 9.29 23.02V-200H720v-347.69q0-6.16-2.69-11.16t-7.31-8.84L494.62-730q-6.16-5.38-14.62-5.38-8.46 0-14.62 5.38L250-567.69q-4.62 3.84-7.31 8.84-2.69 5-2.69 11.16V-200Zm-40 0v-347.69q0-15.35 6.87-29.08 6.86-13.73 18.98-22.61l215.38-163.08q16.91-12.92 38.65-12.92t38.89 12.92l215.38 163.08q12.12 8.88 18.98 22.61 6.87 13.73 6.87 29.08V-200q0 16.08-11.96 28.04T720-160H564.62q-13.74 0-23.02-9.29-9.29-9.29-9.29-23.02v-203.07H427.69v203.07q0 13.73-9.29 23.02-9.28 9.29-23.02 9.29H240q-16.08 0-28.04-11.96T200-200Zm280-268.46Z" />
+                            </svg>
+                            <span class="d-sm-block d-lg-none d-xl-block">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a class="nav-link d-flex gap-3 align-items-start" href="rooms.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#e8eaed">
+                                <path
+                                    d="M180-160q-8.54 0-14.27-5.73T160-180q0-8.54 5.73-14.27T180-200h60v-535.38q0-27.62 18.5-46.12Q277-800 304.62-800h350.76q27.62 0 46.12 18.5Q720-763 720-735.38V-200h60q8.54 0 14.27 5.73T800-180q0 8.54-5.73 14.27T780-160H180Zm100-40h400v-535.38q0-9.24-7.69-16.93-7.69-7.69-16.93-7.69H304.62q-9.24 0-16.93 7.69-7.69 7.69-7.69 16.93V-200Zm289.23-249.23q12.39 0 21.58-9.19Q600-467.62 600-480q0-12.38-9.19-21.58-9.19-9.19-21.58-9.19-12.38 0-21.58 9.19-9.19 9.2-9.19 21.58 0 12.38 9.19 21.58 9.2 9.19 21.58 9.19ZM280-760v560-560Z" />
+                            </svg>
+                            <span class="d-sm-block d-lg-none d-xl-block">Rooms</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a class="nav-link d-flex gap-3 align-items-start" href="reservations.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#e8eaed">
+                                <path
+                                    d="M224.62-120q-27.62 0-46.12-18.5Q160-157 160-184.62v-510.76q0-27.62 18.5-46.12Q197-760 224.62-760h70.76v-67.69q0-9.31 6.12-15.43 6.12-6.11 15.42-6.11 9.31 0 15.43 6.11 6.11 6.12 6.11 15.43V-760h286.16v-69.23q0-8.54 5.73-14.27t14.27-5.73q8.53 0 14.26 5.73 5.74 5.73 5.74 14.27V-760h70.76q27.62 0 46.12 18.5Q800-723 800-695.38v510.76q0 27.62-18.5 46.12Q763-120 735.38-120H224.62Zm0-40h510.76q9.24 0 16.93-7.69 7.69-7.69 7.69-16.93v-350.76H200v350.76q0 9.24 7.69 16.93 7.69 7.69 16.93 7.69ZM200-575.39h560v-119.99q0-9.24-7.69-16.93-7.69-7.69-16.93-7.69H224.62q-9.24 0-16.93 7.69-7.69 7.69-7.69 16.93v119.99Zm0 0V-720-575.39Zm280 181.54q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.57 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.19 9.19 21.57 0 12.39-9.19 21.58-9.2 9.19-21.58 9.19Zm-160 0q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.57 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.19 9.19 21.57 0 12.39-9.19 21.58-9.2 9.19-21.58 9.19Zm320 0q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.57 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.19 9.19 21.57 0 12.39-9.19 21.58-9.2 9.19-21.58 9.19ZM480-240q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.58 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.2 9.19 21.58 0 12.39-9.19 21.58Q492.38-240 480-240Zm-160 0q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.58 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.2 9.19 21.58 0 12.39-9.19 21.58Q332.38-240 320-240Zm320 0q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.58 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.2 9.19 21.58 0 12.39-9.19 21.58Q652.38-240 640-240Z" />
+                            </svg>
+                            <span class="d-sm-block d-lg-none d-xl-block">Reservations</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a class="nav-link d-flex gap-3 align-items-start" href="records.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#e8eaed">
+                                <path
+                                    d="M180-200q-25.31 0-42.65-17.35Q120-234.69 120-260v-435.38q0-25.31 19.65-44.97Q159.31-760 184.62-760H357q12.92 0 25.12 5.23 12.19 5.23 20.88 13.92L463.85-680h349.23q8.54 0 14.27 5.73t5.73 14.27q0 8.54-5.73 14.27T813.08-640H447.77l-80-80H184.62q-10.77 0-17.7 6.92-6.92 6.93-6.92 17.7V-240q0-10.77 4.23-8.08 4.23 2.7 11.15 6.54l76.7-256.84q6.46-20.62 23.73-33.43 17.27-12.81 38.65-12.81h512.92q32.54 0 52.2 25.97 19.65 25.96 10.19 57.03l-65.85 219.24q-5.69 19.07-21.8 30.73Q786-200 766.15-200H180Zm37.08-40h546q8.46 0 15-4.62 6.54-4.61 8.84-13.07l64.31-215.39q3.85-12.3-3.85-21.92-7.69-9.62-20-9.62H314.46q-8.46 0-15 4.62-6.54 4.62-8.84 13.08L217.08-240ZM160-498.15V-720v221.85ZM217.08-240l73.54-246.92q2.3-8.46 3.84-13.08l1.54-4.62-2.69 9.62q-2.69 9.62-6.54 21.92l-64.31 215.39q-2.31 8.46-3.84 13.07l-1.54 4.62Z" />
+                            </svg>
+                            <span class="d-sm-block d-lg-none d-xl-block">Records</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a class="nav-link nav-active d-flex gap-3 align-items-start" aria-current="page"
+                            href="reports.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#e8eaed">
+                                <path
+                                    d="M360-500q-8.54 0-14.27-5.73T340-520q0-8.54 5.73-14.27T360-540h240q8.54 0 14.27 5.73T620-520q0 8.54-5.73 14.27T600-500H360Zm0-160q-8.54 0-14.27-5.73T340-680q0-8.54 5.73-14.27T360-700h240q8.54 0 14.27 5.73T620-680q0 8.54-5.73 14.27T600-660H360ZM240-380h300q24.38 0 44.77 10.58 20.38 10.57 35.08 29.73l100.15 130v-565.69q0-10.77-6.92-17.7-6.93-6.92-17.7-6.92H264.62q-10.77 0-17.7 6.92-6.92 6.93-6.92 17.7V-380Zm24.62 220h442.76l-119-155.31q-9.07-11.84-21.42-18.27Q554.62-340 540-340H240v155.38q0 10.77 6.92 17.7 6.93 6.92 17.7 6.92Zm430.76 40H264.62q-27.62 0-46.12-18.5Q200-157 200-184.62v-590.76q0-27.62 18.5-46.12Q237-840 264.62-840h430.76q27.62 0 46.12 18.5Q760-803 760-775.38v590.76q0 27.62-18.5 46.12Q723-120 695.38-120ZM240-160v-640 640Zm0-180v-40 40Z" />
+                            </svg>
+                            <span class="d-sm-block d-lg-none d-xl-block">Reports</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a class="nav-link d-flex gap-3 align-items-start" href="inbox.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#e8eaed">
+                                <path
+                                    d="M184.62-200q-27.62 0-46.12-18.5Q120-237 120-264.62v-430.76q0-27.62 18.5-46.12Q157-760 184.62-760h590.76q27.62 0 46.12 18.5Q840-723 840-695.38v430.76q0 27.62-18.5 46.12Q803-200 775.38-200H184.62ZM800-684.62 497.92-486.85q-4.23 2.23-8.57 3.73-4.35 1.5-9.35 1.5t-9.35-1.5q-4.34-1.5-8.57-3.73L160-684.62v420q0 10.77 6.92 17.7 6.93 6.92 17.7 6.92h590.76q10.77 0 17.7-6.92 6.92-6.93 6.92-17.7v-420ZM480-520l307.69-200H172.31L480-520ZM160-684.62v8.47-32.47 1.39V-720v12.77-2.04 33.12-8.47V-240v-444.62Z" />
+                            </svg>
+                            <span class="d-sm-block d-lg-none d-xl-block">Inbox</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a class="nav-link d-flex gap-3 align-items-start" href="pages/home.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#000000">
+                                <path
+                                    d="M480-210.31 184.61-439.54l32.16-25.38L480-261.54l263.23-203.38 32.16 25.38L480-210.31Zm0-152.77L184.61-592.31 480-821.54l295.39 229.23L480-363.08Zm0-229.23Zm0 178 230-178-230-178-230 178 230 178Z" />
+                            </svg>
+                            <span class="d-sm-block d-lg-none d-xl-block">Pages</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Logout -->
+                <form action="" class="w-100">
+                    <button type="button"
+                        class="btn btn-primary w-100 mt-3 d-flex gap-3 align-items-center justify-content-center">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#ffffff">
+                                <path
+                                    d="M224.62-160q-27.62 0-46.12-18.5Q160-197 160-224.62v-510.76q0-27.62 18.5-46.12Q197-800 224.62-800h256.15v40H224.62q-9.24 0-16.93 7.69-7.69 7.69-7.69 16.93v510.76q0 9.24 7.69 16.93 7.69 7.69 16.93 7.69h256.15v40H224.62Zm433.84-178.46-28.08-28.77L723.15-460H367.69v-40h355.46l-92.77-92.77 28.08-28.77L800-480 658.46-338.46Z" />
+                            </svg>
+                        </span>
+                        <span class="text-white d-sm-block d-lg-none d-xl-block">Logout</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contents -->
+    <main class="container-fluid">
+        <h1 class="fw-bold text-primary mb-3">Reports</h1>
+        <section id="content">
+            <!-- Mobile Cards Carousel -->
+            <div id="carouselExampleDark" class="carousel carousel-dark slide d-lg-none mb-3" data-bs-ride="carousel"
+                data-bs-interval="false">
+                <!-- Bottom Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <!-- Carousel Content -->
+                <div class="carousel-inner">
+                    <div class="carousel-item bg-white rounded border active">
+                        <div style="height: 250px;"></div>
+                        <div class="carousel-caption">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                    width="40px" fill="#0d6efd">
+                                    <path
+                                        d="M140-140v-50.41l33.85-33.85V-140H140Zm161.79 0v-210.41l33.85-33.85V-140h-33.85Zm161.29 0v-244.26l33.84 34.85V-140h-33.84Zm161.79 0v-209.41l33.85-33.85V-140h-33.85Zm161.28 0v-370.41L820-544.26V-140h-33.85ZM140-384.54v-47.15l260-259.69 160 160 260-260.16v47.67L560-483.72l-160-160-260 259.18Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h5>32,799.00 Php</h5>
+                                <p>Monthly Revenues</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-white rounded border">
+                        <div style="height: 250px;"></div>
+                        <div class="carousel-caption">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                    width="40px" fill="#0d6efd">
+                                    <path
+                                        d="M533.85-456.92q-33.85 0-56.93-23.08-23.07-23.08-23.07-56.92 0-33.85 23.07-56.93 23.08-23.07 56.93-23.07 33.84 0 56.92 23.07 23.08 23.08 23.08 56.93 0 33.84-23.08 56.92t-56.92 23.08Zm-260 133.84q-23.72 0-41.09-17.37-17.38-17.37-17.38-41.09v-310.77q0-23.72 17.38-41.09 17.37-17.37 41.09-17.37h520q23.71 0 41.09 17.37 17.37 17.37 17.37 41.09v310.77q0 23.72-17.37 41.09-17.38 17.37-41.09 17.37h-520ZM320-356.92h427.69q0-29.26 20.86-50.02 20.85-20.75 49.91-20.75v-218.46q-29.25 0-50.01-20.86-20.76-20.85-20.76-49.91H320q0 29.25-20.85 50.01-20.86 20.76-49.92 20.76v218.46q29.26 0 50.01 20.85Q320-385.99 320-356.92Zm413.85 141.54h-567.7q-23.71 0-41.09-17.38-17.37-17.37-17.37-41.09v-358.46h33.85v358.46q0 9.24 7.69 16.93 7.69 7.69 16.92 7.69h567.7v33.85Zm-460-141.54h-24.62v-360h24.62q-10 0-17.31 7.3-7.31 7.31-7.31 17.31v310.77q0 10 7.31 17.31 7.31 7.31 17.31 7.31Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h5>12,599.00 Php</h5>
+                                <p>Monthly Expenses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-white rounded border">
+                        <div style="height: 250px;"></div>
+                        <div class="carousel-caption">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                    width="40px" fill="#0d6efd">
+                                    <path
+                                        d="M218.46-120q-24.58 0-41.52-16.94Q160-153.88 160-178.46v-529.23q0-24.58 16.94-41.52 16.94-16.94 41.52-16.94h78.72v-83.08h38.2v83.08h292.31v-83.08h35.64v83.08h78.21q24.58 0 41.52 16.94Q800-732.27 800-707.69v529.23q0 24.58-16.94 41.52Q766.12-120 741.54-120H218.46Zm0-33.85h523.08q9.23 0 16.92-7.69 7.69-7.69 7.69-16.92v-360h-572.3v360q0 9.23 7.69 16.92 7.69 7.69 16.92 7.69Zm-24.61-418.46h572.3v-135.38q0-9.23-7.69-16.93-7.69-7.69-16.92-7.69H218.46q-9.23 0-16.92 7.69-7.69 7.7-7.69 16.93v135.38Zm0 0v-160 160ZM480-393.85q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.57 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.19 9.19 21.57 0 12.39-9.19 21.58-9.2 9.19-21.58 9.19Zm-160 0q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.57 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.19 9.19 21.57 0 12.39-9.19 21.58-9.2 9.19-21.58 9.19Zm320 0q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.57 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.19 9.19 21.57 0 12.39-9.19 21.58-9.2 9.19-21.58 9.19ZM480-240q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.58 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.2 9.19 21.58 0 12.39-9.19 21.58Q492.38-240 480-240Zm-160 0q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.58 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.2 9.19 21.58 0 12.39-9.19 21.58Q332.38-240 320-240Zm320 0q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.58 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.2 9.19 21.58 0 12.39-9.19 21.58Q652.38-240 640-240Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h5>56</h5>
+                                <p>Monthly Reservations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop Cards -->
+            <div class="d-none d-lg-flex gap-3 mb-3">
+                <div class="card w-100">
+                    <div class="card-body d-flex flex-column justify-content-between" style="height: 200px;">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                                fill="#0d6efd">
+                                <path
+                                    d="M140-140v-50.41l33.85-33.85V-140H140Zm161.79 0v-210.41l33.85-33.85V-140h-33.85Zm161.29 0v-244.26l33.84 34.85V-140h-33.84Zm161.79 0v-209.41l33.85-33.85V-140h-33.85Zm161.28 0v-370.41L820-544.26V-140h-33.85ZM140-384.54v-47.15l260-259.69 160 160 260-260.16v47.67L560-483.72l-160-160-260 259.18Z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h5 class="text-primary fw-bold fs-1 m-0">32,799.00 Php</h5>
+                            <p class="m-0">Monthly Revenues</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-100">
+                    <div class="card-body d-flex flex-column justify-content-between" style="height: 200px;">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                                fill="#0d6efd">
+                                <path
+                                    d="M533.85-456.92q-33.85 0-56.93-23.08-23.07-23.08-23.07-56.92 0-33.85 23.07-56.93 23.08-23.07 56.93-23.07 33.84 0 56.92 23.07 23.08 23.08 23.08 56.93 0 33.84-23.08 56.92t-56.92 23.08Zm-260 133.84q-23.72 0-41.09-17.37-17.38-17.37-17.38-41.09v-310.77q0-23.72 17.38-41.09 17.37-17.37 41.09-17.37h520q23.71 0 41.09 17.37 17.37 17.37 17.37 41.09v310.77q0 23.72-17.37 41.09-17.38 17.37-41.09 17.37h-520ZM320-356.92h427.69q0-29.26 20.86-50.02 20.85-20.75 49.91-20.75v-218.46q-29.25 0-50.01-20.86-20.76-20.85-20.76-49.91H320q0 29.25-20.85 50.01-20.86 20.76-49.92 20.76v218.46q29.26 0 50.01 20.85Q320-385.99 320-356.92Zm413.85 141.54h-567.7q-23.71 0-41.09-17.38-17.37-17.37-17.37-41.09v-358.46h33.85v358.46q0 9.24 7.69 16.93 7.69 7.69 16.92 7.69h567.7v33.85Zm-460-141.54h-24.62v-360h24.62q-10 0-17.31 7.3-7.31 7.31-7.31 17.31v310.77q0 10 7.31 17.31 7.31 7.31 17.31 7.31Z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h5 class="text-primary fw-bold fs-1 m-0">12,599.00 Php</h5>
+                            <p class="m-0">Monthly Expenses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-100">
+                    <div class="card-body d-flex flex-column justify-content-between" style="height: 200px;">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                                fill="#0d6efd">
+                                <path
+                                    d="M218.46-120q-24.58 0-41.52-16.94Q160-153.88 160-178.46v-529.23q0-24.58 16.94-41.52 16.94-16.94 41.52-16.94h78.72v-83.08h38.2v83.08h292.31v-83.08h35.64v83.08h78.21q24.58 0 41.52 16.94Q800-732.27 800-707.69v529.23q0 24.58-16.94 41.52Q766.12-120 741.54-120H218.46Zm0-33.85h523.08q9.23 0 16.92-7.69 7.69-7.69 7.69-16.92v-360h-572.3v360q0 9.23 7.69 16.92 7.69 7.69 16.92 7.69Zm-24.61-418.46h572.3v-135.38q0-9.23-7.69-16.93-7.69-7.69-16.92-7.69H218.46q-9.23 0-16.92 7.69-7.69 7.7-7.69 16.93v135.38Zm0 0v-160 160ZM480-393.85q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.57 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.19 9.19 21.57 0 12.39-9.19 21.58-9.2 9.19-21.58 9.19Zm-160 0q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.57 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.19 9.19 21.57 0 12.39-9.19 21.58-9.2 9.19-21.58 9.19Zm320 0q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.57 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.19 9.19 21.57 0 12.39-9.19 21.58-9.2 9.19-21.58 9.19ZM480-240q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.58 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.2 9.19 21.58 0 12.39-9.19 21.58Q492.38-240 480-240Zm-160 0q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.58 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.2 9.19 21.58 0 12.39-9.19 21.58Q332.38-240 320-240Zm320 0q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.58 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.2 9.19 21.58 0 12.39-9.19 21.58Q652.38-240 640-240Z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h5 class="text-primary fw-bold fs-1 m-0">56</h5>
+                            <p class="m-0">Monthly Reservations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="mb-3 d-flex gap-3 flex-column flex-lg-row justify-content-lg-between">
+                <button type="button"
+                    class="btn btn-primary d-flex align-items-center gap-3 justify-content-center pe-4"
+                    data-bs-toggle="modal" data-bs-target="#downloadReportModal">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#ffffff">
+                        <path
+                            d="M480-336.92 338.46-478.46l28.31-28.77L460-414v-346h40v346l93.23-93.23 28.31 28.77L480-336.92ZM264.62-200q-27.62 0-46.12-18.5Q200-237 200-264.62v-96.92h40v96.92q0 9.24 7.69 16.93 7.69 7.69 16.93 7.69h430.76q9.24 0 16.93-7.69 7.69-7.69 7.69-16.93v-96.92h40v96.92q0 27.62-18.5 46.12Q723-200 695.38-200H264.62Z" />
+                    </svg>
+                    <span class="text-white">Download Report</span>
+                </button>
+
+                <div class="d-flex gap-3">
+                    <!-- Filter -->
+                    <div class="d-flex gap-3">
+                        <div class="dropdown">
+                            <button style=" min-width: 115px;" type="button" id="filter" data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                class="btn btn-primary d-flex align-items-center gap-3 justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#ffffff">
+                                    <path
+                                        d="M422.31-280v-40h114.61v40H422.31Zm-150-180v-40h414.61v40H272.31ZM160-640v-40h640v40H160Z" />
+                                </svg>
+                                <span class="text-white">Rating</span>
+                            </button>
+                            <form class="dropdown-menu px-2" aria-labelledby="filter">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="filterType5">
+                                    <label class="form-check-label" for="filterType5">
+                                        5 : Excellent
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="filterType4">
+                                    <label class="form-check-label" for="filterType4">
+                                        4 : Very Good
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="filterType3">
+                                    <label class="form-check-label" for="filterType3">
+                                        3 : Good
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="filterType2">
+                                    <label class="form-check-label" for="filterType2">
+                                        2 : Unsatisfied
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="filterType1">
+                                    <label class="form-check-label" for="filterType1">
+                                        1 : Never Again
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Search -->
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Search Bar"
+                            aria-describedby="searchButton">
+                        <button class="btn btn-primary" type="button" id="searchButton">Search</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feedbacks -->
+            <div class="p-3 bg-white rounded border w-100">
+                <hgroup class="d-flex gap-3 align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#0d6efd">
+                        <path
+                            d="M255.38-415.38h88.16l210.77-210.77q5.15-5.93 7.73-12.43t2.58-12.88q0-6.39-2.7-12.66-2.69-6.26-7.61-12.19l-36.77-38q-5.16-5.15-11.92-7.73-6.77-2.58-13.39-2.58-6.38 0-12.88 2.58-6.5 2.58-12.43 7.73L255.38-503.54v88.16Zm273.85-236.08-37-37.77 37 37.77ZM290.77-450.77v-38l137.92-137.92 18.46 19.54 18.77 19.23-137.15 137.15h-38Zm156.38-156.38 18.77 19.23-37.23-38.77 18.46 19.54Zm25.23 191.77h232.24v-40H512.38l-40 40ZM120-156.92v-618.46q0-27.62 18.5-46.12Q157-840 184.62-840h590.76q27.62 0 46.12 18.5Q840-803 840-775.38v430.76q0 27.62-18.5 46.12Q803-280 775.38-280h-532.3L120-156.92ZM226-320h549.38q9.24 0 16.93-7.69 7.69-7.69 7.69-16.93v-430.76q0-9.24-7.69-16.93-7.69-7.69-16.93-7.69H184.62q-9.24 0-16.93 7.69-7.69 7.69-7.69 16.93v521.15L226-320Zm-66 0v-480 480Z" />
+                    </svg>
+                    <h2 class="fs-5 fw-bold text-primary m-0">Customer Feedback</h2>
+                </hgroup>
+                <div class="table-responsive">
+                    <table class="table table-bordered m-0 my-3">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Feedback</th>
+                                <th scope="col">Rating</th>
+                                <th scope="col">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Juan Dela Cruz</td>
+                                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, illum!</td>
+                                <td>Excellent</td>
+                                <td>01/01/2024</td>
+                            </tr>
+                            <tr>
+                                <td>Juan Dela Cruz</td>
+                                <td>Lorem ipsum dolor sit.</td>
+                                <td>Good</td>
+                                <td>01/01/2024</td>
+                            </tr>
+                            <tr>
+                                <td>Juan Dela Cruz</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque!</td>
+                                <td>Excellent</td>
+                                <td>01/01/2024</td>
+                            </tr>
+                            <tr>
+                                <td>Juan Dela Cruz</td>
+                                <td>Lorem ipsum dolor sit amet consectetur.</td>
+                                <td>Very Good</td>
+                                <td>01/01/2024</td>
+                            </tr>
+                            <tr>
+                                <td>Juan Dela Cruz</td>
+                                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, illum!</td>
+                                <td>Excellent</td>
+                                <td>01/01/2024</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination -->
+                <nav aria-label="Table navigation">
+                    <ul class="pagination justify-content-center mb-0">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Download Report Modal -->
+        <div class="modal fade" id="downloadReportModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <form action="" method="post" class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Download Report</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <select id="addRoomType" class="form-select mb-3" aria-label="Default select example"
+                                required>
+                                <option selected>Select a Report to Download</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="revenue">Revenue</option>
+                                <option value="expenses">Expenses</option>
+                                <option value="reservations">Reservations</option>
+                            </select>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">From</span>
+                                <input id="addRoomNumber" type="date" class="form-control" placeholder="Room No."
+                                    aria-label="Room No." aria-describedby="basic-addon1" required>
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1">To</span>
+                                <input id="addRoomNumber" type="date" class="form-control" placeholder="Room No."
+                                    aria-label="Room No." aria-describedby="basic-addon1" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn bg-white border" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Download Report</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

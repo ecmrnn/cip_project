@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+*,
+*::after,
+*::before {
+	font-family: "Inter", "sans-serif", "Segoe UI";
+	color: var(--clr-dark);
+}
+
+:root {
+	/* #0d6efd */
+	--clr-dark: rgba(0 0 0 / 1);
+	--clr-primary: rgba(13 110 253 / 1);
+	--clr-primary-50: rgb(13 110 253 / 0.5);
+	--clr-primary-10: rgb(13 110 253 / 0.1);
+	--clr-primary-05: rgb(13 110 253 / 0.05);
+	--clr-success: rgba(25 135 84 / 1);
+	--clr-success-50: rgba(25 135 84 / 0.5);
+	--clr-success-25: rgba(25 135 84 / 0.25);
+	--border-radius: 4px;
+}
+
+/* 
+/    
+/    Override Bootstrap styles
+/    
+*/
+
+.nav-link,
+.nav-link:hover,
+.nav-link:focus {
+	color: var(--clr-dark) !important;
+	border-radius: var(--border-radius);
+}
+
+.nav-link:hover {
+	color: var(--clr-primary);
+	background-color: var(--clr-primary-05);
+}
+
+.nav-active,
+.nav-active > *,
+.nav-active:hover,
+.nav-active:focus {
+	background-color: var(--clr-primary);
+	color: white !important;
+	border-radius: 6px;
+}
+
+.list-group-item:hover {
+	background-color: var(--clr-primary-05) !important;
+}
+
+.list-group-item.active:hover {
+	background-color: var(--clr-primary) !important;
+}
+
+.nav-page-link {
+	text-decoration: none !important;
+}
+
+.nav-active svg {
+	fill: white !important;
+}
+
+.nav-link svg {
+	fill: var(--clr-dark);
+}
+
+svg {
+	fill: var(--clr-primary);
+}
+
+option:first-of-type {
+	color: rgba(0 0 0 / 0.25) !important;
+}
+
+/* 
+/
+/   Carousel
+/
+*/
+
+.carousel-caption {
+	width: 100%;
+	height: 100%;
+	padding: 2em;
+	top: 0;
+	left: 0;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.carousel-caption h5 {
+	margin: 0;
+	font-size: 3rem;
+	font-weight: bold;
+	color: var(--clr-primary);
+}
+
+.card-icon {
+	width: min-content;
+	padding: 0.5em;
+	background-color: var(--clr-primary-05);
+	border-radius: 50%;
+}
+
+.carousel-caption svg {
+	fill: var(--clr-primary);
+}
+
+.carousel-indicators [data-bs-target] {
+	height: 5px !important;
+	background-color: var(--clr-primary-50) !important;
+}
+
+/* 
+/
+/	Tables
+/
+*/
+
+th {
+	color: var(--clr-primary);
+	background-color: var(--clr-primary-10) !important;
+	vertical-align: top;
+}
+
+th,
+td {
+	padding-left: 1em !important;
+	padding-right: 1em !important;
+}
+
+tbody > tr:nth-of-type(2n) {
+	background-color: var(--clr-primary-05);
+}
+
+/* 
+/
+/	Calendar
+/
+*/
+
+.table-calendar {
+	text-align: center;
+}
+
+.date-noncurrent {
+	opacity: 0.25;
+}
+
+.date-today {
+	background-color: var(--clr-primary) !important;
+	color: white;
+}
+
+.table-calendar > tbody > tr:nth-of-type(2n) {
+	background-color: transparent;
+}
+
+/* 
+/
+/	Status
+/
+*/
+
+.status-success,
+.status-warning,
+.status-danger,
+.status-info {
+	padding: 0.25rem 1em !important;
+	width: max-content;
+	border-radius: var(--border-radius);
+	display: block;
+	font-weight: bold;
+}
+
+.status-success {
+	background-color: rgb(236 251 230) !important;
+	color: green;
+}
+
+.status-warning {
+	background-color: rgb(251 247 230) !important;
+	color: orange;
+}
+
+.status-danger {
+	background-color: rgb(251 230 230) !important;
+	color: red;
+}
+
+.status-info {
+	background-color: rgba(0 168 232 / 0.251) !important;
+	color: rgb(0 52 89);
+}
+
+/* 
+/
+/	Modals
+/
+*/
+
+.modal-title {
+	font-weight: bold;
+	color: var(--clr-primary);
+}
+
+/* 
+/
+/	Buttons
+/
+*/
+
+.btn-primary svg,
+.btn-danger svg {
+	fill: white;
+}
+
+button[data-favorite="true"] > svg {
+	fill: #ffbf00;
+}
+
+/* 
+/
+/	Messages
+/
+*/
+
+.message:nth-of-type(2n) {
+	background-color: var(--clr-primary-05);
+}
+
+/* 
+/
+/	Pages
+/
+*/
+
+.page-section {
+	min-height: 300px;
+}

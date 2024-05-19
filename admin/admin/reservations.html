@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS and JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer></script>
+    <link rel="stylesheet" href="../assets/styles/app.css">
+    <link rel="stylesheet" href="../assets/styles/media.css">
+
+    <title>Reservations</title>
+</head>
+
+<body class="d-lg-flex min-vh-100 bg-light">
+    <!-- Navigation -->
+    <nav
+        class="py-3 navbar sticky-top navbar-expand-lg navbar-light bg-white border-bottom border-end align-items-start">
+        <div class="container-fluid d-lg-flex flex-lg-column h-100">
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- User : Profile Picture, Name, and Role -->
+            <div class="d-inline" href="#">
+                <div class="d-flex flex-lg-row-reverse gap-3 align-items-center">
+                    <div class="d-flex flex-column align-items-end align-items-lg-start d-sm-flex d-lg-none d-xl-flex">
+                        <!-- Name and Role -->
+                        <p class="m-0" style="font-size: 0.875rem;">Hans Carbilledo</p>
+                        <p class="m-0" style="font-size: 0.75rem; opacity: .5;">Admin</p>
+                    </div>
+
+                    <div>
+                        <!-- Profile Picture -->
+                        <img src="" alt="" class="rounded-circle border" style="width: 40px; aspect-ratio: 1;">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse mt-3 pt-3 border-top flex-column justify-content-between align-items-start"
+                id="navbarToggler">
+                <ul class="nav flex-column">
+                    <p style="font-size: 0.75rem; opacity: .5;" class="d-lg-flex justify-content-lg-center d-xl-block">
+                        <span class="d-sm-inline d-lg-none d-xl-inline text-center">Main</span> Menu
+                    </p>
+                    <li class="nav-item mb-1">
+                        <a class="nav-link d-flex gap-3 align-items-start" href="dashboard.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#e8eaed">
+                                <path
+                                    d="M240-200h147.69v-203.08q0-13.73 9.29-23.02 9.29-9.28 23.02-9.28h120q13.73 0 23.02 9.28 9.29 9.29 9.29 23.02V-200H720v-347.69q0-6.16-2.69-11.16t-7.31-8.84L494.62-730q-6.16-5.38-14.62-5.38-8.46 0-14.62 5.38L250-567.69q-4.62 3.84-7.31 8.84-2.69 5-2.69 11.16V-200Zm-40 0v-347.69q0-15.35 6.87-29.08 6.86-13.73 18.98-22.61l215.38-163.08q16.91-12.92 38.65-12.92t38.89 12.92l215.38 163.08q12.12 8.88 18.98 22.61 6.87 13.73 6.87 29.08V-200q0 16.08-11.96 28.04T720-160H564.62q-13.74 0-23.02-9.29-9.29-9.29-9.29-23.02v-203.07H427.69v203.07q0 13.73-9.29 23.02-9.28 9.29-23.02 9.29H240q-16.08 0-28.04-11.96T200-200Zm280-268.46Z" />
+                            </svg>
+                            <span class="d-sm-block d-lg-none d-xl-block">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a class="nav-link d-flex gap-3 align-items-start" href="rooms.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#e8eaed">
+                                <path
+                                    d="M180-160q-8.54 0-14.27-5.73T160-180q0-8.54 5.73-14.27T180-200h60v-535.38q0-27.62 18.5-46.12Q277-800 304.62-800h350.76q27.62 0 46.12 18.5Q720-763 720-735.38V-200h60q8.54 0 14.27 5.73T800-180q0 8.54-5.73 14.27T780-160H180Zm100-40h400v-535.38q0-9.24-7.69-16.93-7.69-7.69-16.93-7.69H304.62q-9.24 0-16.93 7.69-7.69 7.69-7.69 16.93V-200Zm289.23-249.23q12.39 0 21.58-9.19Q600-467.62 600-480q0-12.38-9.19-21.58-9.19-9.19-21.58-9.19-12.38 0-21.58 9.19-9.19 9.2-9.19 21.58 0 12.38 9.19 21.58 9.2 9.19 21.58 9.19ZM280-760v560-560Z" />
+                            </svg>
+                            <span class="d-sm-block d-lg-none d-xl-block">Rooms</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a class="nav-link nav-active d-flex gap-3 align-items-start" aria-current="page"
+                            href="reservations.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#e8eaed">
+                                <path
+                                    d="M224.62-120q-27.62 0-46.12-18.5Q160-157 160-184.62v-510.76q0-27.62 18.5-46.12Q197-760 224.62-760h70.76v-67.69q0-9.31 6.12-15.43 6.12-6.11 15.42-6.11 9.31 0 15.43 6.11 6.11 6.12 6.11 15.43V-760h286.16v-69.23q0-8.54 5.73-14.27t14.27-5.73q8.53 0 14.26 5.73 5.74 5.73 5.74 14.27V-760h70.76q27.62 0 46.12 18.5Q800-723 800-695.38v510.76q0 27.62-18.5 46.12Q763-120 735.38-120H224.62Zm0-40h510.76q9.24 0 16.93-7.69 7.69-7.69 7.69-16.93v-350.76H200v350.76q0 9.24 7.69 16.93 7.69 7.69 16.93 7.69ZM200-575.39h560v-119.99q0-9.24-7.69-16.93-7.69-7.69-16.93-7.69H224.62q-9.24 0-16.93 7.69-7.69 7.69-7.69 16.93v119.99Zm0 0V-720-575.39Zm280 181.54q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.57 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.19 9.19 21.57 0 12.39-9.19 21.58-9.2 9.19-21.58 9.19Zm-160 0q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.57 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.19 9.19 21.57 0 12.39-9.19 21.58-9.2 9.19-21.58 9.19Zm320 0q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.57 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.19 9.19 21.57 0 12.39-9.19 21.58-9.2 9.19-21.58 9.19ZM480-240q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.58 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.2 9.19 21.58 0 12.39-9.19 21.58Q492.38-240 480-240Zm-160 0q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.58 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.2 9.19 21.58 0 12.39-9.19 21.58Q332.38-240 320-240Zm320 0q-12.38 0-21.58-9.19-9.19-9.19-9.19-21.58 0-12.38 9.19-21.58 9.2-9.19 21.58-9.19 12.38 0 21.58 9.19 9.19 9.2 9.19 21.58 0 12.39-9.19 21.58Q652.38-240 640-240Z" />
+                            </svg>
+                            <span class="d-sm-block d-lg-none d-xl-block">Reservations</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a class="nav-link d-flex gap-3 align-items-start" href="records.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#e8eaed">
+                                <path
+                                    d="M180-200q-25.31 0-42.65-17.35Q120-234.69 120-260v-435.38q0-25.31 19.65-44.97Q159.31-760 184.62-760H357q12.92 0 25.12 5.23 12.19 5.23 20.88 13.92L463.85-680h349.23q8.54 0 14.27 5.73t5.73 14.27q0 8.54-5.73 14.27T813.08-640H447.77l-80-80H184.62q-10.77 0-17.7 6.92-6.92 6.93-6.92 17.7V-240q0-10.77 4.23-8.08 4.23 2.7 11.15 6.54l76.7-256.84q6.46-20.62 23.73-33.43 17.27-12.81 38.65-12.81h512.92q32.54 0 52.2 25.97 19.65 25.96 10.19 57.03l-65.85 219.24q-5.69 19.07-21.8 30.73Q786-200 766.15-200H180Zm37.08-40h546q8.46 0 15-4.62 6.54-4.61 8.84-13.07l64.31-215.39q3.85-12.3-3.85-21.92-7.69-9.62-20-9.62H314.46q-8.46 0-15 4.62-6.54 4.62-8.84 13.08L217.08-240ZM160-498.15V-720v221.85ZM217.08-240l73.54-246.92q2.3-8.46 3.84-13.08l1.54-4.62-2.69 9.62q-2.69 9.62-6.54 21.92l-64.31 215.39q-2.31 8.46-3.84 13.07l-1.54 4.62Z" />
+                            </svg>
+                            <span class="d-sm-block d-lg-none d-xl-block">Records</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a class="nav-link d-flex gap-3 align-items-start" href="reports.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#e8eaed">
+                                <path
+                                    d="M360-500q-8.54 0-14.27-5.73T340-520q0-8.54 5.73-14.27T360-540h240q8.54 0 14.27 5.73T620-520q0 8.54-5.73 14.27T600-500H360Zm0-160q-8.54 0-14.27-5.73T340-680q0-8.54 5.73-14.27T360-700h240q8.54 0 14.27 5.73T620-680q0 8.54-5.73 14.27T600-660H360ZM240-380h300q24.38 0 44.77 10.58 20.38 10.57 35.08 29.73l100.15 130v-565.69q0-10.77-6.92-17.7-6.93-6.92-17.7-6.92H264.62q-10.77 0-17.7 6.92-6.92 6.93-6.92 17.7V-380Zm24.62 220h442.76l-119-155.31q-9.07-11.84-21.42-18.27Q554.62-340 540-340H240v155.38q0 10.77 6.92 17.7 6.93 6.92 17.7 6.92Zm430.76 40H264.62q-27.62 0-46.12-18.5Q200-157 200-184.62v-590.76q0-27.62 18.5-46.12Q237-840 264.62-840h430.76q27.62 0 46.12 18.5Q760-803 760-775.38v590.76q0 27.62-18.5 46.12Q723-120 695.38-120ZM240-160v-640 640Zm0-180v-40 40Z" />
+                            </svg>
+                            <span class="d-sm-block d-lg-none d-xl-block">Reports</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a class="nav-link d-flex gap-3 align-items-start" href="inbox.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#e8eaed">
+                                <path
+                                    d="M184.62-200q-27.62 0-46.12-18.5Q120-237 120-264.62v-430.76q0-27.62 18.5-46.12Q157-760 184.62-760h590.76q27.62 0 46.12 18.5Q840-723 840-695.38v430.76q0 27.62-18.5 46.12Q803-200 775.38-200H184.62ZM800-684.62 497.92-486.85q-4.23 2.23-8.57 3.73-4.35 1.5-9.35 1.5t-9.35-1.5q-4.34-1.5-8.57-3.73L160-684.62v420q0 10.77 6.92 17.7 6.93 6.92 17.7 6.92h590.76q10.77 0 17.7-6.92 6.92-6.93 6.92-17.7v-420ZM480-520l307.69-200H172.31L480-520ZM160-684.62v8.47-32.47 1.39V-720v12.77-2.04 33.12-8.47V-240v-444.62Z" />
+                            </svg>
+                            <span class="d-sm-block d-lg-none d-xl-block">Inbox</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a class="nav-link d-flex gap-3 align-items-start" href="pages/home.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#000000">
+                                <path
+                                    d="M480-210.31 184.61-439.54l32.16-25.38L480-261.54l263.23-203.38 32.16 25.38L480-210.31Zm0-152.77L184.61-592.31 480-821.54l295.39 229.23L480-363.08Zm0-229.23Zm0 178 230-178-230-178-230 178 230 178Z" />
+                            </svg>
+                            <span class="d-sm-block d-lg-none d-xl-block">Pages</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Logout -->
+                <form action="" class="w-100">
+                    <button type="button"
+                        class="btn btn-primary w-100 mt-3 d-flex gap-3 align-items-center justify-content-center">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#ffffff">
+                                <path
+                                    d="M224.62-160q-27.62 0-46.12-18.5Q160-197 160-224.62v-510.76q0-27.62 18.5-46.12Q197-800 224.62-800h256.15v40H224.62q-9.24 0-16.93 7.69-7.69 7.69-7.69 16.93v510.76q0 9.24 7.69 16.93 7.69 7.69 16.93 7.69h256.15v40H224.62Zm433.84-178.46-28.08-28.77L723.15-460H367.69v-40h355.46l-92.77-92.77 28.08-28.77L800-480 658.46-338.46Z" />
+                            </svg>
+                        </span>
+                        <span class="text-white d-sm-block d-lg-none d-xl-block">Logout</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contents -->
+    <main class="container-fluid">
+        <h1 class="fw-bold text-primary mb-3">Reservations</h1>
+        <section id="content">
+            <!-- Action Buttons -->
+            <div class="mb-3 d-lg-flex justify-content-lg-between">
+                <button type="button"
+                    class="btn btn-primary d-none d-lg-flex align-items-center gap-3 justify-content-center pe-4"
+                    data-bs-toggle="modal" data-bs-target="#addRoomModal">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#ffffff">
+                        <path d="M460-460H240v-40h220v-220h40v220h220v40H500v220h-40v-220Z" />
+                    </svg>
+                    <span class="text-white">Add Reservation</span>
+                </button>
+
+                <div class="d-flex gap-3">
+                    <!-- Filter -->
+                    <div class="d-flex gap-3">
+                        <div class="dropdown">
+                            <button style=" min-width: 115px;" type="button" id="filter" data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                class="btn btn-primary d-flex align-items-center gap-3 justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#ffffff">
+                                    <path
+                                        d="M422.31-280v-40h114.61v40H422.31Zm-150-180v-40h414.61v40H272.31ZM160-640v-40h640v40H160Z" />
+                                </svg>
+                                <span class="text-white">Status</span>
+                            </button>
+                            <form class="dropdown-menu px-2" aria-labelledby="filter">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="filterTypeCheckedIn">
+                                    <label class="form-check-label" for="filterTypeCheckedIn">
+                                        Checked-in
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="filterTypeCheckedOut">
+                                    <label class="form-check-label" for="filterTypeCheckedOut">
+                                        Checked-out
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="filterTypePending">
+                                    <label class="form-check-label" for="filterTypePending">
+                                        Pending
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="filterTypeConfirmed">
+                                    <label class="form-check-label" for="filterTypeConfirmed">
+                                        Confirmed
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Search -->
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Search Bar"
+                            aria-describedby="searchButton">
+                        <button class="btn btn-primary" type="button" id="searchButton">Search</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- All Reservations -->
+            <div class="p-3 bg-white rounded border w-100">
+                <hgroup class="d-flex gap-3 align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#000000">
+                        <path
+                            d="m447.69-490.77 253.77-254.54q6.62-6.61 14.16-6.61 7.53 0 14.15 6.61 6.61 6.62 6.61 14.16 0 7.53-6.61 14.15L476.23-463.23l-28.54-27.54Zm92.85 92.08 225.54-225.77q6.61-6.62 14.27-6.62 7.65 0 14.27 6.62 6.61 6.61 6.61 14.27 0 7.65-6.61 14.27L568.31-370.38l-27.77-28.31ZM227.92-229.46q-80.23-80.23-79.84-192.08.38-111.84 81.38-192.84L344.08-729l39.77 40.54q10.84 10.84 16.61 23.73 5.77 12.88 7.69 27.81l144.93-145.16q6.61-6.61 14.27-6.61 7.65 0 14.27 6.61 6.61 6.62 6.61 14.27 0 7.66-6.61 14.27L407.85-579.77l-62.7 63.23 19.77 19.77q38.31 38.31 37.85 92.31-.46 54-39 92.54l-7.69 7.69-27.77-28.31 6.92-7.69q26.85-26.85 27.42-64.12.58-37.27-26.27-64.11l-25.46-25.23q-9.69-9.69-9.69-23.12 0-13.42 9.69-23.11l44.7-43.7q15.84-15.84 15.84-38.5 0-22.65-15.84-38.5l-11.54-11.53-86.31 85.53Q189-517.85 187.85-422.19q-1.16 95.65 67.61 164.42Q324.23-189 421.15-189q96.93 0 165.7-68.77l212.84-213.08q6.62-6.61 14.27-6.61 7.66 0 14.27 6.61 6.62 6.62 6.62 14.27 0 7.66-6.62 14.27L614.38-229.46q-81 81-193.23 81-112.23 0-193.23-81Zm192.85-193.62ZM650.77-89l-.77-40.23q75.23 0 128-52.77 52.77-52.77 52.77-128l40.23.77q0 91.54-64.35 155.88Q742.31-89 650.77-89ZM89-650.77q0-91.54 64.35-155.88Q217.69-871 309.23-871l.77 40.23q-75.23 0-128 52.77-52.77 52.77-52.77 128L89-650.77Z" />
+                    </svg>
+                    <h2 class="fs-5 fw-bold text-primary m-0">Recent Reservations</h2>
+                </hgroup>
+
+
+                <!-- Lists -->
+                <div class="table-responsive">
+                    <table class="table table-bordered m-0 my-3">
+                        <thead>
+                            <tr>
+                                <th scope="col">Room ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Check-in Date</th>
+                                <th scope="col">Check-in Time</th>
+                                <th scope="col">Transaction ID</th>
+                                <th scope="col" style="border-right: 0 !important;">Status</th>
+                                <th scope="col" style="width: 280px; border-left: 0 !important;"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle" scope="row">101</td>
+                                <td class="align-middle">Juan Dela Cruz</td>
+                                <td class="align-middle">01/01/2024</td>
+                                <td class="align-middle">2:00 PM</td>
+                                <td class="align-middle">R01012024-001</td>
+                                <td class="align-middle" style="border-right: 0 !important;">
+                                    <span class="status-success rounded-pill">Checked In</span>
+                                </td>
+                                <td class="align-middle d-flex gap-2 justify-content-end"
+                                    style="border-left: 0 !important;">
+                                    <button data-bs-toggle="modal" data-bs-target="#updateRoomModal"
+                                        class="btn border-primary text-primary bg-white"
+                                        style="min-width: max-content;">View Reservation</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle" scope="row">101</td>
+                                <td class="align-middle">Juan Dela Cruz</td>
+                                <td class="align-middle">01/01/2024</td>
+                                <td class="align-middle">2:00 PM</td>
+                                <td class="align-middle">R01012024-001</td>
+                                <td class="align-middle" style="border-right: 0 !important;">
+                                    <span class="status-warning rounded-pill">Checked Out</span>
+                                </td>
+                                <td class="align-middle d-flex gap-2 justify-content-end"
+                                    style="border-left: 0 !important;">
+                                    <button data-bs-toggle="modal" data-bs-target="#updateRoomModal"
+                                        class="btn border-primary text-primary bg-white"
+                                        style="min-width: max-content;">View Reservation</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle" scope="row">101</td>
+                                <td class="align-middle">Juan Dela Cruz</td>
+                                <td class="align-middle">01/01/2024</td>
+                                <td class="align-middle">2:00 PM</td>
+                                <td class="align-middle">R01012024-001</td>
+                                <td class="align-middle" style="border-right: 0 !important;">
+                                    <span class="status-danger rounded-pill">Pending</span>
+                                </td>
+                                <td class="align-middle d-flex gap-2 justify-content-end"
+                                    style="border-left: 0 !important;">
+                                    <button data-bs-toggle="modal" data-bs-target="#updateRoomModal"
+                                        class="btn border-primary text-primary bg-white"
+                                        style="min-width: max-content;">View Reservation</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle" scope="row">101</td>
+                                <td class="align-middle">Juan Dela Cruz</td>
+                                <td class="align-middle">01/01/2024</td>
+                                <td class="align-middle">2:00 PM</td>
+                                <td class="align-middle">R01012024-001</td>
+                                <td class="align-middle" style="border-right: 0 !important;">
+                                    <span class="status-info rounded-pill">Confirmed</span>
+                                </td>
+                                <td class="align-middle d-flex gap-2 justify-content-end"
+                                    style="border-left: 0 !important;">
+                                    <button data-bs-toggle="modal" data-bs-target="#updateRoomModal"
+                                        class="btn border-primary text-primary bg-white"
+                                        style="min-width: max-content;">View Reservation</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination -->
+                <nav aria-label="Table navigation">
+                    <ul class="pagination justify-content-center mb-0">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Floating Add Reservation Button -->
+            <div class="d-block d-lg-none">
+                <button class="btn btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle"
+                    style="width: 60px; aspect-ratio: 1;" data-bs-toggle="modal" data-bs-target="#addRoomModal">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#ffffff">
+                        <path d="M460-460H240v-40h220v-220h40v220h220v40H500v220h-40v-220Z" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Add Reservation Modal -->
+            <div class="modal fade" id="addRoomModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <form action="" method="post" class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Add Reservation</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <!-- Customer Information -->
+                                <h4 class="fs-6 fw-bold text-primary mb-3">Customer Information</h4>
+
+                                <div class="d-flex gap-3 mb-3">
+                                    <input type="text" class="form-control" placeholder="First Name"
+                                        aria-label="First Name">
+                                    <input type="text" class="form-control" placeholder="Last Name"
+                                        aria-label="Last Name">
+                                </div>
+
+                                <input type="text" class="form-control mb-3" placeholder="Phone Number"
+                                    aria-label="Phone Number">
+
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                    <input id="viewRoomNumber" type="email" class="form-control"
+                                        placeholder="Email Address" aria-label="Email Address"
+                                        aria-describedby="basic-addon1" required>
+                                </div>
+
+                                <!-- Reservation Details -->
+                                <h4 class="fs-6 fw-bold text-primary mb-3">Resrevation Details</h4>
+
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">#</span>
+                                    <input id="addRoomNumber" type="text" class="form-control" placeholder="Room No."
+                                        aria-label="Room No." aria-describedby="basic-addon1" required>
+                                </div>
+
+                                <input type="date" class="form-control mb-3" placeholder="Date"
+                                    aria-label="Check in Date">
+
+                                <input type="time" class="form-control mb-3" placeholder="Date"
+                                    aria-label="Check in TIme">
+
+
+                                <select id="addDuration" class="form-select mb-3" aria-label="Default select example"
+                                    required>
+                                    <option selected>Select a Duration</option>
+                                    <option value="12">12:00 Hours</option>
+                                    <option value="6">6:00 Hours</option>
+                                    <option value="3">3:00 Hours</option>
+                                </select>
+
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1">&#8369;</span>
+                                    <input id="addAmountPaid" type="text" class="form-control"
+                                        placeholder="Amount Paid: e.g. 599.00" aria-label="Rate"
+                                        aria-describedby="basic-addon1" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn bg-white border" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Add Reservation</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- View Room Modal -->
+            <div class="modal fade" id="updateRoomModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <form action="" method="post" class="modal-content">
+                        <div class="modal-header">
+                            <!-- Unique Reservation ID -->
+                            <h5 class="modal-title" id="exampleModalLabel">R01012024-001</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex flex-column flex-lg-row gap-3">
+                            <!-- Customer Info. -->
+                            <div class="w-100">
+                                <h4 class="fs-6 fw-bold text-primary mb-3">Customer Information</h4>
+
+                                <div class="d-flex gap-3 mb-3">
+                                    <input type="text" class="form-control" placeholder="First Name"
+                                        aria-label="First Name">
+                                    <input type="text" class="form-control" placeholder="Last Name"
+                                        aria-label="Last Name">
+                                </div>
+
+                                <input type="text" class="form-control mb-3" placeholder="Phone Number"
+                                    aria-label="Phone Number">
+
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                    <input id="viewRoomNumber" type="email" class="form-control"
+                                        placeholder="Email Address" aria-label="Email Address"
+                                        aria-describedby="basic-addon1" required>
+                                </div>
+                            </div>
+
+                            <!-- Reservation Details -->
+                            <div class="w-100">
+                                <h4 class="fs-6 fw-bold text-primary mb-3">Reservation Details</h4>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">#</span>
+                                    <input id="viewRoomNumber" type="text" class="form-control" placeholder="Room No."
+                                        aria-label="Room No." aria-describedby="basic-addon1" required>
+                                </div>
+
+                                <input type="date" class="form-control mb-3" placeholder="Date"
+                                    aria-label="Check in Date">
+
+                                <input type="time" class="form-control mb-3" placeholder="Date"
+                                    aria-label="Check in TIme">
+
+
+                                <select id="addDuration" class="form-select mb-3" aria-label="Default select example"
+                                    required>
+                                    <option selected>Select a Duration</option>
+                                    <option value="12">12:00 Hours</option>
+                                    <option value="6">6:00 Hours</option>
+                                    <option value="3">3:00 Hours</option>
+                                </select>
+
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1">&#8369;</span>
+                                    <input id="addAmountPaid" type="text" class="form-control"
+                                        placeholder="Amount Paid: e.g. 599.00" aria-label="Rate"
+                                        aria-describedby="basic-addon1" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger"
+                                onclick="confirm('You are about to delete this room. This action cannot be undone!')">Delete
+                                Room</button>
+                            <div class="flex-grow-1"></div>
+                            <button type="button" class="m-1 btn bg-white border"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="m-1 btn btn-primary">Update Room</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

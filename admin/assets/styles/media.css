@@ -1,0 +1,40 @@
+/* 
+/
+/   Equivalent to Boostrap's "lg" breakpoint
+/
+*/
+
+main {
+	padding: 2em !important;
+}
+
+body > nav {
+	height: 100vh;
+}
+
+@media only screen and (max-width: 992px) {
+	main {
+		padding: 0.75rem !important;
+	}
+	.page-section {
+		min-height: 200px;
+	}
+	body > nav {
+		height: auto;
+	}
+	.carousel-caption h5 {
+		font-size: 2rem;
+	}
+}
+
+/* 
+/
+/	Custom: 1824px
+/
+*/
+
+@media only screen and (min-width: 1824px) {
+	.reservation {
+		flex-direction: row !important;
+	}
+}
