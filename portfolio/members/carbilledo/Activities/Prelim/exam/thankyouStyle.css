@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url(Images/water.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #f2f2f2;
+}
+
+header img {
+    max-width: 30%;
+    height: auto;
+}
+
+h1 {
+    margin: 200px;
+}
+
+.back {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.back button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #2f57db;
+    color: #faf5ff;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.back button:hover {
+    background-color: #9333ea;
+}

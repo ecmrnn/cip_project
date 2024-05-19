@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="stylesheet" href="categoryStyle.css">
+
+</head>
+<body>
+    <div class="back">
+        <button id="backButton">Back</button>
+    </div>
+      
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+          history.back();
+        });
+    </script>
+    <header>
+        <a href="index.html" class="">
+            <img src="Images/logo.png" alt="Logo">
+        </a>
+    </header>
+    
+    <div class="outfit-gallery">
+        
+        <table>
+            <tr>
+                <td>
+                    <div class="outfit-item">
+                        <a href="gallery.html">
+                            <img src="Images/denim_category.jpg" alt="Outfit 1" class="outfit-img">
+                            <h4>Denims</h4>
+                        </a>
+                    </div>
+                </td>
+        </table>
+        
+        <table>
+                <td>
+                    <div class="outfit-item">
+                        <img src="Images/dresses_category.jpg" alt="Outfit 2" class="outfit-img">
+                        <h4>Dresses</h4>
+                    </div>
+                </td>
+        </table>
+        
+        <table>
+                <td>
+                    <div class="outfit-item">
+                        <img src="Images/blouse_category.jpg" alt="Outfit 3" class="outfit-img">
+                        <h4>Blouse</h4>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; Carbilledo 2024</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

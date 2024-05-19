@@ -1,0 +1,115 @@
+body, html
+		{
+			height: 100%;
+			margin: 0;
+		}
+		#bg
+		{
+			background-image: url("../Images/PostMaloneHome.png");
+			height: 100%;
+			background-size: 100% auto;
+			background-position:center;
+			background-repeat:no-repeat;
+			position:relative;
+		}
+		#post
+		{
+			position:absolute;
+			bottom: 10px;
+			right: 30px;
+		}
+		#nav
+		{
+			position:relative;
+		}
+		ul 
+		{
+			list-style-type: none;
+			margin: 0;
+			padding:0;
+			overflow: hidden;
+			background-color: #333;
+			display:flex;
+			justify-content:space-between;
+		}
+
+		li 
+		{
+			font-family:arial;
+			font-size:25px;
+			float: left;
+		}
+
+		li a 
+		{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 20px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover 
+		{
+			background-color: #111;
+			height:100%;
+		}
+		#nav p
+		{
+			font-weight:bold;
+		}
+		#nav span
+		{
+			font-weight:bold;
+			font-size:30px;
+		}
+		#nav img
+		{
+			width:30px;
+		}
+		#nav div
+		{
+			margin-right:20px;
+		}
+		#dropdown
+		{
+			display: none;
+			position: absolute;
+			background-color: #f1f1f1;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;	
+		}
+		#dropdown a
+		{
+			font-size:15px;
+			color: black;
+			padding: 10px 15px;
+			text-decoration: none;
+			display: block;
+		}
+		#dropdown a:hover {background-color: #ddd;}
+
+		#navAlbum:hover #dropdown {display: block;}
+
+		#Album:hover {background-color: #111;}
+		.Active {background-color: #111;}
+
+		.back {
+			margin: 10px;
+		}
+
+		.back button {
+			width: 100px;
+			height: 30px;
+			border: none;
+			background-color: #2f57db;
+			color: #faf5ff;
+			cursor: pointer;
+			border-radius: 8px;
+		  }
+	
+		  .back button:hover {
+			background-color: #9333ea;
+		  }
+	

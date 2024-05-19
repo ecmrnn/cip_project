@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prelim Activity 4</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+        body {
+            line-height: 2;
+            font-family: "Poppins", sans-serif;
+            background-color: #faf5ff;
+        }
+
+        table {
+          width: 100%;
+          text-align: center;
+        }
+        
+        .back {
+            margin: 10px;
+        }
+
+        .back button {
+            width: 100px;
+            height: 30px;
+            border: none;
+            background-color: #2f57db;
+            color: #faf5ff;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .back button:hover {
+            background-color: #9333ea;
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <button id="backButton">Back</button>
+    </div>
+      
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+          history.back();
+        });
+    </script>
+    <table border="1">
+        <tr>
+          <th colspan="3" style="text-align: center;">Dream Car: Gallery of Picture</th>
+        </tr>
+        <tr>
+          <td rowspan="3"><img style="text-align: center; margin: 10px 10px 10px 10px; height: auto; width: 200px;" src="../Prelim/image/car1.jpeg"> <br> Ford Mustang</td>
+          <td colspan="2"><img style="text-align: center; margin: 10px 10px 10px 50px; height: 100px; width: auto;" src="../Prelim/image/car2.jpeg"> <br> Chevy Camaro</td>
+        </tr>
+        <tr>
+          <td><img style="text-align: center; margin: 10px 10px 10px 10px; height: 100px; width: auto;" src="../Prelim/image/car3.png"> <br> Honda Rebel</td>
+          <td><img style="text-align: center; margin: 10px 10px 10px 10px; height: 100px; width: auto;" src="../Prelim/image/car4.jpeg"> <br> Chevrolette Corvette</td>
+        </tr>
+        <tr>
+          <td><img style="text-align: center; margin: 10px 10px 10px 10px; height: 100px; width: auto;" src="../Prelim/image/car5.jpeg"> <br> Toyota GR Supra</td>
+          <td><img style="text-align: center; margin: 10px 10px 10px 10px; height: 100px; width: auto;" src="../Prelim/image/car6.jpeg"> <br> Honda Civic Type R</td>
+        </tr>
+      </table>
+</body>
+</html>

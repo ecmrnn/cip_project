@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="galleryStyle.css">
+
+</head>
+<body>
+    <div class="back">
+        <button id="backButton">Back</button>
+    </div>
+      
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+          history.back();
+        });
+    </script>
+    <header>
+        <a href="index.html" class="">
+            <img src="Images/logo.png" alt="Logo">
+        </a>
+    </header>
+
+    <div class="outfit-gallery">
+        
+        <table>
+            <tr>
+                <td>
+                    <div class="outfit-item">
+                        <a href="description.html">
+                            <img src="Images/denim_gallery.jpg" alt="Outfit 1" class="outfit-img">
+                            <h5>Kids Girls Denim Bucket Hat (Unisex)</h5>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+        <table>
+            <tr>
+                <td>
+                    <div class="outfit-item">
+                        <img src="Images/denim_gallery2.jpg" alt="Outfit 2" class="outfit-img">
+                        <h5>Kids Patchwork Slim-Fit Jeans (Unisex)</h5>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+        <table>
+            <tr>
+                <td>
+                    <div class="outfit-item">
+                        <img src="Images/denim_gallery3.jpg" alt="Outfit 3" class="outfit-img">
+                        <h5>Girls Paperbag Denim Shorts (Kids)</h5>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td>
+                    <div class="outfit-item">
+                        <img src="Images/denim_gallery4.jpg" alt="Outfit 3" class="outfit-img">
+                        <h5>Kids Release Buckie Overalls (Unisex)</h5>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td>
+                    <div class="outfit-item">
+                        <img src="Images/denim_gallery5.jpg" alt="Outfit 3" class="outfit-img">
+                        <h5>Kids Distressed Slim-Fit (Unisex)</h5>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; Carbilledo 2024</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

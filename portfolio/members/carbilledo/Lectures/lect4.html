@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lectStyle.css">
+    <title>Lecture 4</title>
+    <style>
+        .back button {
+            width: 100px;
+            height: 30px;
+            border: none;
+            background-color: #2f57db;
+            color: #faf5ff;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .back button:hover {
+            background-color: #9333ea;
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <button id="backButton">Back</button>
+    </div>
+      
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+          history.back();
+        });
+    </script>
+    <header>
+      <h1>Module 3: Links</h1>
+    </header>
+    
+    <h3 style="background-color: #ABEBC6;">Creating Links with &lt;a&gt;</h3>
+    
+    <tr>
+      <ul>
+        <p style="line-height: 1.5">
+          Links, in the context of web pages, are clickable elements that allow users to navigate <br> between different pages or sections of a website, or to external resources on the internet. <br> They are fundamental to web navigation and play a crucial role in connecting content <br> together.
+        </p>
+      </ul>
+    </tr>
+    
+    <tr>
+      <ul>
+        <p> <br><br>
+          To create links on a webpage in HTML, you use the <a> (anchor) tag. Here's the basic syntax:
+        </p>
+        <p>
+          &lt;a <span style="color:red;">href</span>="<span style="color:green;">URL</span>"> Link Text &lt;/a &gt;
+        </p>
+        <p> <br><br>
+          Here's an examples:
+        </p>
+        <p>
+          &lt;a <span style="color:red;">href</span>="<span style="color:green;">https://www.example.com</span>"> Example Link &lt;/a &gt;
+        </p>
+        <p>
+          This will create a link that says "Visit Example Website" and, when clicked, will take the user to <br> the website https://www.example.com.
+        </p>
+        <p style="line-height: 1.5;"> <br>
+          Additionally, you can create internal links within the same webpage or to different sections <br> of the same webpage using the <strong>'id'</strong> attribute and the <strong>'#'</strong> symbol followed by the ID of the target <br> element. <br><br> For example:
+        </p>
+        <p>
+          &lt;a <span style="color:red;">href</span>="<span style="color:green;">#section2</span>"> Go to Section 2 &lt;/a &gt;
+        </p>
+        <p>This link would take the user to the section of the webpage with the ID "section2".</p>
+      </ul>
+    </tr>
+    
+    <footer style="text-align:center; background-color: #ABEBC6; padding:10px;">
+      <p>Wanna learn <strong> how to put images on a webpage? </strong>click this image.<a href="../Lectures/lect5.html"> <br><br> <img src="https://www.scaler.com/topics/images/image-link-in-html-thumbnail.webp" alt="HTML Links Image" style="height:300px;"></a></p>
+    </footer>
+  </body>
+</html>

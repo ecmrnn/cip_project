@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prelim Activity 3</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+      body {
+          line-height: 2;
+          font-family: "Poppins", sans-serif;
+          background-color: #faf5ff;
+      }
+
+      ol, ul, li {
+          line-height: 1.5;
+      }
+
+      .back button {
+        width: 100px;
+        height: 30px;
+        border: none;
+        background-color: #2f57db;
+        color: #faf5ff;
+        cursor: pointer;
+        border-radius: 8px;
+      }
+
+      .back button:hover {
+        background-color: #9333ea;
+      }
+    </style>
+</head>
+<body>
+  <div class="back">
+      <button id="backButton">Back</button>
+  </div>
+    
+  <script>
+      document.getElementById("backButton").addEventListener("click", function() {
+        history.back();
+      });
+  </script>
+
+    <h1>CARBILLEDO</h1>
+<hr>
+
+<h2>LISTS</h2>
+
+<ol type="A">
+  <li>HTML Structure and Elements</li>
+  <li>CSS Styling and Layout:
+    
+    <ol type="I">
+      <li>Flex box Layout</li>
+      <li>CSS Grid Layout:
+        <ol style="list-style-type: square;">
+          <li>Grid Container Properties</li>
+          <li>Grid Item Properties</li>
+        </ol>
+      <li>CSS Transition and Animation:</li>
+        <ol type="i">
+          <li>Transisiton Properties</li>
+          <li>Keyframe Animation:</li>
+          <ul style="list-style-type: disc;">
+            <li>Keyframe Syntax</li>
+            <li>Animation Timing</li>
+          </ul>
+          <li>Animation Properties</li>
+        </ol>
+      </li>
+    </ol>
+    
+  </li>
+  <li>Responsive Web Design
+
+</li>
+</ol>
+</body>
+</html>

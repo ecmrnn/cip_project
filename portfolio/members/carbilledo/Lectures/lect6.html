@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lectStyle.css">
+    <title>Lecture 6</title>
+    <style>
+        table {
+            width: 100%;
+        }
+
+        .iframetab {
+            text-align: center;
+        }
+
+        .formtab {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <button id="backButton">Back</button>
+    </div>
+      
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+          history.back();
+        });
+    </script>
+
+    <h1>PRELIM LECTURES</h1>
+    <h2>Lecture 6: iFrames and Forms</h2>
+
+    <hr>
+
+    <h2>Block and Inline Elements</h2>
+    <ol style="list-style-type: disc;">
+        <li>
+            Every HTML element has a default display value depending on what type of element it is. The default display
+            value for most elements is block or inline
+        </li>
+    </ol>
+
+    <h2>The &lt;div&gt; Element</h2>
+    <ol style="list-style-type: disc;">
+        <li>The &lt;div&gt; element is often used as a container for other HTML elements.</li>
+        <li>The &lt;div&gt; element has no required attributes, but style, class and id are common.</li>
+        <li>When used together with CSS, the &lt;div&gt; element can be used to style blocks of content:</li>
+    </ol>
+    <h3>Example:</h3>
+    <ol style="list-style-type: disc;">
+        <li>
+            &lt;div style="background-color:royalblue; color:white; padding:20px;"&gt; <br>
+            &emsp;&emsp;&lt;h2&gt;Rizal Park&lt;/h2&gt; <br>
+            &emsp;&emsp;&lt;p&gt;Rizal Park (Filipino: Liwasang Rizal), also known as Luneta Park or simply Luneta, is a historical urban park in <br>
+            &emsp;&emsp;the Philippines.&lt;/p&gt; <br>
+            &lt;/div&gt; <br>
+        </li>
+    </ol>
+
+    <h2>Block level elements in HTML:</h2>
+    <table border="1" class="iframetab">
+        <tr>
+            <td>&lt;address&gt;</td>
+            <td>&lt;dd&gt;</td>
+            <td>&lt;figcaption&gt;</td>
+            <td>&lt;header&gt;</td>
+            <td>&lt;noscript&gt;</td>
+            <td>&lt;section&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;article&gt;</td>
+            <td>&lt;div&gt;</td>
+            <td>&lt;figure&gt;</td>
+            <td>&lt;hr&gt;</td>
+            <td>&lt;p&gt;</td>
+            <td>&lt;tfoot&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;aside&gt;</td>
+            <td>&lt;dl&gt;</td>
+            <td>&lt;footer&gt;</td>
+            <td>&lt;li&gt;</td>
+            <td>&lt;pre&gt;</td>
+            <td>&lt;ul&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;blockquote&gt;</td>
+            <td>&lt;dt&gt;</td>
+            <td>&lt;form&gt;</td>
+            <td>&lt;main&gt;</td>
+            <td>&lt;output&gt;</td>
+            <td>&lt;table&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;canvas&gt;</td>
+            <td>&lt;fieldset&gt;</td>
+            <td>&lt;h1&gt;-&lt;h6&gt;</td>
+            <td>&lt;nav&gt;</td>
+            <td>&lt;ol&gt;</td>
+            <td>&lt;video&gt;</td>
+        </tr>
+    </table>
+
+    <h2>Inline Elements</h2>
+    <ol>
+        <li>An inline element does not start on a new line and only takes up as much width as necessary.</li>
+        <li>This is <u>an inline <span> element inside</u> a paragraph</li>
+    </ol>
+
+    <h2>The &lt;span&gt; Element</h2>
+    <ol>
+        <li>The &lt;span&gt; element is often used as a container for some text.</li>
+        <li>The &lt;span&gt; element has no required attributes, but style, class and id are common.</li>
+    </ol>
+
+    <h2>The Class Attribute</h2>
+    <ol>
+        <li>The class attribute specifies one or more class names for an HTML element.</li>
+        <li>
+            The class name can be used by CSS and JavaScript to perform certain tasks for elements with the specified class
+            name.
+        </li>
+        <li>In CSS, to select elements with a specific class, write a period (.) character, followed by the name of the class.</li>
+        <li><b>Note:</b> The class name is case sensitive!</li>
+    </ol>
+
+    <hr>
+
+    <h1>Forms</h1>
+    <h2>Form Fundamentals</h2>
+    <ol>
+        <li>
+            are composed of one or more text-input boxes, clickable buttons, multiple-choice checkboxes, and even pull-
+            down menus and image maps, all placed inside the &lt;form&gt; tag
+        </li>
+    </ol>
+
+    <h2>The &lt;form&gt; Tag</h2>
+    <table border="1" class="formtab">
+        <tr>
+            <th>Function</th>
+            <th>Defines a form</th>
+        </tr>
+        <tr>
+            <td style="width: 20%; padding: 20px;">Attribute</td>
+            <td>
+                accept, action, charset, class, dir, enctype, id, lang, method, name, onClick, onDblClick,
+                onKeyDown, onKeyPress, onKeyUp, onMouseDown, onMouseMove, onMouseOut,
+                onMouseOver, onMouseUp, onReset, onSubmit, style, target, title
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 20%; padding: 20px;">End tag</td>
+            <td>&lt;/form&gt;; never omitted</td>
+        </tr>
+        <tr>
+            <td style="width: 20%; padding: 20px;">Contains</td>
+            <td>form_content</td>
+        </tr>
+        <tr>
+            <td style="width: 20%; padding: 20px;">Used in</td>
+            <td>block</td>
+        </tr>
+    </table>
+
+    <h2>The &lt;input&gt; Element</h2>
+    <ol>
+        <li>The &lt;input&gt; element is the most important form element.</li>
+        <li>The &lt;input&gt; element can be displayed in several ways, depending on the type attribute.</li>
+    </ol>
+    <table border="1" class="formtab">
+        <tr>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td style="width: 20%; padding: 20px;">&lt;input type="text"&gt;</td>
+            <td>Defines a one-line text input field</td>
+        </tr>
+        <tr>
+            <td style="width: 20%; padding: 20px;">&lt;input type="radio"&gt;</td>
+            <td>Defines a radio button (for selecting one of many choices)</td>
+        </tr>
+        <tr>
+            <td style="width: 20%; padding: 20px;">&lt;input type="submit"&gt;</td>
+            <td>Defines a submit button (for submitting the form)</td>
+        </tr>
+    </table>
+</body>
+</html>

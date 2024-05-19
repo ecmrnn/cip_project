@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<head>
+	<title>
+		Feedback Page
+	</title>
+	<link rel="stylesheet" href="../CSS/feedbackstyle.css">
+</head>
+<body>
+	<div id ="bg">
+		<div id = "nav">
+			<ul>
+				<li><a href="../HTML/HomePage.html"><span><img src = "../Images/MusicFolderWhite.png">Malone</span>Mania</a></li>
+				<div>
+				<li><a href="../HTML/Artist.html">Artist</a></li>
+				<li id = "navAlbum"><a href="../HTML/Album.html" id = "Album">Album</a>
+					<div id = "dropdown">
+						<a href = "../HTML/Album.html">Hollywood's Bleeding</a>
+						<a href = "../HTML/Album2.html">Beerpongs &amp; Bently</a>
+						<a href = "../HTML/Album3.html">Stoney &lpar;Deluxe&rpar;</a>
+						<a href = "../HTML/Album4.html">The Diamond Collection</a>
+					</div>
+				</li>
+				<li><a class = "Active" href="../HTML/Feedback.html">Feed Back</a></li>
+				</div>
+			</ul>	
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div id = "form">
+			<form action = "">
+				<div id = "FormHeader">
+					<p>Send us your feedback!<br><span>Do you have a suggestion or found some bug?<br>let us know</span></p>
+				</div>
+				<div id = "experience">
+					<p>How was your experience?</p>	
+					<div id = "Exp">
+						<input type="radio" id="Smile" name="Mood" value="Smile" checked>
+						<label for="Smile"><img src = "../Images/Smiling.png"></label>
+						<input type="radio" id="Happy" name="Mood" value="Happy">
+						<label for="Happy"><img src = "../Images/Happy.png"></label>
+						<input type="radio" id="Sad" name="Mood" value="Sad">
+						<label for="Sad"><img src = "../Images/Sad.png"></label>
+					</div>
+				</div>
+				<div id = "review" >
+					 <textarea id="comment" name="comment" rows="10" cols="150" placeholder="Describe your experience here..."></textarea>
+				</div>
+				<div id = "classification">
+					<div id = "Category">
+						<input type="radio" id="Bug" name="set" value="Bug">
+						<label for="Bug">Bug</label>
+						<input type="radio" id="Suggest" name="set" value="Suggest">
+						<label for="Suggest">Suggestion</label>
+						<input type="radio" id="Other" name="set" value="Other">
+						<label for="Other">Other</label>
+					</div>
+					<div id ="finish">
+						<input type = "submit" value ="Send Feedback">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>		
+</body>

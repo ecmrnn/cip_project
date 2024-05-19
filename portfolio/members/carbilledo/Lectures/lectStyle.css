@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+  line-height: 2;
+  font-family: "Poppins", sans-serif;
+  background-color: #faf5ff;
+}
+
+.back {
+  margin: 10px;
+}
+
+.back button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  background-color: #2f57db;
+  color: #faf5ff;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.back button:hover {
+  background-color: #9333ea;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description</title>
+    <link rel="stylesheet" href="descriptionStyle.css">
+</head>
+<body>
+    <div class="back">
+        <button id="backButton">Back</button>
+    </div>
+      
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+          history.back();
+        });
+    </script>
+    <header>
+        <a href="index.html" class="">
+            <img src="Images/logo.png" alt="Logo">
+        </a>
+    </header>
+
+    <div class="container">
+        <div class="image">
+
+            <table>
+                <tr>
+                    <td rowspan="3">
+                        <div class="outfit-item">
+                                <img src="Images/denim_gallery.jpg" alt="Outfit 1" class="outfit-img">
+                                
+                        </div>
+                    </td>
+
+                    <td rowspan="1">
+                        <div class="outfit-item">
+                            <h3>Kids Girls Denim Bucket Hat (Unisex)</h3>
+                            <br>
+                            <p>Crafted from non-stretch denim, this bucket hat features distressing and a channel-stitched brim.</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="1">
+                        <div class="outfit-detail">
+                            <p><strong>Price:</strong> ₱670.68</p> <br>
+                            <p><strong>Color:</strong> Blue</p> <br>
+                            <p><strong>Size:</strong> One Size</p> <br>
+                        <div></div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td rowspan="1">
+                        <a href="thankyou.html">
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </a>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; Carbilledo 2024</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

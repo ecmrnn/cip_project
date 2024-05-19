@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm Quiz</title>
+    <style>
+        .back button {
+            width: 100px;
+            height: 30px;
+            border: none;
+            background-color: #2f57db;
+            color: #faf5ff;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .back button:hover {
+            background-color: #9333ea;
+        }
+
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+        body {
+            line-height: 2;
+            font-family: "Poppins", sans-serif;
+            background-color: #faf5ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <button id="backButton">Back</button>
+    </div>
+      
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+          history.back();
+        });
+    </script>
+    
+    <table  style="width: 930px; margin-left: auto; margin-right: auto;">
+        <tr>
+            <td colspan="2" rowspan="4" style="width: 180px;">
+                <img src="photo.jpg" alt="" style="width: 160px; height: 160px; display: block; margin-left: auto; margin-right: auto; border-radius: 50%;">
+            </td>
+            <td rowspan="2" style="text-align: center; width: 500px;">
+                <h2>UNIVERSITY OF THE EAST</h2>
+                <h5>ENROLLMENT SYSTEM</h5>
+            </td>
+            <td></td>
+            </tr>
+            <tr>
+            <td>
+                <label for="program">Program:</label>
+                <input type="text" id="program" style="outline: none; border: none; border-bottom: 1px solid black; width: 100px;">
+            </td>
+            
+        </tr>
+        <tr>
+            <td rowspan="2" style="text-align: center;">
+                <h2>PERSONAL DATA SHEET</h2>
+                <h5>(Graduate School, LAW, Medicine)</h5>
+            </td>
+            <td></td>
+            </tr>
+            <tr>
+            <td>
+                <label for="studentNo">Student #:</label>
+                <input type="text" id="studentNo" style="outline: none; border: none; border-bottom: 1px solid black; width: 100px;">
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <div style="margin-left: auto; margin-right: auto; width: fit-content; line-height: 2;">
+        <form>
+            <div style="display: flex;">
+                <div style="flex: .5;">
+                    <input type="text" id="surname" style="outline: none; border: none; width: 230px;  border-bottom: 1px solid black;">
+                    <br>
+                    <label for="surname">SURNAME</label>
+                </div>
+                <div style="flex: .5;">
+                    <input type="text" id="givenName" style="outline: none; border: none; width: 230px; border-bottom: 1px solid black;">
+                    <br>
+                    <label for="givenName">GIVEN NAME</label>
+                </div>
+                <div style="flex: .5;">
+                    <input type="text" id="middleName" style="outline: none; border: none; width: 230px; border-bottom: 1px solid black;">
+                    <br>
+                    <label for="middleName">MIDDLE NAME</label>
+                </div>
+                <div style="flex: 1;">
+                    <input type="text" id="auxName" style="outline: none; border: none; width: 180px; border-bottom: 1px solid black; margin-left: 30px;">
+                    <br>
+                    <label for="auxName" style="margin-left: 50px;">AUXILIARY NAME</label>
+                </div>
+            </div>            
+        </form>
+
+        <h4 style="text-align: left;"><strong>STUDENT DETAILS:</strong></h4>
+
+        <!-- Student details -->
+        <table style="width: 930px; line-height: 2;">
+            <tr>
+                <td colspan="3">
+                    <label for="">City Address:</label>
+                    <input type="text" style="width: 820px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1">
+                    <label for="">Zip Code:</label>
+                    <input type="text" style="width: 215px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+                <td colspan="1">
+                    <label for="">Tel. No.:</label>
+                    <input type="text" style="width: 215px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+                <td colspan="1">
+                    <label for="">E-mail address:</label>
+                    <input type="text" style="width: 218px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <label for="">Home Address:</label>
+                    <input type="text" style="width: 808px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+            </tr>
+        </table>
+
+        <table style="width: 930px; line-height: 2;">
+            <tr>
+                <td colspan="1">
+                    <label for="">Zip Code:</label>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+                <td colspan="1">
+                    <label for="">Region:</label>
+                    <input type="text" id="" name="" value="" style="width: 280px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1">
+                    <label for="">Birthday:</label>
+                    <input type="date" id="" name="" value="" style="width: 305px;">
+                </td>
+                <td colspan="1">
+                    <label for="">Age:</label>
+                    <input type="number" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1">
+                    <label for="">Birthplace:</label>
+                    <input type="text" id="" name="" value="" style="width: 290px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+                <td colspan="1">
+                    <label for="">Religion:</label>
+                    <input type="text" id="" name="" value="" style="width: 270px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1">
+                    <label for="">Citizenship:</label>
+                    <input type="text" id="" name="" value="" style="width: 285px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+                <td colspan="1">
+                    <label for="">Sex:</label>
+                    <select name="sex" id="sex" style="width: 305px;" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                        <option value="">select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Checkboxes section -->
+        <table style="width: 930px;">
+            <tr>
+                <td style="width: 120px;"><h4><strong>Legal Status:</strong></h4></td>
+                <td style="width: 400px;">
+                    <input type="checkbox" id="" name="" value="">
+                    <label for="">Citizen of RP</label>
+                </td>
+
+                <td style="width: 120px;" ><h4><strong>Civil Status:</strong></h4></td>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                    <label for="">Single</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 120px;"></td>
+                <td style="width: 120px; line-height: 1.5;">
+                    <input type="checkbox" id="" name="" value="">
+                    <label for="">Permanent Resident</label>
+                </td>
+
+                <td style="width: 120px;"></td>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                    <label for="">Married</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 120px;"></td>
+                <td style="width: 120px;">
+                    <input type="checkbox" id="" name="" value="">
+                    <label for="" style="line-height: 1.5;">Person granted permission to enter and <br> remian as a student in RP on a visa for <br> a defined period os time</label>
+                </td>
+
+                <td style="width: 120px;"></td>
+                <td style="line-height: 2;">
+                    <input type="checkbox" id="" name="" value="">
+                    <label for="">Divorced</label>
+
+                    <br>
+                    <input type="checkbox" id="" name="" value="">
+                    <label for="">Widowed</label>
+
+                    <br>
+                    <input type="checkbox" id="" name="" value="">
+                    <label for="">Separated</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                    <label for="" style="line-height: 1.5;">Person granted permission to enter and <br> remian as a child or spouse of a worker <br> on a visa for a defined period of time</label>
+                </td>
+                
+                <td style="line-height: 1.5;">
+                    <input type="checkbox" id="" name="" value="">
+                    <label for="">Working</label>
+
+                    <br> if working:
+                </td>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                    <label for="">Not working</label>
+
+                    <br> Office/Bus. Tel. #: <input type="text" style="outline: none; border: none; width: 810px; border-bottom: 1px solid black; width: 130px;">
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table style="width: 930px; line-height: 2;">
+            <tr>
+                <td colspan="3">
+                    <h4><strong>FATHER'S INFORMATION:</strong></h4>
+                </td>
+                <td colspan="3">
+                    <h4><strong>MOTHER'S INFORMATION:</strong></h4>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <label for="">Surname</label>
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+                <td >
+                    <label for="">Surname</label>
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <label for="">First Name</label>
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+                <td >
+                    <label for="">First Name</label>
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <label for="">Middle Name</label>
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+                <td >
+                    <label for="">Middle Name</label>
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <label for="">Auxiliary Name</label>
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+                <td >
+                    <label for="">Auxiliary Name</label>
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <label for="">Occupation/ <br> Employment</label>
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+                <td >
+                    <label for="">Occupation/ <br> Employment</label>
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <label for="">Educational <br> Attainment</label>
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+                <td >
+                    <label for="">Educational <br> Attainment</label>
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <label for="">Parent's Address:</label>
+                    <input type="text" id="" name="" value="" style="width: 778px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <label for="">Zip Code</label>
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+                <td >
+                    <label for="">Parent's Tel. #</label>
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+            </tr>
+        </table>
+
+        <table style="width: 930px; line-height: 2;">
+            <tr>
+                <td colspan="3">
+                    <h4><strong>GUARDIAN'S INFORMATION:</strong></h4>
+                </td>
+                <td colspan="3">
+                    <h4>(If Applicable)</h4>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <label for="">Surname</label>
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+                <td rowspan="2">
+                    <label for="">Guardian's <br> Address</label>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td >
+                    <label for="">First Name</label>
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <label for="">Middle Name</label>
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td >
+                    <label for="">Auxiliary Name</label>
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+                <td><label for="">Zip Code</label></td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="line-height: 1;">
+                    <label for="">Occupation/ <br> Employment</label>
+                </td>
+                <td rowspan="1"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="1">
+                    <label for="">:</label>
+                </td>
+                <td rowspan="1">
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td >
+                    <label for="">Off./Bus. Tel. #</label>
+                </td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+                <td><label for="">Tel. #</label></td>
+                <td>
+                    <label for="">:</label>
+                </td>
+                <td>
+                    <input type="text" id="" name="" value="" style="width: 300px; outline: none; border: none; border-bottom: 1px solid black;">
+                </td>
+            </tr>
+        </table>
+</body>
+</html>

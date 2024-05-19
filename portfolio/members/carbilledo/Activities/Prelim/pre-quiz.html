@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prelim QUIZ</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+        body {
+            line-height: 2;
+            font-family: "Poppins", sans-serif;
+            background-color: #faf5ff;
+        }
+
+        h1, p {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            height: auto;
+        }
+
+        img {
+            width: 100px;
+        }
+
+        .back {
+            margin: 10px;
+        }
+
+        .back button {
+            width: 100px;
+            height: 30px;
+            border: none;
+            background-color: #2f57db;
+            color: #faf5ff;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .back button:hover {
+            background-color: #9333ea;
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <button id="backButton">Back</button>
+    </div>
+      
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+          history.back();
+        });
+    </script>
+    <table border="2">
+        <tr>
+            <td colspan="7"><h1>QUIZ 1</h1></td>
+        </tr>
+        <tr>
+            <td rowspan="3"><img src="../Prelim/image/pvz.png" alt="zombie"></td>
+            <td colspan="7"><p>Be the change you want to see  in the world - Mahatma Gandhi</p></td>
+        </tr>
+        <tr>
+            <td rowspan="2"><img src="../Prelim/image/pvz.png" alt="zombie"></td>
+            <td rowspan="1"><p>The journey of a thousand miles  begins with a single step. -Lao Tzu</p></td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="6">
+                <img src="../Prelim/image/pvz.png" alt="zombie">
+                <p>The difference between the impossible and the possible lies in a man's DETERMINATION -Tommy Lasorda</p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3"><img src="../Prelim/image/pvz.png" alt=""></td>
+            <td rowspan="2"><img src="../Prelim/image/pvz.png" alt=""></td>
+        </tr>
+        <tr>
+            <td colspan="6"><p>UNLESS someone like YOU cares a whole awful  lot, NOTHING is going to get better. It's NOT. -Dr. Seuss</p></td>
+        </tr>
+        <tr>
+            <td colspan="7"><p>All our dreams can come true, if we have the courage to pursue them. -Walter ELias Disney</p></td>
+        </tr>
+        <tr>
+            <td colspan="8"><p>Some people come in your life as blessings, Some come in your life as lessons. -Mother Teresa</p></td>
+        </tr>
+    </table>
+</body>
+</html>

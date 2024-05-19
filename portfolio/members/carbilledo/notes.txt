@@ -1,0 +1,65 @@
+modified:
+
+lectures
+-lect1
+-lect2 ------------------ modified
+-lect3 ------------------ modified
+-lect4 ------------------ modified
+-lect5 ------------------ modified
+-lect6 ------------------ modified
+-lect7 ------------------ modified
+
+activities:
+prelim
+-pre-act2 ------------------ modified
+-pre-act3 ------------------ modified
+-pre-act4 ------------------ modified
+-pre-quiz ------------------ modified
+-pre-exam ------------------ modified
+
+midterm
+-mid-act1 ------------------ modified
+-mid-quiz ------------------ modified
+-mid-exam ------------------ modified
+
+finals
+-final-act2 ------------------ processing..
+
+
+
+
+COMPONENTS:
+
+.back button {
+        width: 100px;
+        height: 30px;
+        border: none;
+        background-color: #2f57db;
+        color: #faf5ff;
+        cursor: pointer;
+        border-radius: 8px;
+      }
+
+      .back button:hover {
+        background-color: #9333ea;
+      }
+
+
+
+<div class="back">
+    <a href="/CARBILLEDO/portfolio.html">
+      <button>Back</button>
+    </a>
+  </div>
+
+
+
+<style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+      body {
+          line-height: 2;
+          font-family: "Poppins", sans-serif;
+          background-color: #faf5ff;
+      }
+</style>

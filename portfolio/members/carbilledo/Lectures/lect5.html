@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lectStyle.css">
+    <title>Lecture 5</title>
+    <style>
+        .back button {
+            width: 100px;
+            height: 30px;
+            border: none;
+            background-color: #2f57db;
+            color: #faf5ff;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .back button:hover {
+            background-color: #9333ea;
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <button id="backButton">Back</button>
+    </div>
+      
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+          history.back();
+        });
+    </script>
+    <header>
+      <h1>Module 4: Images</h1>
+    </header>
+    
+    <h3 style="background-color: #ABEBC6;">Inserting images with &lt;img&gt;</h3>
+    
+    <tr>
+      <ul>
+        <p style="line-height: 1.5">
+          In HTML, images are included using the <img> tag. This tag does not have a closing tag; instead, <br> it's self-closing. <br><br> Here's how you include an image on a webpage: 
+        </p>
+      </ul>
+    </tr>
+    
+    <tr>
+      <ul>
+        <p>
+          &lt;img <span style="color:red;">src</span>=<span style="color:green;">"image_url_here"</span> <span style="color:red;">alt</span>=<span style="color:green;">"alternative_text_here"</span>&gt;
+  
+        </p>
+        <p> <br>
+          Explanation of attributes:
+        </p>
+        <ul style="line-height:1.5;">
+          <li><strong>'src'</strong> : Specifies the URL or path to the image file. This can be a relative or absolute URL.</li>
+          <li><strong>'alt'</strong> : Specifies alternative text for the image. This is important for accessibility purposes and <br> should describe the content of the image in case it cannot be displayed.</li>
+        </ul> <br>
+        <p>Example:</p>
+        <p>
+          &lt;img <span style="color:red;">src</span>=<span style="color:green;">"example.jpg"</span> <span style="color:red;">alt</span>=<span style="color:green;">"Example Image"</span>&gt;
+        </p>
+        <p>
+          In this example, example.jpg is the image file, and "Example Image" is the alternative text.
+        </p>
+        <p style="line-height: 1.5;"> <br>
+          Additionally, you can include images from other websites by providing their URLs in the <strong>'src'</strong> attribute. These are often referred to as "image links." <br><br> For example:
+        </p>
+        <p></p>
+        <p>
+          <a href="https://ue.instructure.com/login/canvas">
+          <img src="https://mb4fin.com/wp-content/uploads/2023/09/canvas.jpg" alt="Canvas" style="height:200px;"></a> <br>
+          &lt;img <span style="color:red;">src</span>=<span style="color:green;">"https://ue.instructure.com/login/canvas"</span> <span style="color:red;">alt</span>=<span style="color:green;">"Canvas Instructure"</span>&gt;
+        </p>
+        <p>This would display the image hosted on 'https://ue.instructure.com/login/canvas'.</p>
+      </ul>
+    </tr>
+    
+    <footer style="text-align:center; background-color: #ABEBC6; padding:10px;">
+      <p>Wanna learn <strong> how to create links on a webpage? </strong>click the image below.<a href="../Lectures/lect4.html"> <br><br> <img src="https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1695624005182-Topic%20%2861%29.jpg" alt="HTML Links" style="height:200px;"></a>
+    </footer>
+    
+  </body>
+</html>

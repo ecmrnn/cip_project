@@ -1,0 +1,175 @@
+body
+		{
+			margin:0px;
+			font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+		}
+		#header
+		{
+			position:relative;
+			background-image: linear-gradient(#D7D7D7, #525252);
+			height:500px;
+			display:flex;
+			justify-content:space-between;
+		}
+		#headerPic img
+		{	
+			height:500px;
+		}
+
+		#headerName
+		{
+			margin-top:auto;
+			margin-bottom:auto;
+		}
+		#post
+		{	
+			position:absolute;
+			font-family:arial;
+			color:white;
+			font-size:70px;
+			font-weight:bold;
+			left:600px;
+			top:30px;
+			
+		}
+		#post img
+		{
+			width:120px;
+			vertical-align:sub;
+		}
+		#malone
+		{	
+			position:absolute;
+			font-family:arial;
+			color:white;
+			font-size:120px;
+			font-weight:bold;
+			left:600px;
+			top:110px;
+			
+		}
+		#malone img
+		{
+			width:180px;
+			vertical-align:sub;
+		}
+		#malone span
+		{
+			position:absolute;
+			font-size:20px;
+			top:320px;
+		}
+		#content
+		{
+			position:relative;
+			background: linear-gradient(#B57A62, #B77A63, #0F0F0E);
+			height:750px;
+		}
+		#Description
+		{
+			position:absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto auto;
+			background-color:#D9D9D950;
+			width:90%;
+			height:90%;
+			border-radius:20px;
+			word-wrap: break-word;
+		}
+		#biography p
+		{
+			word-wrap: break-word;
+			max-width: 90ch;
+			color:white;
+			font-size:24px;
+			margin-left:20px;
+			margin-right:20px;
+			text-align: justify;
+			line-height: 1.5;
+			
+		}
+		#nav
+		{
+			position:fixed;
+			width: 100%;
+			z-index: 9999999999;
+		}
+		ul 
+		{
+			list-style-type: none;
+			margin: 0;
+			padding:0;
+			overflow: hidden;
+			background-color: #333;
+			display:flex;
+			justify-content:space-between;
+		}
+
+		li 
+		{
+			font-family:arial;
+			font-size:25px;
+			float: left;
+		}
+
+		li a 
+		{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 20px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover 
+		{
+			background-color: #111;
+			height:100%;
+		}
+		#nav p
+		{
+			font-weight:bold;
+		}
+		#nav span
+		{
+			font-weight:bold;
+			font-size:30px;
+		}
+		#nav img
+		{
+			width:30px;
+		}
+		#nav div
+		{
+			margin-right:20px;
+		}
+		#dropdown
+		{
+			display: none;
+			position: absolute;
+			background-color: #f1f1f1;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;	
+		}
+		#dropdown a
+		{
+			font-size:15px;
+			color: black;
+			padding: 10px 15px;
+			text-decoration: none;
+			display: block;
+		}
+		#dropdown a:hover {background-color: #ddd;}
+
+		#navAlbum:hover #dropdown {display: block;}
+
+		#Album:hover {background-color: #111;}
+		.Active {background-color: #111;}
+		#headerNamePost
+		{
+			border:1px solid;
+		}

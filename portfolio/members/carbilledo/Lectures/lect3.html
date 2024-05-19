@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="lectStyle.css">
+  <title>Lecture 3</title>
+  <style>
+    table, th, td {
+        border-collapse: collapse;
+        border: 5px dotted blue;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .back button {
+        width: 100px;
+        height: 30px;
+        border: none;
+        background-color: #2f57db;
+        color: #faf5ff;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    .back button:hover {
+        background-color: #9333ea;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="back">
+      <button id="backButton">Back</button>
+  </div>
+    
+  <script>
+      document.getElementById("backButton").addEventListener("click", function() {
+        history.back();
+      });
+  </script>
+  <h1>PRELIM LECTURES</h1>
+  <h2>Lecture 2: HTML List, Tables, and more.</h2>
+  
+  <hr>
+  
+  <h2>HTML Styles</h2>
+    <ul>
+      <li><p> The HTML Style attribute is used to add styles to an elements such as color, font, size, and more. </p></li>
+      <li><p> &lttagname style="property:value;"&gt </p></li>
+    </ul>
+  
+  <hr>
+  
+  <h2>Background Color</h2>
+    <ul>
+      <li><p> The CSS background-color property defines the background color for an HTML element. </p></li>
+      <li><p> &ltbody style="background-color: DarkTurquiose;"&gt </p></li>
+      <li><p> Example:</p></li>
+      <li><p style = "background-color: orange; padding: .5em 1em; color: black;"> Is this orange?</p></li>
+    </ul>
+  
+  <hr>
+  
+  <h2>Text Color</h2>
+    <ul>
+      <li><p> The HTML Style attribute is used to add styles to an elements such as color, font, size, and more. </p></li>
+      <li><p> &lttagname style="property:value;"&gt </p></li>
+    </ul>
+  
+  <hr>
+  
+  <h2>Font Size</h2>
+    <ul>
+      <li><p> The HTML Style attribute is used to add styles to an elements such as color, font, size, and more. </p></li>
+      <li><p> &lttagname style="property:value;"&gt </p></li>
+       <li><p style= "font-size: 3em"> Size size size </p></li>
+    </ul>
+  
+  <hr>
+  
+  <h2>Text Alignment</h2>
+    <ul>
+      <li><p> The HTML Style attribute is used to add styles to an elements such as color, font, size, and more. </p></li>
+      <li><p> &lttagname style="property:value;"&gt </p></li>
+      <li><p style= "text-align: center; font-size: 3em;">Center Alignment</p></li>
+    </ul>
+  
+  <hr>
+  
+  <h2>HTML Lists</h2>
+    <p>Bullet List</p>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <p>Numbered List</p>
+    <ol>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+    <p>roman, starting from 10</p>
+  
+  <hr>
+  
+  <h1>How to cook Adobo</h1>
+    <ol type="1">
+      <li><p> Begin by frying the chicken pieces over high heat with a small amount of oil until they are brown. This process is called searing, and this adds flavour and color to the meat. Make sure that the meat pieces are not wet or you will not achieve the desired color you are looking for. Also, do not overcrowd the pot because the juices from the meat will run out and thus prevent the browning effect of the meat. </p></li>
+      <li><p> The next step would be to drop all the ingredients in the same pot and bring the liquid to a boil. Bring down the heat to a simmer and slowly cook the chicken. Pour more water for a saucy adobo and cook further if you want a drier adobo. </p></li>
+      <li><p> With or without sauce, adobo will always be a comforting dish served any time of day especially when shared with the family. <br><br><br></p></li>
+    </ol>
+  
+  <ol type="a">
+      <li><p> Begin by frying the chicken pieces over high heat with a small amount of oil until they are brown. This process is called searing, and this adds flavour and color to the meat. Make sure that the meat pieces are not wet or you will not achieve the desired color you are looking for. Also, do not overcrowd the pot because the juices from the meat will run out and thus prevent the browning effect of the meat. </p></li>
+      <li><p> The next step would be to drop all the ingredients in the same pot and bring the liquid to a boil. Bring down the heat to a simmer and slowly cook the chicken. Pour more water for a saucy adobo and cook further if you want a drier adobo. </p></li>
+      <li><p> With or without sauce, adobo will always be a comforting dish served any time of day especially when shared with the family. <br><br><br></p></li>
+    </ol>
+  
+  <ol type="A">
+      <li><p> Begin by frying the chicken pieces over high heat with a small amount of oil until they are brown. This process is called searing, and this adds flavour and color to the meat. Make sure that the meat pieces are not wet or you will not achieve the desired color you are looking for. Also, do not overcrowd the pot because the juices from the meat will run out and thus prevent the browning effect of the meat. </p></li>
+      <li><p> The next step would be to drop all the ingredients in the same pot and bring the liquid to a boil. Bring down the heat to a simmer and slowly cook the chicken. Pour more water for a saucy adobo and cook further if you want a drier adobo. </p></li>
+      <li><p> With or without sauce, adobo will always be a comforting dish served any time of day especially when shared with the family. <br><br><br></p></li>
+    </ol>
+  
+  <ol type="i">
+      <li><p> Begin by frying the chicken pieces over high heat with a small amount of oil until they are brown. This process is called searing, and this adds flavour and color to the meat. Make sure that the meat pieces are not wet or you will not achieve the desired color you are looking for. Also, do not overcrowd the pot because the juices from the meat will run out and thus prevent the browning effect of the meat. </p></li>
+      <li><p> The next step would be to drop all the ingredients in the same pot and bring the liquid to a boil. Bring down the heat to a simmer and slowly cook the chicken. Pour more water for a saucy adobo and cook further if you want a drier adobo. </p></li>
+      <li><p> With or without sauce, adobo will always be a comforting dish served any time of day especially when shared with the family. <br><br><br></p></li>
+    </ol>
+  
+  <ol type="I">
+      <li><p> Begin by frying the chicken pieces over high heat with a small amount of oil until they are brown. This process is called searing, and this adds flavour and color to the meat. Make sure that the meat pieces are not wet or you will not achieve the desired color you are looking for. Also, do not overcrowd the pot because the juices from the meat will run out and thus prevent the browning effect of the meat. </p></li>
+      <li><p> The next step would be to drop all the ingredients in the same pot and bring the liquid to a boil. Bring down the heat to a simmer and slowly cook the chicken. Pour more water for a saucy adobo and cook further if you want a drier adobo. </p></li>
+      <li><p> With or without sauce, adobo will always be a comforting dish served any time of day especially when shared with the family. </p></li>
+    </ol>
+  
+  <hr>
+  
+  <h2>Defining an HTML Table</h2>
+  
+  <table style="width: 100%" border="1">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Nicole</td>
+      <td>Pascual</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Allen</td>
+      <td>Ramirez</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Hans</td>
+      <td>Carbilledo</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Paulo</td>
+      <td>Calugay</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>EC</td>
+      <td>Maranan</td>
+      <td>22</td>
+    </tr>
+  </table>
+</body>
+</html>

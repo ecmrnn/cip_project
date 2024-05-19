@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="imageStyle.css">
+    <title>Midterm Activity 1</title>
+    <style>
+        .back button {
+            width: 100px;
+            height: 30px;
+            border: none;
+            background-color: #2f57db;
+            color: #faf5ff;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .back button:hover {
+            background-color: #9333ea;
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <button id="backButton">Back</button>
+    </div>
+      
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+          history.back();
+        });
+    </script>
+    <p style="padding: 10px;">
+        Click on the shape or on one of the shape to watch it closer.
+    </p>
+
+    <img style="height: 300px; padding: 10px;" usemap="#workmap" src="shapes.png" alt="Picture of Shapes">
+
+    <map name="workmap">
+        <area shape="circle" coords="170,155,130" href="circle.html" alt="Circle">
+        <area shape="rect" coords="325,40,565,275" href="square.html" alt="Square">
+        <area shape="poly" coords="738,306,757,321,798,334,919,340,970,329,1002,308,1003,88,979,70,927,60,830,57,771,68,735,88" href="cylinder.html" alt="cylinder">
+    </map>
+</body>
+</html>
+

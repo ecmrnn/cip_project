@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url(Images/water.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #f2f2f2;
+}
+
+header img {
+    max-width: 12%;
+    height: auto;
+}
+
+.outfit-gallery {
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.outfit-info {
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.outfit-info h2 {
+    text-align: center;
+    background-color: rgba(235, 235, 235, 0.8);
+    padding: 50px;
+}
+
+.outfit-info p {
+    text-indent: 1.5em;
+    line-height: 1.5;
+}
+
+.outfit-info img {
+    width: 100%;
+    margin-bottom: -4px;
+    margin-top: -2px;
+
+}
+
+.outfit-info h4 {
+    margin: 40px;
+    line-height: 2rem;
+    background-color: #f2f2f2;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.outfit-img {
+    width: 70%; 
+    height: auto;
+    margin-bottom: -6px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+table {
+    width: 100vw;
+    border: none;
+}
+
+.back {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.back button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #2f57db;
+    color: #faf5ff;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.back button:hover {
+    background-color: #9333ea;
+}
