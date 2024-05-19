@@ -13,11 +13,11 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
         defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../../assets/js/app.js" defer></script>
-    <link rel="stylesheet" href="../../assets/styles/app.css">
-    <link rel="stylesheet" href="../../assets/styles/media.css">
+    <script src="../assets/js/app.js" defer></script>
+    <link rel="stylesheet" href="../assets/styles/app.css">
+    <link rel="stylesheet" href="../assets/styles/media.css">
 
-    <title>Pages / Rooms & Suites</title>
+    <title>Pages / Contact us</title>
 </head>
 
 <body class="d-lg-flex min-vh-100 bg-light">
@@ -129,7 +129,7 @@
                 </ul>
                 <!-- Logout -->
                 <form action="" class="w-100">
-                    <button type="button"
+                    <a href="../index.html" type="button"
                         class="btn btn-primary w-100 mt-3 d-flex gap-3 align-items-center justify-content-center">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -139,7 +139,7 @@
                             </svg>
                         </span>
                         <span class="text-white d-sm-block d-lg-none d-xl-block">Logout</span>
-                    </button>
+                    </a>
                 </form>
             </div>
         </div>
@@ -155,18 +155,18 @@
                     <a class="nav-link" href="home.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="rooms.html">Rooms</a>
+                    <a class="nav-link" href="rooms.html">Rooms</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="about.html">About us</a>
+                    <a class="nav-link" href="about.html">About us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact us</a>
+                    <a class="nav-link active" aria-current="page" href="contact.html">Contact us</a>
                 </li>
             </ul>
 
             <div class="p-3 bg-white rounded border-end border-start border-bottom w-100">
-                <h2 class="fs-5 fw-bold text-primary">Rooms</h2>
+                <h2 class="fs-5 fw-bold text-primary">Contact us</h2>
 
                 <div class="p-3 mb-3 d-flex justify-content-between align-items-center border rounded">
                     <p class="mb-0 ms-2"><strong>Status</strong>: Published</p>
@@ -187,7 +187,7 @@
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Hero Section
+                                Contacts
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
@@ -199,20 +199,21 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" height="24px"
                                                 viewBox="0 -960 960 960" width="24px" fill="#00">
                                                 <path
-                                                    d="M240-300v-360h40v160h200v-160h40v360h-40v-160H280v160h-40Zm440 0v-320h-80v-40h120v360h-40Z" />
+                                                    d="M304.62-80Q277-80 258.5-98.5 240-117 240-144.62v-670.76q0-27.62 18.5-46.12Q277-880 304.62-880h350.76q27.62 0 46.12 18.5Q720-843 720-815.38v670.76q0 27.62-18.5 46.12Q683-80 655.38-80H304.62ZM280-258.46v113.84q0 9.24 7.69 16.93 7.69 7.69 16.93 7.69h350.76q9.24 0 16.93-7.69 7.69-7.69 7.69-16.93v-113.84H280Zm200 100q12.38 0 21.58-9.19 9.19-9.2 9.19-21.58 0-12.39-9.19-21.58Q492.38-220 480-220q-12.38 0-21.58 9.19-9.19 9.19-9.19 21.58 0 12.38 9.19 21.58 9.2 9.19 21.58 9.19Zm-200-140h400V-740H280v441.54ZM280-780h400v-35.38q0-9.24-7.69-16.93-7.69-7.69-16.93-7.69H304.62q-9.24 0-16.93 7.69-7.69 7.69-7.69 16.93V-780Zm0 521.54V-120v-138.46ZM280-780v-60 60Z" />
+                                            </svg>
                                             </svg>
                                         </div>
                                         <div>
-                                            <p class="m-0 fw-bold" style="font-size: 0.75rem;">Title</p>
-                                            <p class="m-0">Quinn Dormitelle</p>
+                                            <p class="m-0 fw-bold" style="font-size: 0.75rem;">Contact #1</p>
+                                            <p class="m-0">+63 926 235 5389</p>
                                         </div>
                                     </div>
 
                                     <div>
                                         <button class="btn btn-edit border rounded" data-bs-placement="top" title="Edit"
                                             data-bs-toggle="tooltip" data-bs-toggle="modal"
-                                            data-bs-target="#editTextModal"
-                                            onclick="$('#editTextModal').modal('show');">
+                                            data-bs-target="#editContactModal"
+                                            onclick="$('#editContactModal').modal('show');">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="24px"
                                                 viewBox="0 -960 960 960" width="24px" fill="#00">
                                                 <path
@@ -236,20 +237,21 @@
                                         <div class="p-3 border rounded" style="width: min-content;">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="24px"
                                                 viewBox="0 -960 960 960" width="24px" fill="#00">
-                                                <path d="M455.38-200v-510H240.77v-50H720v50H505.38v510h-50Z" />
+                                                <path
+                                                    d="M304.62-80Q277-80 258.5-98.5 240-117 240-144.62v-670.76q0-27.62 18.5-46.12Q277-880 304.62-880h350.76q27.62 0 46.12 18.5Q720-843 720-815.38v670.76q0 27.62-18.5 46.12Q683-80 655.38-80H304.62ZM280-258.46v113.84q0 9.24 7.69 16.93 7.69 7.69 16.93 7.69h350.76q9.24 0 16.93-7.69 7.69-7.69 7.69-16.93v-113.84H280Zm200 100q12.38 0 21.58-9.19 9.19-9.2 9.19-21.58 0-12.39-9.19-21.58Q492.38-220 480-220q-12.38 0-21.58 9.19-9.19 9.19-9.19 21.58 0 12.38 9.19 21.58 9.2 9.19 21.58 9.19Zm-200-140h400V-740H280v441.54ZM280-780h400v-35.38q0-9.24-7.69-16.93-7.69-7.69-16.93-7.69H304.62q-9.24 0-16.93 7.69-7.69 7.69-7.69 16.93V-780Zm0 521.54V-120v-138.46ZM280-780v-60 60Z" />
                                             </svg>
                                         </div>
                                         <div>
-                                            <p class="m-0 fw-bold" style="font-size: 0.75rem;">Subtitle</p>
-                                            <p class="m-0">We Make You Feel Comfortable</p>
+                                            <p class="m-0 fw-bold" style="font-size: 0.75rem;">Contact #2</p>
+                                            <p class="m-0">+63 968 557 5943</p>
                                         </div>
                                     </div>
 
                                     <div>
                                         <button class="btn btn-edit border rounded" data-bs-placement="top" title="Edit"
                                             data-bs-toggle="tooltip" data-bs-toggle="modal"
-                                            data-bs-target="#editTextModal"
-                                            onclick="$('#editTextModal').modal('show');">
+                                            data-bs-target="#editContactModal"
+                                            onclick="$('#editContactModal').modal('show');">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="24px"
                                                 viewBox="0 -960 960 960" width="24px" fill="#00">
                                                 <path
@@ -274,144 +276,20 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" height="24px"
                                                 viewBox="0 -960 960 960" width="24px" fill="#00">
                                                 <path
-                                                    d="M224.62-160q-27.62 0-46.12-18.5Q160-197 160-224.62V-440h40v215.38q0 9.24 7.69 16.93 7.69 7.69 16.93 7.69H440v40H224.62ZM520-160v-40h215.38q9.24 0 16.93-7.69 7.69-7.69 7.69-16.93V-440h40v215.38q0 27.62-18.5 46.12Q763-160 735.38-160H520ZM300-300l78.46-103.08 70 84.62 104.62-132.31L666.15-300H300ZM160-520v-215.38q0-27.62 18.5-46.12Q197-800 224.62-800H440v40H224.62q-9.24 0-16.93 7.69-7.69 7.69-7.69 16.93V-520h-40Zm600 0v-215.38q0-9.24-7.69-16.93-7.69-7.69-16.93-7.69H520v-40h215.38q27.62 0 46.12 18.5Q800-763 800-735.38V-520h-40Zm-147.69-47.69q-19.08 0-31.85-12.77-12.77-12.77-12.77-31.85 0-19.07 12.77-31.84t31.85-12.77q19.07 0 31.84 12.77t12.77 31.84q0 19.08-12.77 31.85-12.77 12.77-31.84 12.77Z" />
+                                                    d="M304.62-80Q277-80 258.5-98.5 240-117 240-144.62v-670.76q0-27.62 18.5-46.12Q277-880 304.62-880h350.76q27.62 0 46.12 18.5Q720-843 720-815.38v670.76q0 27.62-18.5 46.12Q683-80 655.38-80H304.62ZM280-258.46v113.84q0 9.24 7.69 16.93 7.69 7.69 16.93 7.69h350.76q9.24 0 16.93-7.69 7.69-7.69 7.69-16.93v-113.84H280Zm200 100q12.38 0 21.58-9.19 9.19-9.2 9.19-21.58 0-12.39-9.19-21.58Q492.38-220 480-220q-12.38 0-21.58 9.19-9.19 9.19-9.19 21.58 0 12.38 9.19 21.58 9.2 9.19 21.58 9.19Zm-200-140h400V-740H280v441.54ZM280-780h400v-35.38q0-9.24-7.69-16.93-7.69-7.69-16.93-7.69H304.62q-9.24 0-16.93 7.69-7.69 7.69-7.69 16.93V-780Zm0 521.54V-120v-138.46ZM280-780v-60 60Z" />
                                             </svg>
                                         </div>
                                         <div>
-                                            <p class="m-0 fw-bold" style="font-size: 0.75rem;">Background Image</p>
-                                            <p class="m-0">Quinn Dormitelle</p>
+                                            <p class="m-0 fw-bold" style="font-size: 0.75rem;">Contact #3</p>
+                                            <p class="m-0">+63 912 265 6907</p>
                                         </div>
                                     </div>
 
                                     <div>
                                         <button class="btn btn-edit border rounded" data-bs-placement="top" title="Edit"
                                             data-bs-toggle="tooltip" data-bs-toggle="modal"
-                                            data-bs-target="#editImageModal"
-                                            onclick="$('#editImageModal').modal('show');">
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                                viewBox="0 -960 960 960" width="24px" fill="#00">
-                                                <path
-                                                    d="M200.85-163.08q-17.16 3.46-29.2-8.57-12.03-12.04-8.57-29.2L190-331.08 331.08-190l-130.23 26.92ZM331.08-190 190-331.08l439.54-439.54Q647.92-789 675-789q27.08 0 45.46 18.38l50.16 50.16Q789-702.08 789-675q0 27.08-18.38 45.46L331.08-190Zm327-552.31-404 403.23 85 85 403.23-404q6.92-6.92 6.92-17.3 0-10.39-6.92-17.31l-49.62-49.62q-6.92-6.92-17.31-6.92-10.38 0-17.3 6.92Z" />
-                                            </svg>
-                                        </button>
-
-                                        <button class="btn border rounded" data-bs-toggle="tooltip"
-                                            data-bs-placement="top" title="Hide">
-                                            <svg xmlns=" http://www.w3.org/2000/svg" height="24px"
-                                                viewBox="0 -960 960 960" width="24px" fill="#00">
-                                                <path
-                                                    d="M480.18-353.85q60.97 0 103.47-42.68t42.5-103.65q0-60.97-42.68-103.47t-103.65-42.5q-60.97 0-103.47 42.68t-42.5 103.65q0 60.97 42.68 103.47t103.65 42.5ZM480-392q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm.11 152q-129.96 0-236.88-70.73Q136.31-381.46 83.08-500q53.23-118.54 160.04-189.27T479.89-760q129.96 0 236.88 70.73Q823.69-618.54 876.92-500q-53.23 118.54-160.04 189.27T480.11-240ZM480-500Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Our Rooms
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <div class="p-3 border rounded d-flex justify-content-between gap-3 mb-3">
-                                    <div class="d-flex flex-column flex-md-row gap-3">
-                                        <div class="p-3 border rounded" style="width: min-content;">
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                                viewBox="0 -960 960 960" width="24px" fill="#00">
-                                                <path
-                                                    d="M120-240v-200q0-17.77 10.23-37.85Q140.46-497.92 160-508v-92q0-33.85 23.08-56.92Q206.15-680 240-680h180q20.69 0 35.31 8.5Q469.92-663 480-648q10.08-15 24.69-23.5Q519.31-680 540-680h180q33.85 0 56.92 23.08Q800-633.85 800-600v92q19.54 10.08 29.77 30.15Q840-457.77 840-440v200h-40v-80H160v80h-40Zm380-280h260v-80q0-17-11.5-28.5T720-640H540q-17 0-28.5 11.5T500-600v80Zm-300 0h260v-80q0-17-11.5-28.5T420-640H240q-17 0-28.5 11.5T200-600v80Zm-40 160h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <p class="m-0 fw-bold" style="font-size: 0.75rem;">Room #1</p>
-                                            <p class="m-0">Deluxe</p>
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <button class="btn btn-edit border rounded" data-bs-placement="top" title="Edit"
-                                            data-bs-toggle="tooltip" data-bs-toggle="modal"
-                                            data-bs-target="#editRoomModal"
-                                            onclick="$('#editRoomModal').modal('show');">
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                                viewBox="0 -960 960 960" width="24px" fill="#00">
-                                                <path
-                                                    d="M200.85-163.08q-17.16 3.46-29.2-8.57-12.03-12.04-8.57-29.2L190-331.08 331.08-190l-130.23 26.92ZM331.08-190 190-331.08l439.54-439.54Q647.92-789 675-789q27.08 0 45.46 18.38l50.16 50.16Q789-702.08 789-675q0 27.08-18.38 45.46L331.08-190Zm327-552.31-404 403.23 85 85 403.23-404q6.92-6.92 6.92-17.3 0-10.39-6.92-17.31l-49.62-49.62q-6.92-6.92-17.31-6.92-10.38 0-17.3 6.92Z" />
-                                            </svg>
-                                        </button>
-
-                                        <button class="btn border rounded" data-bs-toggle="tooltip"
-                                            data-bs-placement="top" title="Hide">
-                                            <svg xmlns=" http://www.w3.org/2000/svg" height="24px"
-                                                viewBox="0 -960 960 960" width="24px" fill="#00">
-                                                <path
-                                                    d="M480.18-353.85q60.97 0 103.47-42.68t42.5-103.65q0-60.97-42.68-103.47t-103.65-42.5q-60.97 0-103.47 42.68t-42.5 103.65q0 60.97 42.68 103.47t103.65 42.5ZM480-392q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm.11 152q-129.96 0-236.88-70.73Q136.31-381.46 83.08-500q53.23-118.54 160.04-189.27T479.89-760q129.96 0 236.88 70.73Q823.69-618.54 876.92-500q-53.23 118.54-160.04 189.27T480.11-240ZM480-500Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="p-3 border rounded d-flex justify-content-between gap-3 mb-3">
-                                    <div class="d-flex flex-column flex-md-row gap-3">
-                                        <div class="p-3 border rounded" style="width: min-content;">
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                                viewBox="0 -960 960 960" width="24px" fill="#00">
-                                                <path
-                                                    d="M120-240v-200q0-17.77 10.23-37.85Q140.46-497.92 160-508v-92q0-33.85 23.08-56.92Q206.15-680 240-680h180q20.69 0 35.31 8.5Q469.92-663 480-648q10.08-15 24.69-23.5Q519.31-680 540-680h180q33.85 0 56.92 23.08Q800-633.85 800-600v92q19.54 10.08 29.77 30.15Q840-457.77 840-440v200h-40v-80H160v80h-40Zm380-280h260v-80q0-17-11.5-28.5T720-640H540q-17 0-28.5 11.5T500-600v80Zm-300 0h260v-80q0-17-11.5-28.5T420-640H240q-17 0-28.5 11.5T200-600v80Zm-40 160h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <p class="m-0 fw-bold" style="font-size: 0.75rem;">Room #2</p>
-                                            <p class="m-0">Suite</p>
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <button class="btn btn-edit border rounded" data-bs-placement="top" title="Edit"
-                                            data-bs-toggle="tooltip" data-bs-toggle="modal"
-                                            data-bs-target="#editRoomModal"
-                                            onclick="$('#editRoomModal').modal('show');">
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                                viewBox="0 -960 960 960" width="24px" fill="#00">
-                                                <path
-                                                    d="M200.85-163.08q-17.16 3.46-29.2-8.57-12.03-12.04-8.57-29.2L190-331.08 331.08-190l-130.23 26.92ZM331.08-190 190-331.08l439.54-439.54Q647.92-789 675-789q27.08 0 45.46 18.38l50.16 50.16Q789-702.08 789-675q0 27.08-18.38 45.46L331.08-190Zm327-552.31-404 403.23 85 85 403.23-404q6.92-6.92 6.92-17.3 0-10.39-6.92-17.31l-49.62-49.62q-6.92-6.92-17.31-6.92-10.38 0-17.3 6.92Z" />
-                                            </svg>
-                                        </button>
-
-                                        <button class="btn border rounded" data-bs-toggle="tooltip"
-                                            data-bs-placement="top" title="Hide">
-                                            <svg xmlns=" http://www.w3.org/2000/svg" height="24px"
-                                                viewBox="0 -960 960 960" width="24px" fill="#00">
-                                                <path
-                                                    d="M480.18-353.85q60.97 0 103.47-42.68t42.5-103.65q0-60.97-42.68-103.47t-103.65-42.5q-60.97 0-103.47 42.68t-42.5 103.65q0 60.97 42.68 103.47t103.65 42.5ZM480-392q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm.11 152q-129.96 0-236.88-70.73Q136.31-381.46 83.08-500q53.23-118.54 160.04-189.27T479.89-760q129.96 0 236.88 70.73Q823.69-618.54 876.92-500q-53.23 118.54-160.04 189.27T480.11-240ZM480-500Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="p-3 border rounded d-flex justify-content-between gap-3">
-                                    <div class="d-flex flex-column flex-md-row gap-3">
-                                        <div class="p-3 border rounded" style="width: min-content;">
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                                viewBox="0 -960 960 960" width="24px" fill="#00">
-                                                <path
-                                                    d="M120-240v-200q0-17.77 10.23-37.85Q140.46-497.92 160-508v-92q0-33.85 23.08-56.92Q206.15-680 240-680h180q20.69 0 35.31 8.5Q469.92-663 480-648q10.08-15 24.69-23.5Q519.31-680 540-680h180q33.85 0 56.92 23.08Q800-633.85 800-600v92q19.54 10.08 29.77 30.15Q840-457.77 840-440v200h-40v-80H160v80h-40Zm380-280h260v-80q0-17-11.5-28.5T720-640H540q-17 0-28.5 11.5T500-600v80Zm-300 0h260v-80q0-17-11.5-28.5T420-640H240q-17 0-28.5 11.5T200-600v80Zm-40 160h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <p class="m-0 fw-bold" style="font-size: 0.75rem;">Room #3</p>
-                                            <p class="m-0">Premium</p>
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <button class="btn btn-edit border rounded" data-bs-placement="top" title="Edit"
-                                            data-bs-toggle="tooltip" data-bs-toggle="modal"
-                                            data-bs-target="#editRoomModal"
-                                            onclick="$('#editRoomModal').modal('show');">
+                                            data-bs-target="#editContactModal"
+                                            onclick="$('#editContactModal').modal('show');">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="24px"
                                                 viewBox="0 -960 960 960" width="24px" fill="#00">
                                                 <path
@@ -457,82 +335,25 @@
         </div>
 
         <!-- Text -->
-        <div class="modal fade" id="editTextModal" tabindex="-1" aria-labelledby="editTextModalLabel"
+        <div class="modal fade" id="editContactModal" tabindex="-1" aria-labelledby="editContactModalLabel"
             aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="editTextModalLabel">Editing Text</h5>
+                        <h5 class="modal-title" id="editContactModalLabel">Editing Contact</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <form action="">
                             <div class="mb-3">
-                                <label for="newText" class="form-label">Current Text</label>
-                                <input type="text" class="form-control" readonly id="newText" placeholder="..."
-                                    value="Quinn's Dormitelle">
+                                <label for="currentContact" class="form-label">Current Contact</label>
+                                <input type="text" class="form-control" readonly id="currentContact" placeholder="..."
+                                    value="+63 926 235 5389">
                             </div>
-                            <div>
-                                <label for="newText" class="form-label">New Text</label>
-                                <input type="text" class="form-control" id="newText" placeholder="...">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-primary">Update Changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Image -->
-        <div class="modal fade" id="editImageModal" tabindex="-1" aria-labelledby="editImageModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="editImageModalLabel">Editing Image</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="">
-                            <div>
-                                <label for="formFile" class="form-label">Upload New Image</label>
-                                <input class="form-control" type="file" id="formFile">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-primary">Update Changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Room -->
-        <div class="modal fade" id="editRoomModal" tabindex="-1" aria-labelledby="editRoomModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="editRoomModalLabel">Editing Room</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="">
-                            <div class="mb-3">
-                                <label for="formFile" class="form-label">Upload New Image</label>
-                                <input class="form-control" type="file" id="formFile">
-                            </div>
-                            <div class="mb-3">
-                                <label for="newTitle" class="form-label">New Title</label>
-                                <input type="email" class="form-control" id="newTitle" placeholder="...">
-                            </div>
-                            <div class="">
-                                <label for="newDescription" class="form-label">New Description</label>
-                                <textarea class="form-control" id="newDescription" rows="3"></textarea>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">+63</span>
+                                <input type="text" class="form-control" placeholder="9xx xxx xxxx"
+                                    aria-label="Contact Number" aria-describedby="basic-addon1">
                             </div>
                         </form>
                     </div>
