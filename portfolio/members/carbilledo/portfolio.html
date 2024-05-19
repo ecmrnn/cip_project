@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolioStyles.css">
     <title>CARBILLEDO</title>
 </head>
+
 <body>
     <div class="back">
-        <button id="backButton">Back</button>
+        <button id="backButton" onclick="history.back()">Back</button>
     </div>
-      
-    <script>
-        document.getElementById("backButton").addEventListener("click", function() {
-          history.back();
-        });
-    </script>
-    
+
+
     <div class="container">
         <header>
             <h1>Table of Contents</h1>
@@ -145,4 +142,5 @@
         </section>
     </div>
 </body>
+
 </html>

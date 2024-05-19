@@ -58,8 +58,8 @@ h3 {
 }
 
 .margin::before {
-	content: "wwww";
-	color: #f4f4f4;
+	content: "&nbsp;";
+	color: transparent;
 }
 
 .text-justify {
@@ -71,9 +71,15 @@ h3 {
 }
 
 .btn-primary {
-	background-color: #f4f4f4 !important;
+	background-color: white !important;
 	color: var(--clr-primary) !important;
 	border-color: var(--clr-primary) !important;
+}
+
+.btn-primary:hover {
+	background-color: var(--clr-primary) !important;
+	border-color: white !important;
+	color: white !important;
 }
 
 .primary-color {
@@ -167,7 +173,7 @@ footer a {
 	text-decoration: none;
 }
 
-footer a:hover {
+footer ul a:hover {
 	text-decoration: underline;
 }
 
