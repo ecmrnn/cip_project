@@ -1,0 +1,610 @@
+/* 
+/
+/   Global Styles
+/
+*/
+
+:root {
+    --clr-primary: #f57c4f;
+    --clr-secondary: #eeaf6a;
+    --clr-grey: #fcfcfc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--clr-primary);
+}
+
+img {
+    display: block;
+    user-select: none;
+}
+
+section {
+    padding: 2em;
+    position: relative;
+    display: grid;
+    place-items: center;
+    z-index: 99;
+}
+
+h2 {
+    font-family: "Poppins";
+    font-size: 4rem;
+    color: var(--clr-primary);
+    line-height: 1;
+}
+
+video {
+    width: 100%;
+    border-radius: 0.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* 
+/
+/   Navigation Styles
+/
+*/
+
+nav {
+    padding: 0 2em;
+    position: fixed;
+    top: 1em;
+    right: 0;
+    z-index: 999;
+    background-color: white;
+    border-radius: 1em 0 0 1em;
+    border-bottom: 1px solid var(--clr-primary);
+}
+
+.links {
+    display: flex;
+    list-style-type: none;
+}
+
+.link {
+    padding: 1em;
+    background-color: white;
+    position: relative;
+}
+
+.link a {
+    font-family: "Poppins";
+    font-size: large;
+}
+
+.link::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    border-radius: 2;
+    bottom: 1em;
+    left: 1em;
+    opacity: 0.5;
+    background-color: var(--clr-primary);
+    transition: all 250ms ease-in-out;
+}
+
+.link:hover::after {
+    width: calc(100% - 2em);
+}
+
+.link a {
+    text-decoration: none;
+    color: var(--clr-primary);
+}
+
+.divider {
+    padding: 1em;
+    color: var(--clr-primary);
+    opacity: 0.25;
+    font-size: larger;
+}
+
+/* 
+/
+/   Hero Styles (Home)
+/
+*/
+
+main {
+    height: 100vh;
+}
+
+#hero--image {
+    position: fixed;
+    top: 0;
+}
+
+#hero--content {
+    position: absolute;
+    right: 10em;
+    bottom: 10em;
+}
+
+.hero--content--subtitle {
+    margin-bottom: 2rem;
+    text-align: right;
+    color: white;
+    font-family: "Poppins";
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+.primary--button {
+    margin-top: 2rem;
+    color: var(--clr-primary);
+    padding: 1rem 3rem;
+    font-size: 1.25rem;
+    font-family: "Poppins";
+    background-color: white;
+    border: 0;
+    float: right;
+    transition: all 100ms ease-in-out;
+    box-shadow: 0.5em 0.5em 0 0 #ff9c64;
+    border-radius: 0.5em;
+}
+
+.primary--button:hover {
+    translate: 0.5em 0.5em;
+    box-shadow: 0 0 0 0 #ff9c64;
+}
+
+/* 
+/
+/   Artist / Galdives
+/
+*/
+
+#galdive {
+    height: 100vh;
+}
+
+#artist--greetings {
+    max-width: 50ch;
+    margin-top: 2em;
+    letter-spacing: 1px;
+}
+
+.galdives--content {
+    width: calc(100vw - 8em);
+    height: calc(100vh - 8em);
+    background-color: white;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.galdives--content img {
+    width: 400px;
+}
+
+/* 
+/
+/   Tracks
+/
+*/
+
+#new-album {
+    padding: 10em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: white;
+}
+
+.tracks {
+    max-width: 1112px;
+    margin: auto;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: start;
+}
+
+#track--header {
+    width: 1112px;
+    margin: auto;
+    display: flex;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+#track--album img {
+    width: 300px;
+    aspect-ratio: 1;
+    border-radius: 0.5em;
+    position: relative;
+}
+
+#track--album {
+    position: relative;
+}
+
+#track--album::after,
+#track--album::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-secondary);
+    opacity: 0.25;
+    position: absolute;
+    top: -0.5em;
+    left: -0.5em;
+    border-radius: 0.5em;
+    z-index: -1;
+    rotate: 1deg;
+}
+
+#track--album::before {
+    background-color: var(--clr-primary);
+    rotate: 1deg;
+    top: 0.5em;
+    left: 0.5em;
+}
+
+.track--info {
+    margin: 0.5em 0;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.track--info p {
+    max-width: 50ch;
+}
+
+.track--audio {
+    padding: 0.5em;
+    background-color: var(--clr-grey);
+    border-radius: 0.25rem;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.track--icon {
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    border-radius: 0.5em;
+    background-color: var(--clr-primary);
+    border: 0;
+    transition: all 100ms ease-in-out;
+    position: relative;
+}
+
+.track--icon[data-playing="true"] {
+    border-radius: 50%;
+}
+
+.track--icon[data-playing="true"]::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    animation-name: audioPulse;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: var(--clr-primary);
+    opacity: 0.25;
+}
+
+.track--icon:hover {
+    border-radius: 50%;
+}
+
+.track--icon svg {
+    fill: white;
+    position: relative;
+    z-index: 999;
+}
+
+.track--title {
+    font-family: "Poppins";
+    color: var(--clr-primary);
+    font-size: 1.15rem;
+    line-height: 1;
+}
+
+.track--duration {
+    font-size: 0.75rem;
+}
+
+.track--description {
+    padding: 1rem 0;
+    text-align: justify;
+    font-size: 0.75rem;
+}
+
+/* 
+/
+/   Feedback
+/
+*/
+
+#feedback {
+    height: 100vh;
+    background-color: white;
+}
+
+#feedback p {
+    margin: 2em 0;
+    max-width: 45ch;
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
+
+#feedback > div {
+    display: flex;
+    gap: 5em;
+}
+
+/* Custom input style */
+.input {
+    display: grid;
+    gap: 1em;
+}
+
+#feedback input,
+#feedback textarea {
+    min-width: 400px;
+    padding: 1em;
+    border: 1px solid #00000025;
+    border-bottom-color: var(--clr-primary);
+    border-radius: 0.5em;
+    transition: all 100ms ease-in-out;
+}
+
+#feedback input:focus,
+#feedback textarea:focus {
+    background-color: #eeaf6a10;
+    outline: 0;
+    border-color: var(--clr-primary);
+}
+
+textarea {
+    resize: none;
+}
+
+#feedback form {
+    display: grid;
+    gap: 1em;
+}
+
+button[type="submit"] {
+    padding: 1em;
+    border-radius: 0.5em;
+    background-color: var(--clr-secondary);
+    border: 0;
+    overflow: hidden;
+    color: white;
+    font-family: "Poppins";
+    font-size: 1rem;
+    box-shadow: 0 0.5em 0 0 var(--clr-primary);
+    transition: all 100ms ease-in-out;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    outline: 0;
+    translate: 0 0.5em;
+    box-shadow: 0 0 0 0 var(--clr-primary);
+}
+
+/* 
+/
+/   Now Playing
+/
+*/
+aside {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index: 9999;
+    translate: 0 calc(100% + 1em);
+    transition: all 250ms ease-in-out;
+}
+
+aside[data-playing="true"] {
+    translate: 0 0;
+}
+
+#now__playing {
+    padding: 0.25em 1em 0.25em 0.25em;
+    display: flex;
+    gap: 0.5em;
+    background-color: var(--clr-grey);
+    border-radius: 0.5em 0.5em 0 0;
+    border: 1px solid #00000025;
+    border-bottom: 0;
+}
+
+.volume {
+    margin-top: 0.25em;
+    padding: 0 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid #00000025;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.volume svg {
+    border: 0;
+    background-color: transparent;
+}
+
+#now__playing--actions {
+    padding: 0.25em;
+    background-color: white;
+    border-radius: 0 0 0.25em 0.25em;
+    border: 1px solid #00000025;
+}
+
+#now__playing--actions button {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #00000025;
+    border-radius: 0.5em;
+    background-color: white;
+}
+
+#nowPlayingTitle {
+    max-width: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#now__playing--actions svg {
+    fill: var(--clr-primary);
+}
+
+aside svg {
+    fill: white;
+}
+
+#now__playing > div:first-of-type {
+    min-width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    border-radius: 0.5em;
+    background-color: var(--clr-primary);
+}
+
+/* 
+/
+/   Utilities
+/
+*/
+
+.fill-white {
+    fill: white;
+}
+
+.fill-primary {
+    fill: var(--clr-primary);
+}
+
+input[type="range"] {
+    height: 16px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #f57c4f;
+    border-radius: 50px;
+    border: 0px solid #ffffff;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #2497e3;
+    height: 10px;
+    width: 10px;
+    border-radius: 19px;
+    background: #eeaf6a;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3.5px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: #f57c4f;
+}
+
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #f57c4f;
+    border-radius: 50px;
+    border: 0px solid #ffffff;
+}
+
+input[type="range"]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #2497e3;
+    height: 10px;
+    width: 10px;
+    border-radius: 19px;
+    background: #eeaf6a;
+    cursor: pointer;
+}
+input[type="range"]::-ms-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+    background: #f57c4f;
+    border: 0px solid #ffffff;
+    border-radius: 100px;
+    box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-fill-upper {
+    background: #f57c4f;
+    border: 0px solid #ffffff;
+    border-radius: 100px;
+    box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #2497e3;
+    height: 10px;
+    width: 10px;
+    border-radius: 19px;
+    background: #eeaf6a;
+    cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+    background: #f57c4f;
+}
+input[type="range"]:focus::-ms-fill-upper {
+    background: #f57c4f;
+}

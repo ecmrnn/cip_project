@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Galdive</title>
+
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/animation.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,700&family=Poppins:wght@600&display=swap"
+            rel="stylesheet"
+        />
+
+        <script src="assets/js/app.js" defer></script>
+
+        <script defer>
+            function setName() {
+                localStorage.setItem(
+                    "name",
+                    document.querySelector("#name").value
+                );
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Fixed Navigation -->
+        <nav>
+            <ul class="links">
+                <li class="link"><a href="#">Home</a></li>
+                <li class="divider">/</li>
+                <li class="link"><a href="#galdive">Galdive</a></li>
+                <li class="divider">/</li>
+                <li class="link"><a href="#new-album">Album</a></li>
+                <li class="divider">/</li>
+                <li class="link"><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero / Landing Page-->
+        <main>
+            <img
+                id="hero--image"
+                src="assets/images/home_image.jpg"
+                usemap="#masako"
+                alt="picture"
+            />
+            <map name="masako">
+                <area
+                    target=""
+                    alt="Galdive"
+                    title="Galdive"
+                    href="#new-album"
+                    coords="929,1050,917,974,916,922,909,884,905,845,909,790,904,730,898,701,891,678,901,658,905,628,909,611,911,593,906,579,901,560,896,543,893,523,887,510,880,493,870,478,863,468,853,458,838,445,828,428,818,413,809,403,799,390,788,370,777,351,769,333,785,326,800,318,811,310,815,301,839,216,833,201,785,128,768,76,750,61,738,50,713,39,670,20,641,18,613,0,371,1,335,22,307,61,296,86,289,115,281,136,291,159,299,196,308,213,296,243,289,258,284,278,279,306,278,331,287,362,295,393,308,419,305,410,290,369,318,393,338,417,346,433,348,452,356,485,353,532,345,554,326,579,294,604,261,621,199,642,169,662,141,687,125,714,111,738,106,755,105,767,99,786,94,804,93,830,95,855,103,872,113,886,120,898,133,920,141,923,159,940,170,942,187,949,179,934,171,912,169,894,171,869,174,850,182,833,188,818,194,799,203,791,193,820,189,846,185,874,190,894,197,913,205,926,215,930,225,939,236,945,268,948,289,950,301,957,318,958,329,959,319,975,314,994,321,1051"
+                    shape="poly"
+                />
+            </map>
+
+            <div id="hero--content">
+                <p class="hero--content--subtitle">
+                    Check out our new release!
+                </p>
+                <img src="assets/images/album.png" usemap="#GLDV" alt="album" />
+                <map name="GLDV">
+                    <area
+                        target=""
+                        alt="Galdive"
+                        title="Galdive"
+                        href="#galdive"
+                        coords="155,131,154,188,163,188,164,199,240,199,235,209,227,219,219,229,209,233,198,238,185,242,167,242,154,241,139,235,128,230,118,223,110,209,101,189,99,166,99,148,103,129,112,112,121,100,132,92,144,84,160,80,171,77,181,77,194,78,210,84,222,89,227,97,232,103,239,110,321,111,313,90,308,79,302,70,294,56,284,44,272,34,262,27,251,20,240,15,223,8,202,1,187,1,167,0,147,1,134,2,107,11,87,20,69,33,52,46,42,60,36,71,26,87,20,106,16,126,16,150,17,179,21,201,25,218,34,231,43,248,53,261,63,270,74,281,87,290,104,301,120,306,133,311,155,315,173,315,189,315,202,315,227,311,246,304,264,295,276,283,291,270,301,258,308,246,314,235,324,223,325,209,325,143,314,146,313,135"
+                        shape="poly"
+                    />
+                    <area
+                        target=""
+                        alt="Album"
+                        title="Album"
+                        href="#new-album"
+                        coords="350,-1,427,0,427,11,437,11,435,243,522,245,523,258,532,257,531,314,363,314,361,305,352,304"
+                        shape="poly"
+                    />
+                    <area
+                        target=""
+                        alt="Feedback"
+                        title="Feedback"
+                        href="#feedback"
+                        coords="556,1,556,307,566,303,565,313,641,315,641,3"
+                        shape="poly"
+                    />
+                    <area
+                        target=""
+                        alt="Feedback"
+                        title="Feedback"
+                        href="#feedback"
+                        coords="639,2,694,0,717,7,739,16,760,27,775,36,789,48,802,63,813,77,821,92,829,110,834,130,838,154,836,185,833,206,826,225,818,243,807,258,794,271,782,282,765,295,747,303,725,310,703,315,685,315,639,315,641,237,655,239,672,239,692,237,706,230,729,220,738,207,746,198,751,182,754,161,755,148,753,130,748,118,742,104,728,90,719,84,707,81,690,77,676,76,660,76,648,76,641,76"
+                        shape="poly"
+                    />
+                    <area
+                        target=""
+                        alt=""
+                        title=""
+                        href="feedback.html"
+                        coords="844,2,931,3,928,14,933,13,998,217,1072,-1,1151,1,1147,11,1163,10,1052,315,964,314,957,303,949,304"
+                        shape="poly"
+                    />
+                </map>
+
+                <a href="#new-album" class="primary--button"
+                    >Check our album!</a
+                >
+            </div>
+        </main>
+
+        <!-- About Artist -->
+        <section id="galdive">
+            <div class="galdives--content">
+                <hgroup>
+                    <h2>Hi, we are Galdive!</h2>
+                    <p id="artist--greetings">
+                        Hello! This is Galdive and we would like to thank you
+                        for purchasing our album! <br /><br />
+                        We put so much thought into this album. We promise you
+                        to deliver a wonderful journey to our new colors of
+                        soundscape.
+                        <br /><br />
+                        It&apos;s been a fun and great journey finishing this
+                        album and we cannot wait for you to hear it. We hope
+                        you&apos;ll like it! Have a great day! Talk soon on
+                        April 28th!
+                    </p>
+                </hgroup>
+                <img src="assets/images/artist.png" alt="artist" />
+            </div>
+        </section>
+
+        <!-- Tracks -->
+        <section id="new-album">
+            <div id="track--header">
+                <div id="track--album">
+                    <img src="assets/images/home_image.jpg" alt="" />
+                </div>
+
+                <div>
+                    <h2>See You Tomorrow</h2>
+                    <div class="track--info" style="margin-top: 1em">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 -960 960 960"
+                            width="24"
+                        >
+                            <path
+                                d="m480-240-168 72q-40 17-76-6.5T200-241v-519q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v519q0 43-36 66.5t-76 6.5l-168-72Zm0-88 200 86v-518H280v518l200-86Zm0-432H280h400-200Z"
+                            />
+                        </svg>
+                        <p>
+                            Embark on an odyssey that captures the essence of
+                            fleeting moments and hopeful anticipation.
+                        </p>
+                    </div>
+                    <div class="track--info">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 -960 960 960"
+                            width="24"
+                        >
+                            <path
+                                d="M480-300q75 0 127.5-52.5T660-480q0-75-52.5-127.5T480-660q-75 0-127.5 52.5T300-480q0 75 52.5 127.5T480-300Zm0-140q-17 0-28.5-11.5T440-480q0-17 11.5-28.5T480-520q17 0 28.5 11.5T520-480q0 17-11.5 28.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+                            />
+                        </svg>
+                        <p>10 Songs</p>
+                    </div>
+                    <div class="track--info">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 -960 960 960"
+                            width="24"
+                        >
+                            <path
+                                d="M680-80H280q-33 0-56.5-23.5T200-160v-640q0-33 23.5-56.5T280-880h400q33 0 56.5 23.5T760-800v640q0 33-23.5 56.5T680-80Zm0-80v-640H280v640h400ZM480-600q33 0 56.5-23.5T560-680q0-33-23.5-56.5T480-760q-33 0-56.5 23.5T400-680q0 33 23.5 56.5T480-600Zm0 400q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm0-80q-33 0-56.5-23.5T400-360q0-33 23.5-56.5T480-440q33 0 56.5 23.5T560-360q0 33-23.5 56.5T480-280ZM280-800v640-640Z"
+                            />
+                        </svg>
+                        <p>Released: April 12, 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tracks">
+                <div class="track">
+                    <video controls>
+                        <source
+                            type="video/mp4"
+                            src="assets/video/Galdive - Shoulder (Official Visualizer).mp4"
+                        />
+                    </video>
+
+                    <audio
+                        loop
+                        id="Shoulder"
+                        src="assets/audio/Galdive - Shoulder (Official Visualizer).mp3"
+                    ></audio>
+                    <div class="track--audio">
+                        <button
+                            class="track--icon"
+                            onclick="audioClick('Shoulder')"
+                        >
+                            <svg
+                                data-id="Shoulder"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="24"
+                                viewBox="0 -960 960 960"
+                                width="24"
+                            >
+                                <path
+                                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z"
+                                />
+                            </svg>
+                        </button>
+                        <div>
+                            <p class="track--title">Shoulder</p>
+                            <p class="track--duration">Duration: 3m 44s</p>
+                        </div>
+                    </div>
+
+                    <p class="track--description">
+                        Find solace in the embrace of heartfelt melodies,
+                        offering comfort and support through life's trials and
+                        tribulations.
+                    </p>
+                </div>
+
+                <div class="track">
+                    <video controls>
+                        <source
+                            type="video/mp4"
+                            src="assets/video/Galdive - Gravity (Official Visualizer).mp4"
+                        />
+                    </video>
+
+                    <audio
+                        loop
+                        id="Gravity"
+                        src="assets/audio/Galdive - Gravity (Official Visualizer).mp3"
+                    ></audio>
+                    <div class="track--audio">
+                        <button
+                            class="track--icon"
+                            onclick="audioClick('Gravity')"
+                        >
+                            <svg
+                                data-id="Gravity"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="24"
+                                viewBox="0 -960 960 960"
+                                width="24"
+                            >
+                                <path
+                                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z"
+                                />
+                            </svg>
+                        </button>
+                        <div>
+                            <p class="track--title">Gravity</p>
+                            <p class="track--duration">Duration: 4m 33s</p>
+                        </div>
+                    </div>
+
+                    <p class="track--description">
+                        Experience the weight of emotional depth as soaring
+                        melodies and poignant lyrics explore the pull of love
+                        and longing, navigating the complexities of human
+                        connection with grace and vulnerability.
+                    </p>
+                </div>
+
+                <div class="track">
+                    <video controls>
+                        <source
+                            type="video/mp4"
+                            src="assets/video/Galdive - Pocket (Official Visualizer).mp4"
+                        />
+                    </video>
+
+                    <audio
+                        loop
+                        id="Pocket"
+                        src="assets/audio/Galdive - Pocket (Official Visualizer).mp3"
+                    ></audio>
+                    <div class="track--audio">
+                        <button
+                            class="track--icon"
+                            onclick="audioClick('Pocket')"
+                        >
+                            <svg
+                                data-id="Pocket"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="24"
+                                viewBox="0 -960 960 960"
+                                width="24"
+                            >
+                                <path
+                                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z"
+                                />
+                            </svg>
+                        </button>
+                        <div>
+                            <p class="track--title">Pocket</p>
+                            <p class="track--duration">Duration: 4m 02s</p>
+                        </div>
+                    </div>
+
+                    <p class="track--description">
+                        Discover a hidden universe within the confines of a
+                        small space, where intimate emotions and cherished
+                        memories reside, waiting to be explored and treasured.
+                    </p>
+                </div>
+
+                <div class="track">
+                    <video controls>
+                        <source
+                            type="video/mp4"
+                            src="assets/video/Galdive - Mundane (Official Visualizer).mp4"
+                        />
+                    </video>
+
+                    <audio
+                        loop
+                        id="Mundane"
+                        src="assets/audio/Galdive - Mundane (Official Visualizer).mp3"
+                    ></audio>
+                    <div class="track--audio">
+                        <button
+                            class="track--icon"
+                            onclick="audioClick('Mundane')"
+                        >
+                            <svg
+                                data-id="Mundane"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="24"
+                                viewBox="0 -960 960 960"
+                                width="24"
+                            >
+                                <path
+                                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z"
+                                />
+                            </svg>
+                        </button>
+                        <div>
+                            <p class="track--title">Mundane</p>
+                            <p class="track--duration">Duration: 3m 39s</p>
+                        </div>
+                    </div>
+
+                    <p class="track--description">
+                        Delve into the depths of longing as the mundane aspects
+                        of life become poignant reminders of absence, echoing
+                        the profound impact of a certain person's presence on
+                        every facet of existence.
+                    </p>
+                </div>
+
+                <div class="track">
+                    <video controls>
+                        <source
+                            type="video/mp4"
+                            src="assets/video/Galdive - Sweet Sugar Getaway (Official Visualizer).mp4"
+                        />
+                    </video>
+
+                    <audio
+                        loop
+                        id="Sweet"
+                        src="assets/audio/Galdive - Sweet Sugar Getaway (Official Visualizer).mp3"
+                    ></audio>
+                    <div class="track--audio">
+                        <button
+                            class="track--icon"
+                            onclick="audioClick('Sweet')"
+                        >
+                            <svg
+                                data-id="Sweet"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="24"
+                                viewBox="0 -960 960 960"
+                                width="24"
+                            >
+                                <path
+                                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z"
+                                />
+                            </svg>
+                        </button>
+                        <div>
+                            <p class="track--title">Sweet Sugar Getaway</p>
+                            <p class="track--duration">Duration: 3m 49s</p>
+                        </div>
+                    </div>
+
+                    <p class="track--description">
+                        Indulge in a musical escape that transports you to a
+                        realm of blissful serenity, where sugary melodies offer
+                        a temporary reprieve from the complexities of reality.
+                    </p>
+                </div>
+
+                <div class="track">
+                    <video controls>
+                        <source
+                            type="video/mp4"
+                            src="assets/video/Galdive - 5AM (Audio).mp4"
+                        />
+                    </video>
+
+                    <audio
+                        loop
+                        id="fiveAM"
+                        src="assets/audio/Galdive  5 AM (Lyrics) [CC].mp3"
+                    ></audio>
+                    <div class="track--audio">
+                        <button
+                            class="track--icon"
+                            onclick="audioClick('fiveAM')"
+                        >
+                            <svg
+                                data-id="fiveAM"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="24"
+                                viewBox="0 -960 960 960"
+                                width="24"
+                            >
+                                <path
+                                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z"
+                                />
+                            </svg>
+                        </button>
+                        <div>
+                            <p class="track--title">5AM</p>
+                            <p class="track--duration">Duration: 3m 25s</p>
+                        </div>
+                    </div>
+
+                    <p class="track--description">
+                        Immerse yourself in the quiet stillness of the early
+                        morning hours, where introspection and contemplation
+                        intertwine amidst gentle melodies.
+                    </p>
+                </div>
+
+                <div class="track">
+                    <video controls>
+                        <source
+                            type="video/mp4"
+                            src="assets/video/galdive -  sorbet (official lyric video).mp4"
+                        />
+                    </video>
+
+                    <audio
+                        loop
+                        id="sorbet"
+                        src="assets/audio/Galdive  Sorbet (Lyrics) [CC].mp3"
+                    ></audio>
+                    <div class="track--audio">
+                        <button
+                            class="track--icon"
+                            onclick="audioClick('sorbet')"
+                        >
+                            <svg
+                                data-id="sorbet"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="24"
+                                viewBox="0 -960 960 960"
+                                width="24"
+                            >
+                                <path
+                                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z"
+                                />
+                            </svg>
+                        </button>
+                        <div>
+                            <p class="track--title">Sorbet</p>
+                            <p class="track--duration">Duration: 3m 17s</p>
+                        </div>
+                    </div>
+
+                    <p class="track--description">
+                        Savor the refreshing melodies that evoke the sensation
+                        of indulging in a sweet and tangy treat.
+                    </p>
+                </div>
+
+                <div class="track">
+                    <video controls>
+                        <source
+                            type="video/mp4"
+                            src="assets/video/galdive - blew me (official lyric video).mp4"
+                        />
+                    </video>
+
+                    <audio
+                        loop
+                        id="blew"
+                        src="assets/audio/Galdive  Blew Me (Lyrics) [CC].mp3"
+                    ></audio>
+                    <div class="track--audio">
+                        <button
+                            class="track--icon"
+                            onclick="audioClick('blew')"
+                        >
+                            <svg
+                                data-id="blew"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="24"
+                                viewBox="0 -960 960 960"
+                                width="24"
+                            >
+                                <path
+                                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z"
+                                />
+                            </svg>
+                        </button>
+                        <div>
+                            <p class="track--title">Blew Me</p>
+                            <p class="track--duration">Duration: 4m 22s</p>
+                        </div>
+                    </div>
+
+                    <p class="track--description">
+                        Experience the raw intensity of emotional upheaval as
+                        dynamic melodies and evocative lyrics paint a vivid
+                        portrait of heartache and resilience.
+                    </p>
+                </div>
+
+                <div class="track">
+                    <video controls>
+                        <source
+                            type="video/mp4"
+                            src="assets/video/galdive - dear matias (official visualizer).mp4"
+                        />
+                    </video>
+
+                    <audio
+                        loop
+                        id="matias"
+                        src="assets/audio/Galdive  Dear Matias (Lyrics) [CC].mp3"
+                    ></audio>
+                    <div class="track--audio">
+                        <button
+                            class="track--icon"
+                            onclick="audioClick('matias')"
+                        >
+                            <svg
+                                data-id="matias"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="24"
+                                viewBox="0 -960 960 960"
+                                width="24"
+                            >
+                                <path
+                                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z"
+                                />
+                            </svg>
+                        </button>
+                        <div>
+                            <p class="track--title">Dear Matias</p>
+                            <p class="track--duration">Duration: 4m 00s</p>
+                        </div>
+                    </div>
+
+                    <p class="track--description">
+                        Journey through heartfelt verses and tender melodies as
+                        the lyrics weave a narrative of personal connection and
+                        longing.
+                    </p>
+                </div>
+
+                <div class="track">
+                    <video controls>
+                        <source
+                            type="video/mp4"
+                            src="assets/video/Galdive - Stay (Official Lyric Video).mp4"
+                        />
+                    </video>
+
+                    <audio
+                        loop
+                        id="stay"
+                        src="assets/audio/Galdive - Stay (Official Lyric Video).mp3"
+                    ></audio>
+                    <div class="track--audio">
+                        <button
+                            class="track--icon"
+                            onclick="audioClick('stay')"
+                        >
+                            <svg
+                                data-id="stay"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="24"
+                                viewBox="0 -960 960 960"
+                                width="24"
+                            >
+                                <path
+                                    d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Z"
+                                />
+                            </svg>
+                        </button>
+                        <div>
+                            <p class="track--title">Stay</p>
+                            <p class="track--duration">Duration: 3m 38s</p>
+                        </div>
+                    </div>
+
+                    <p class="track--description">
+                        The music becomes a plea, resonating with emotion as it
+                        captures the longing and vulnerability of wanting
+                        someone to stay.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedbacks -->
+        <section id="feedback">
+            <div>
+                <hgroup>
+                    <h2>
+                        We'd love to hear <br />
+                        your thoughts!
+                    </h2>
+                    <p>
+                        Have a question in mind or ideas you want to share with
+                        us? Tell us about it! We'd love to stay in contact with
+                        you.
+                    </p>
+                </hgroup>
+                <form action="feedback.html" onsubmit="setName()">
+                    <div class="input">
+                        <label for="name">What's your name?</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your cool name!"
+                            required
+                        />
+                    </div>
+                    <div class="input">
+                        <label for="email">What's your email?</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Your personal email."
+                            required
+                        />
+                    </div>
+                    <div class="input">
+                        <label for="idea">Share your idea here!</label>
+                        <textarea
+                            name="idea"
+                            id="idea"
+                            cols="30"
+                            rows="5"
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit">Send Feedback</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Now Playing -->
+        <aside>
+            <div id="now__playing">
+                <div>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 -960 960 960"
+                        width="24"
+                    >
+                        <path
+                            d="M280-120h-80q-33 0-56.5-23.5T120-200v-280q0-75 28.5-140.5t77-114q48.5-48.5 114-77T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480v280q0 33-23.5 56.5T760-120h-80q-33 0-56.5-23.5T600-200v-160q0-33 23.5-56.5T680-440h80v-40q0-117-81.5-198.5T480-760q-117 0-198.5 81.5T200-480v40h80q33 0 56.5 23.5T360-360v160q0 33-23.5 56.5T280-120Zm0-240h-80v160h80v-160Zm400 0v160h80v-160h-80Zm-400 0h-80 80Zm400 0h80-80Z"
+                        />
+                    </svg>
+                </div>
+                <div>
+                    <p style="font-size: 0.65rem; text-transform: uppercase">
+                        Now Playing
+                    </p>
+                    <p id="nowPlayingTitle">...</p>
+                </div>
+            </div>
+            <div id="now__playing--actions">
+                <div style="display: flex; gap: 0.25em">
+                    <button title="Replay 10s" onclick="replay()">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 -960 960 960"
+                            width="24"
+                        >
+                            <path
+                                d="M360-500h-30q-13 0-21.5-8.5T300-530q0-13 8.5-21.5T330-560h60q13 0 21.5 8.5T420-530v180q0 13-8.5 21.5T390-320q-13 0-21.5-8.5T360-350v-150Zm140 180q-17 0-28.5-11.5T460-360v-160q0-17 11.5-28.5T500-560h80q17 0 28.5 11.5T620-520v160q0 17-11.5 28.5T580-320h-80Zm20-60h40v-120h-40v120ZM480-80q-75 0-140.5-28.5t-114-77q-48.5-48.5-77-114T120-440q0-17 11.5-28.5T160-480q17 0 28.5 11.5T200-440q0 117 81.5 198.5T480-160q117 0 198.5-81.5T760-440q0-117-81.5-198.5T480-720h-6l34 34q12 12 11.5 28T508-630q-12 12-28.5 12.5T451-629L348-732q-12-12-12-28t12-28l103-103q12-12 28.5-11.5T508-890q11 12 11.5 28T508-834l-34 34h6q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-440q0 75-28.5 140.5t-77 114q-48.5 48.5-114 77T480-80Z"
+                            />
+                        </svg>
+                    </button>
+                    <button title="Forward 10s" onclick="forward()">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 -960 960 960"
+                            width="24"
+                        >
+                            <path
+                                d="M480-80q-75 0-140.5-28.5t-114-77q-48.5-48.5-77-114T120-440q0-75 28.5-140.5t77-114q48.5-48.5 114-77T480-800h6l-34-34q-12-12-11.5-28t11.5-28q12-12 28.5-12.5T509-891l103 103q12 12 12 28t-12 28L509-629q-12 12-28.5 11.5T452-630q-11-12-11.5-28t11.5-28l34-34h-6q-117 0-198.5 81.5T200-440q0 117 81.5 198.5T480-160q117 0 198.5-81.5T760-440q0-17 11.5-28.5T800-480q17 0 28.5 11.5T840-440q0 75-28.5 140.5t-77 114q-48.5 48.5-114 77T480-80ZM360-500h-30q-13 0-21.5-8.5T300-530q0-13 8.5-21.5T330-560h60q13 0 21.5 8.5T420-530v180q0 13-8.5 21.5T390-320q-13 0-21.5-8.5T360-350v-150Zm140 180q-17 0-28.5-11.5T460-360v-160q0-17 11.5-28.5T500-560h80q17 0 28.5 11.5T620-520v160q0 17-11.5 28.5T580-320h-80Zm20-60h40v-120h-40v120Z"
+                            />
+                        </svg>
+                    </button>
+                </div>
+                <div class="volume">
+                    <svg
+                        id="volumeIcon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 -960 960 960"
+                        width="24"
+                    >
+                        <path
+                            d="M360-360H240q-17 0-28.5-11.5T200-400v-160q0-17 11.5-28.5T240-600h120l132-132q19-19 43.5-8.5T560-703v446q0 27-24.5 37.5T492-228L360-360Zm380-120q0 42-19 79.5T671-339q-10 6-20.5.5T640-356v-250q0-12 10.5-17.5t20.5.5q31 25 50 63t19 80ZM480-606l-86 86H280v80h114l86 86v-252ZM380-480Z"
+                        />
+                    </svg>
+                    <input
+                        type="range"
+                        name="volume"
+                        id="volume"
+                        value="2"
+                        min="0"
+                        max="10"
+                        oninput="changeVolume()"
+                    />
+                </div>
+            </div>
+        </aside>
+    </body>
+</html>

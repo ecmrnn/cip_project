@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=1, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,700&family=Poppins:wght@600&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Custome Style for Feedback -->
+        <style>
+            body {
+                height: 100vh;
+                display: grid;
+                place-items: center;
+                text-align: center;
+                font-family: "Karla";
+            }
+            h1 {
+                font-family: "Poppins";
+                color: #f57c4f;
+            }
+            .button {
+                padding: 1em 2em;
+                margin: 0 auto;
+                text-decoration: none;
+                width: fit-content;
+                display: block;
+                border-radius: 0.5em;
+                background-color: #eeaf6a;
+                border: 0;
+                overflow: hidden;
+                color: white;
+                font-family: "Poppins";
+                font-size: 1rem;
+                box-shadow: 0 0.5em 0 0 #f57c4f;
+                transition: all 100ms ease-in-out;
+            }
+
+            .button:hover,
+            .button:focus {
+                outline: 0;
+                translate: 0 0.5em;
+                box-shadow: 0 0 0 0 #f57c4f;
+            }
+            #emoji {
+                margin: 0;
+                width: 5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div>
+                <img
+                    id="emoji"
+                    src="assets/icons/kissing-cat.512x468.png"
+                    alt="kissing cat"
+                />
+            </div>
+            <h1>We appreciate your feedback<span id="name"></span>!</h1>
+            <p>
+                We will respond to you as soon as we receive your message.
+                <br />
+                We hope you have a wonderful day!
+            </p>
+            <a href="index.html" class="button">Check our Album</a>
+        </main>
+
+        <script defer>
+            let name = localStorage.getItem("name");
+
+            if (name) document.querySelector("#name").innerHTML = `, ${name}`;
+        </script>
+    </body>
+</html>
